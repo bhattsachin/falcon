@@ -1,0 +1,25 @@
+Use  /falcon [-r] <config filename> [batch query]. Or. /falcon [-s] <config filename> to run the project
+
+Beware!! this computer can clog your cpu if run on huge dataset. run at your own risk.
+
+
+Global setup:
+ Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email bhattsachin@gmail.com
+      
+Next steps:
+  mkdir falcon
+  cd falcon
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:bhattsachin/falcon.git
+  git push -u origin master
+      
+Existing Git Repo?
+  cd existing_git_repo
+  git remote add origin git@github.com:bhattsachin/falcon.git
+  git push -u origin master
+      
