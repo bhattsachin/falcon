@@ -1,0 +1,1536 @@
+<<Author>>: Kenb215-87869
+<<Timestamp>>: 2009-03-15T06:13:57Z
+<<Comment>>: subst'ed afc mm
+<<WikiText>>: {{afc c}}{{Wikipedia:Articles for creation/Daily header}}
+
+== Process Physics ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+[http://www.scieng.flinders.edu.au/cpes/people/cahill_r/processphysics.html Process Physics] is a new paradigm for the modeling of reality being developed at Flinders University in South Australia.
+
+It was featured as the cover story in New Scientist, 26 February 2000 No. 2227 pp. 24-28 in an article [http://www.scieng.flinders.edu.au/cpes/people/cahill_r/NS.html "Random Reality"] by Marcus Chown.
+ 
+Kirsty Kitto of Queensland University of Technology recently made available [http://www.users.on.net/~kirsty.kitto/papers/ppQTmodelsComplexity.pdf "Process Physics: quantum theories as models of complexity"]
+
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+New Scientist, 26 February 2000 No. 2227 pp. 24-28 [http://www.scieng.flinders.edu.au/cpes/people/cahill_r/NS.html "Random Reality"] by Marcus Chown.
+ 
+[http://www.users.on.net/~kirsty.kitto/papers/ppQTmodelsComplexity.pdf "Process Physics: quantum theories as models of complexity"] by Kirsty Kitto, To be published in the collection: I. Licata, A. J. Sakaji eds. (2008) Physics of Emergence and Organization, World Scientific, In Press.
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[User:Iwamori|Iwamori]] ([[User talk:Iwamori|talk]]) 04:45, 11 July 2008 (UTC)
+{{tlx|DYKno}} I don't think you should if its not finished yet. --[[User:Meldshal42|<font color="green">'''Meldshal42'''</font >]] [[User talk:Meldshal42|<font color="red">'''(talk to me)'''</font >]] 17:42, 11 July 2008 (UTC)
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. The proposed article is [[Wikipedia:What Wikipedia is not|not suitable for Wikipedia]]. <!-- From template Afc not --> Per second opinion '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 18:32, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Interstate 64 in Indiana ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 64]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 07:59, 11 July 2008 (UTC)
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:20, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Interstate 74 in Indiana ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 74]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:17, 11 July 2008 (UTC)
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:21, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Interstate 74 in Ohio ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 74]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:24, 11 July 2008 (UTC)
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:21, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Kyocera M1000  ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!--Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+ 
+A calmshell celullar phone created by Kyocera. 
+
+It contains two version: Wildcard-Black (Virgin Mobile), Lingo- Green (Cricket Wireless)
+
+=== Specs ===
+
+<blockquote>
+<br />Talk Time:
+Up to 3.25 hours<br /> 
+<br />Standby Time:
+Up to 150 hours <br />
+<br />Size:
+3.94 in x 1.97 in x 0.79 in (100 mm x 50 mm x 20 mm) <br />
+<br />Weight:
+3.5 ounces (100 grams) <br />
+<br />Mode:
+CDMA2000® 1x dual-band digital (800 & 1900 MHz)<br /> 
+<br />Camera:
+1.3 Megapixel <br />
+<br />Battery Type:
+900 mAh<br />
+
+<br />Vocoders:
+13 Kbps (PureVoice) and EVRC<br />
+
+<br />Operational Temperature:
+-22° to 140°F (-30° to 60°C) [Note: Battery performance limited in temperatures below 32°F (0°C).] " ]<ref>[http://www.kyocera-wireless.com/m1000-phone/tech-specs.htm Kyocera Cell Phones - Lingo / Kyocera M1000 wireless phone tech specs<!-- Bot generated title -->]</ref><br />
+
+</blockquote>
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+1.http://www.kyocera-wireless.com/m1000-phone/tech-specs.htm
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/67.61.59.36|67.61.59.36]] ([[User talk:67.61.59.36|talk]]) 08:31, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the importance or significance of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria (A7)]] and/or [[WP:N|guidelines on notability]]. Please provide more information on why the subject is worthy of inclusion in an encyclopedia. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 14:17, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Interstate 364 ==
+
+{| class="navbox collapsible collapsed" style="text-align: left; border: 0px; margin-top: 0.2em;"
+|-
+! style="background-color:#00AFFF" | [[Image:Symbol oppose vote.svg|declined|14px]][[Image:Symbol oppose vote.svg|declined|14px]] These requests for creation have been mass moderated. <span style="color:red;">Please do not modify them.</span>
+|-
+| style="border: solid 1px silver; padding: 8px; background-color: white;" |
+<div class="boilerplate metadata afc" style="background-color:#00AFFF; margin: 2em 0 0 0; padding: 0 10px 0 10px; border: 1px solid #AAAAAA;">''These requests for creation have been mass moderated.  They have all been declined unless otherwise marked.  Please contact the reviewer on his or her talk page if you have any questions.''
+<small>If you want to make changes and try again, copy and paste your article into a new submission and make your changes there.</small><br><!--Template:Afc top -->}}
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 64 in Kentucky]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:32, 11 July 2008 (UTC)
+
+'''Oppose''' this and the ones below - there's no such thing as I-364 in Kentucky. --[[User talk:NE2|NE2]] 09:35, 11 July 2008 (UTC)
+
+== Interstate 364 (Kentucky) ==
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 64 in Kentucky]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:32, 11 July 2008 (UTC)
+
+== Interstate 364 in Kentucky ==
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 64 in Kentucky]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:33, 11 July 2008 (UTC)
+
+== I-364 ==
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 64 in Kentucky]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:33, 11 July 2008 (UTC)
+
+== I-364 (KY) ==
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Interstate 64 in Kentucky]]
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 08:33, 11 July 2008 (UTC)
+
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. The proposed article is [[Wikipedia:What Wikipedia is not|not suitable for Wikipedia]]. <!-- From template Afc not --> '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:22, 11 July 2008 (UTC)
+
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== [[Lex Lovett]] ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+{{tlx|Infobox Wrestler
+|name=Wayne Meyer
+|image= Replace this image male.svg
+|img_capt=
+|names='''Lex Lovett'''<br>Lex Meyer
+<!-- Please don't change the height or weight. These are the measures as officially stated and they should not be changed. -->
+|height={{tlx|height|ft=6|in=1}} 
+|weight={{tlx|convert|225|lb|kg|abbr=on|lk=on}}
+|birth_date={{tlx|birth date and age|1975|7|24}}
+|death_date=
+|birth_place=
+|death_place=
+|resides=[[New Tampa, Florida]]
+|billed=
+|trainer=[[Steve Keirn]]  
+|debut=1999<br>w/"Venom" Tim Keirn<br>vs. [[The Heavenly Bodies#DeNucci and Nelson|Drunk & Disorderly]]<br>{{tlx|small|([[Chris Nelson (wrestler)|Chris Nelson]] & [[Vito DeNucci]])}} 
+|retired=
+|website=
+|}}
+
+'''Wayne Meyer''' (b. [[July 24]], [[1975]]) is an American professional wrestler, known by his ringname '''Lex Lovett''', who competes in Southeastern independent promotions such as [[Independent Pro Wrestling]] and the [[National Wrestling Alliance]]-affiliated [[NWA Florida]] as well as having toured the [[Middle East]], [[Europe]] and [[Asia]]. 
+
+From 2003 to 2006, he and [[Jason Seguine|Buck Quartermain]] formed a tag team in [[Total Non-Stop Action]] and on the independent circuit. He has also briefly appeared in the [[X Wrestling Federation]] and [[World Wrestling Entertainment]]. 
+
+===Early life and career=== 
+Wayne Meyer was born near [[Tampa, Florida]]. At the age of 5, he began watching [[WWF Superstars]] and [[Championship Wrestling from Florida]] then hosted by [[Gordon Solie]]. It was during this time that he became a fan of [[Ric Flair]], [[Ricky Steamboat]], [[Blackjack Mulligan]] and [[Barry Windham|Barry]] and [[Kendall Windham]]. He drifted from wrestling as a teenager, however his interest returned when he and his college roommate Alex Lovett started watching during the ''"[[Attitude Era]]"'' in the mid-1990s. While at USF, he was a [[cheerleader|male cheerleader]] and later coached the cheerleading team. After graduating from the [[University of South Florida]] with a degree in finance, he worked for [[Raymond James]] in St. Petersburg as a junior analyst and taught business studies as a substitute teacher at [[Chamberlain High School]] in Tampa. <ref> {{tlx|cite web |url=http://www.sptimes.com/2004/02/20/Citytimes/Holding_their_own.shtml |title=Holding their own |accessdate= |author=Matus, Ron |authorlink= |coauthors= |date=2004-02-20 |year= |month= |format= |work= |publisher=[[St. Petersburg Times]] |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+His roommate began wrestling as Alex Yeull Lovett soon after graduating and Meyer soon expressed interest in entering professional wrestling himself. Alex Lovett introduced him to [[Steve Keirn]] at an IPW show and Keirn agreed to train him at his wrestling school. He was originally scheduled to start training in July 1999, however he postponed it after Alex Lovett died while touring [[Lima, Peru]]. 
+
+That November, he began training under Keirn and [[Jimmy Del Ray]] learning wrestling moves, ring psychology, dieting, workout programs and general conduct. Prior to his debut, he chose the name '''Lex Lovett''' in honor of Alex Lovett. At the end of the year, he wrestled his first match teaming with [[Tim Keirn|"Venom" Tim Keirn]] against '''[[The Heavenly Bodies#DeNucci and Nelson|Drunk & Disorderly]]''' ([[Chris Nelson (wrestler)|Chris Nelson]] & [[Vito DeNucci]]). <ref name="Wojcik"> {{tlx|cite web |url=http://alanwojcik.com/archives/id20.html |title=Lex Lovett Part 1 |accessdate= |author=Wojcik, Alan |authorlink= |coauthors= |date= |year=2003 |month=December |format= |work= |publisher=AlanWojcik.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+===NWA Florida===
+He spent the next several months in the [[St. Petersburg, Florida|St. Petersburg]] area for promoter Frankie Reyes and later [[Howard Brodie]]'s [[NWA Florida]] territory. He feuded with the stable ''Tampa Clique'', which at the time included [[Pepi Prado]], [[Jason Seguine|Buck Q]], [[Scoot Andrews]] and [[Mike Sullivan (wrestler)|Mike Sullivan]], during his first five months in the promotion. Still in his rookie year, he eventually defeated Pepe Prado for the [[NWA World Junior Heavyweight Championship]] in Tampa on November 14, 2000. Several months later, he was involved in a controversial storyline in the feud between NWA Florida and IPW Hardcore when he accepted a title challenge from former referee Spanky Malone during an NWA Florida supercard at the [[Homer W. Hesterly Armory]] in Tampa on April 24, 2001. <ref> {{tlx|cite web |url=http://wrestlingclassics.com/radio.html#April 28, 2001: |title=NWA Title Change play-by-play and complete supercard coverage |accessdate= |author=Ringside Live |authorlink= |coauthors= |date=2001-04-28 |year= |month= |format= |work=([[Podcast]]) |publisher=WrestlingClassics.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref> He pinned Malone with an [[Asai Moonsault]] in 56 seconds and was immediately attacked by 6 wrestlers from IPW Hardcore who were sitting at ringside. Lovett was hit by a [[fireball (wrestling)|fireball]] during the attack before the wrestlers were arrested by security. <ref>McNeill, Pat. ''The Tables All Were Broken: McNeill's Take On The End Of Professional Wrestling As We Know It''. Lincoln: iUniverse, 2002. (pg. 164) ISBN 0-595-22404-0</ref> 
+
+After a nine-month reign, he lost the title to Jet Jaguar in [[Ybor City, Florida]] on July 18. Soon after, he participated in the NWA Super Junior Open tournament. Lovett successfully advanced to the tournament finals to face Scoot Andrews and [[Christopher Daniels]] in a three way match. On August 21, he defeated [[Mike Thunder]] for the [[NWA World Junior Heavyweight Championship]] in Tampa. He had faced Thunder while in Texas the previous month and was one of the top contenders when Thunder, despite having a torn ligament, defended the belt in Florida. Lovett was helped due to outside interference by Jason Rumble who attacked him following the match. <ref> {{tlx|cite web |url=http://www.kappapublishing.com/wrestling/pages/wrestlingframe.html |title=Pro Wrestling Illustrated: Wrestling History |accessdate= |author=Pro Wrestling Illustrated |authorlink=Pro Wrestling Illustrated |coauthors= |date= |year=2007 |month= |format= |work= |publisher=PWI-Online.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+Two months later, Lovett defended the title against top junior heavyweights Jet Jaguar, Jimmy Rave, Brandon K and Jason Rumble in a "Fatal Five-Way" match at the NWA 53rd Anniversary show in St. Petersburg on October 13. Losing the title to Jason Rumble, he was later part of an interpromotional match between NWA Florida and Independent Professional Wrestling pitting Team NWA Florida (Lovett, Buck Q, Rod Steel, Chris Nelson & Vito DeNucci) against Team IPW (Scoot Andrews, Mike Sullivan, Jet Jaguar, Chaos and the Shane Brothers). The match was a "[[WarGames match|Wargames]]"-style match and eventually ruled a no-contest. <ref> {{tlx|cite web |url=http://www.canoe.ca/SlamWrestlingArchive2001/oct14_nwa-can.html |title=SLAM! Wrestling: Rough night for Canadians at NWA 53rd |accessdate= |author= |authorlink= |coauthors= |date=2001-10-14 |year= |month= |format= |work= |publisher=SLAM! Sports |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+ 
+His match with Jason Rumble was eventually seen by [[World Wrestling Federation]] officials who were impressed with the match. He was invited to [[Cincinnati]] by [[Kevin Kelly (announcer)|Kevin Kelly]] where he would be evaluated along with 14 other wrestlers by [[Jim Cornette]], [[Al Snow]], [[Tom Pritchard]], [[Arn Anderson]], [[Scott Levy|Raven]], [[Tommy Dreamer]] and [[Bill DeMott]]. He and the others worked on matches and promos with six wrestlers receiving contracts with the WWE, although three wrestlers were later released. On December 21, Lovett was given a tryout match against [[Crash Holly]] on [[WWF Jakked]]. <ref name="Wojcik"/>
+
+===IPW Hardcore===
+During the next year, Lovett spent five months on the independent circuit and made appearances for promoter [[Bill Behrens]] in the [[Georgia]]-based [[NWA Wildside]], [[Jimmy Hart]]'s [[X Wrestling Federation]] and [[Dusty Rhodes]]' Turnbuckle Championship Wrestling. Although scheduled for one appearance, he again impressed XWF officials who invited him to matches against [[Jimmy Snuka, Jr.]] and [[Low Ki]] at a second XWF television taping. 
+
+By the time he returned to Florida, Lovett saw NWA Florida on the verge of folding and decided to contact promoter Ron Neimi to join rival promotion IPW Hardcore. One of the main figures involved in the NWA Florida vs. IPW Hardcore feud, the "old school" Lovett was promoted as a ''"[[heel (professional wrestling)|heel]]"'' among the "[[hardcore wrestling|hardcore]]" fans of IPW. He was originally supposed to become the tag team partner of Buck Quartermain but was replaced with [[Steve Madison]] after Quartermain left the promotion. He and Madison teamed together for only a brief time before Lovett turned on him during a tag team match and attacked him. After he and Madison split up, he took on Vito DeNucci as his manager and feuded with Madison and [[Antonio Banks]]. <ref name="Wojcik"/>
+
+===World Japan Pro===
+In 2003, Lovett was contacted by Steve Madison and later [[Masao Hattori|Masao "Tiger" Hattori]] offering to participate in a tour with [[Fighting World of Japan Pro Wrestling|World Japan Pro]]. Lovett accepted and traveled to Japan where he later met with Hattori and [[Riki Choshu]]. During the four-day Magna01 Power Hall Series, he competed under the name Lex Meyer and faced [[Hiroshi Hase]], [[Shiro Koshinaka]] and Riki Choshu & [[Kensuke Sasaki]] in a tag team match. During the II and III series, he wrestled [[Yoji Anjo]] as well as tag team matches with [[Kenzo Suzuki]] against Koshinaka & Choshu and Sasaki against [[Takao Omori]] & [[Koichiro Kimura]]. On July 19, he lost to NWA Florida Heavyweight Champion Scoot Andrews in a three-way match with [[Billy Fives]] in St. Petersburg. <ref> {{tlx|cite web |url=http://www.wrestling-titles.com/us/fl/fl-h.html |title=Florida Heavyweight Title |accessdate= |author= |coauthors= |date= |year=2003 |month= |publisher=Puroresu Dojo }} </ref>
+
+During the Burning Autumn tour, he faced Steve Madison on the first two nights and received high praise from the promotion. Lovett later took on [[Jose Maximo]], [[Katsumi Usuda]], [[Masamitsu Kochi]] and [[Shume Matsuzaki]]. After leaving Japan, he toured the [[People's Republic of China]] with [[NWA Mid-Atlantic Championship Wrestling]] which took place from December 27, 2003 to January 4, 2004. <ref name="Wojcik"/> On the third and last day of the tour, Lovett defeated [[Mike Rapada]] at the Guangzhou Gymnasium with 3,400 in attendance.
+
+===Total Nonstop Action and the independent circuit===
+Soon after his return to the United States, Lovett began wrestling for Total Nonstop Action Wrestling. He made his PPV debut in a dark match with Rod Steel against [[David Young]] & [[Tony Mamaluke]] on February 5, 2003. Although used as a [[jobber|preliminary wrestler]] during his first stint with the promotion, he eventually formed a tag team with Buck Quartermain and managed by former ''[[Survivor (TV series)|Survivor]]'' contestant [[Johnny Fairplay]]. In July 2004, he faced [[Jeff Jarrett]] for the [[TNA World Heavyweight Championship]]. <ref> {{tlx|cite web |url=http://slam.canoe.ca/Slam/Wrestling/2004/08/01/565733.html |title=SLAM! Wrestling: Impact! shows "squash" isn't so bad after all |accessdate= |author=Johnson, Steve |authorlink= |coauthors= |date=2004-07-31 |year= |month= |format= |work= |publisher=SLAM! Wrestling |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+Later that year, Lovett defeated Scoot Andrews for the [[NWA Florida Southern Heavyweight Championship]] on October 9, 2004. Lovett would face his tag team partner, substituting for an injured [[Roderick Strong]], in a match for the title at NWA Florida's supercard ''Rage in the Cage 7'' on February 26, 2005. <ref> {{tlx|cite web |url=http://prowrestlingdaily.com/modules.php?name=News&file=print&sid=412 |title=NWA FL (2/26): Rage in the Cage 7! |accessdate= |author=Wojcik, Alan J. |authorlink= |coauthors= |date=2005-02-28 |year= |month= |format= |work= |publisher=Prowrestlingdaily.com |pages= |language= |archiveurl=http://web.archive.org/web/20060511110630/http://prowrestlingdaily.com/modules.php?name=News&file=print&sid=412 |archivedate=2006-05-11 |quote= }} </ref>
+
+He and Quartermain continued to appear in dark matches on TNA's weekly PPV's losing to '''[[Phi Delta Slam]]''' ([[Big Tilly]] & [[Bruno Sassi]]) at [[TNA Against All Odds]], '''The Naturals''' ([[Chris Candido]] & [[Andy Douglas]]) at [[TNA Destination X]] <ref> {{tlx|cite web |url=http://www.tnawrestling.com/results/ppv/full.php?ppvres=65 |title=TNA Destination X Results 03/13/05 |accessdate= |author=Schultz, Chris |authorlink= |coauthors= |date=2005-03-13 |year= |month= |format= |work= |publisher=TNAwrestling.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref> and '''3 Live Kru''' ([[Ron Killings]] & [[Konnan]]) a three-way match with The Naturals at [[TNA Lockdown]] on April 21, 2005. <ref> {{tlx|cite web |url=http://www.prowrestlinghistory.com/supercards/usa/misc/tna/lockdown.html |title=TNA Lockdown |accessdate= |author= |authorlink= |coauthors= |date= |year= |month= |format= |work= |publisher=ProWrestlingHistory.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref> <ref> {{tlx|cite web |url=http://www.angrymarks.com/news/View.php?ArticleID=324 |title=04/24/05: TNA Lockdown Results |accessdate= |author= |authorlink= |coauthors= |date=2005-04-24 |year= |month= |format= |work= |publisher=AngryMarks.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref> On May 27, he and David Young lost to The Naturals at TNA Impact. <ref> {{tlx|cite web |url=http://www.411mania.com/wrestling/tv_reports/32390 |title=411's NWA TNA Impact Report 5.27.05 |accessdate= |author=Csonka, Larry |authorlink= |coauthors= |date=2005-05-27 |year= |month= |format= |work= |publisher=411mania.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+On June 10, Lovett put his title on the line against [[NWA World Heavyweight Championship|NWA World Heavyweight Champion]] [[A.J. Styles]] at the main event of the Jeff Peterson Memorial Cup. <ref> {{tlx|cite web |url=http://www.canoe.ca/Slam/Wrestling/2005/06/07/1075358.html |title=SLAM! Wrestling: Peterson Cup showcases wrestling's positive side |accessdate= |author=Milner, John |authorlink= |coauthors= |date=2005-06-08 |year= |month= |format= |work= |publisher=SLAM! Sports |pages= |language= |archiveurl= |archivedate= |quote= }} </ref> Although Lovett came close to victory managing to use his signature move, the "Lex Buster", Styles was able to kick out and pinned Lovett with his own finishing move, the "Styles Clash" for the win. After the match, Lovett addressed the fans thanking them for their support and officially announced his retirement. 
+
+In August 2005, he appeared in the corner of Buck Quartermain in his match against [[Ray Lloyd|Glacier]] at a Coastal Championship Wrestling event. This match was to decide the number one contender for the CCW heavyweight title. The next month, he faced Quartermain in a four-way match with [[Mike Sullivan (wrestler)|Mike Sullivan]] and [[Bruce Steel]] at an IPW Hardcore event on September 17. 
+
+Officially coming out of retirement, Lovett appeared on the [[TNA Impact#Spike TV era|first episode]] of [[TNA Impact]] and lost to [[Monty Brown|"The Alpha Male" Monty Brown]] on October 1. He and Quartermain made their return to TNA losing to The Naturals on October 29. They continued to appear in a part time capacity on TNA Impact during the next year losing to [[Team 3-D]] on January 7 and the [[New Age Outlaws|James Gang]] on January 21, 2006. <ref> {{tlx|cite web |url=http://www.tnawrestling.com/info/quickresults/impact/results/2006.html |title=Quick Results Archive: Weekly PPV's - 2006 |accessdate= |author= |authorlink= |coauthors= |date= |year=2006 |month= |format= |work= |publisher=TNAwrestling.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>; they also lost to The Naturals at an Elite Wrestling Entertainment event that same night. He and Quartermain made only infrequent appearances throughout the next few months. Lovett, who was not under contract to TNA, made several inquires into whether he was going to be used in the future in order to quit his full-time job. When he received no response for the promotion, Lovett finally gave his notice in March 2006. <ref> {{tlx|cite web |url=http://www.wrestling101.com/101/newsitem/2706/ |title=TNA: Impact Rating & Lex Lovett Gives Notice |accessdate= |author= |authorlink= |coauthors= |date=2006-04-22 |year= |month= |format= |work= |publisher=Wrestling101.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+===Recent years===
+On April 1, Lovett beat Vito Denucci with manager [[Bill Alfonso]] via disqualification at a show for Elite Wrestling Entertainment in [[Brandon, Florida]]. Later that night, he joined Buck Quartermain, Erick Stevens and Steve Madison in the main event losing to Mike Sullivan, Shawn Murphy and '''The New Heavenly Bodies''' (Chris Nelson & Vito Denucci) in the "Captain's Fall" elimination match. <ref> {{tlx|cite web |url=http://www.1wrestling.com/news/newsline.asp?news=25566 |title=Newsline, 04/05/2006 |accessdate= |author= |authorlink= |coauthors= |date=2006-04-05 |year= |month= |format= |work= |publisher=1wrestling.com |pages= |language= |archiveurl= |archivedate= |quote= }} </ref>
+
+In May, he made a one-time appearance in the WWE developmental territory [[Deep South Wrestling]] teaming with [[Mike Shane|Gymini Jake]] in the DSW Tag Team Championship tournament. Defeating [[Eric Perez]] & [[Montel Vontavious Porter]] in the opening rounds, they advanced to the finals where they lost to '''High Impact''' ([[Mike Taylor (wrestler)|Mike Taylor]] and [[Tony Stradlin|Tony Santarelli]]). <ref> {{tlx|cite web |url=http://www.wrestling-titles.com/us/ga/dsw/dsw-t.html |title=Deep South Wrestling Tag Team Title |accessdate=|date= |year=2003 |month= |publisher=Puroresu Dojo}} </ref>
+
+Throughout 2006 and into 2007, he and Quartermain would continue teaming off and on in various independent promotions. Although defeating the tag team Black Market in a handicap match four days later while in Elite Wrestling Entertainment, he and Lovett lost to '''The Down Boys''' (Tom Lawlor & J.P. Ice) at a Pro Wrestling Warfare show on March 11.
+
+===Championships and accomplishments===
+*'''Independent Professional Wrestling'''
+:*IPW Heavyweight Championship (1 time) <ref> {{tlx|cite web |url=http://www.solie.org/titlehistories/htipw2.html |title=Independent Pro Wrestling Heavyweight Title History |accessdate= |author=Westcott, Brian |coauthors=Kriss Knights |date= |year=2003 |month=|publisher=Solie's Title Histories }} </ref>
+
+*'''[[National Wrestling Alliance]]'''
+:'''World'''
+:*[[NWA World Junior Heavyweight Championship]] (1 time) <ref name=autogenerated2> {{tlx|cite web |url=http://www.wrestling-titles.com/us/fl/fl-j.html#revived |title=N.W.A. Florida Junior Heavyweight Title |accessdate=|date= |year=2003 |month= |publisher=Puroresu Dojo}} </ref>
+:'''Regional'''
+:*[[NWA Florida Junior Heavyweight Championship]] (2 times) <ref name=autogenerated2 />
+:*[[NWA Southern Heavyweight Championship]] (1 time) <ref> {{tlx|cite web |url=http://www.wrestling-titles.com/nwa/others/south-h.html |title=N.W.A. Southern Heavyweight Title |accessdate=|date= |year=2003 |month= |publisher=Puroresu Dojo}} </ref>
+
+*'''Other titles'''
+**USWS Heavyweight Championship (1 time)
+
+*'''[[Pro Wrestling Illustrated]]'''
+:*PWI ranked him # '''216''' of the 500 best singles wrestlers of the PWI 500 in 2004
+:*PWI ranked him # '''261''' of the 500 best singles wrestlers of the PWI 500 in 2003 
+
+===References===
+
+<references/>
+{{tlx|refs|2}}
+
+===External links===
+{{tlx|Portal|Professional wrestling|break=yes}}
+*[http://www.obsessedwithwrestling.com/profiles/l/lex-lovett.php Profile at Online World of Wrestling] 
+*[http://www.bodyslamming.com/nwa/lexlovett.html Other Superstars - Lex Lovett]
+*[http://www.cagematch.de/?id=2&nr=190&worker=Lex+Lovett CageMatch.de - Lex Lovett] {{tlx|ger}}
+*[http://www.accelerator3359.com/Wrestling/bios/lovett.html Accelerator's Wrestling Rollercoaster: Lex Lovett]
+*[http://www.geocities.com/supersportcenter/lexlovett.html Super Wrestling Center: Lex Lovett] 
+*[http://wrestling.xwiki.com/xwiki/bin/view/Main/LexLovett Lex Lovett] at the [http://wrestling.xwiki.com/xwiki/bin/view/Main/LexLovett WrestleWiki] 
+
+<!-- {{tlx|DEFAULTSORT:Meyer, Wayne}}
+[[:Category:1975 births]]
+[[:Category:Living people]]
+[[:Category:American professional wrestlers]] 
+[[:Category:People from Florida]] -->
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/71.184.42.78|71.184.42.78]] ([[User talk:71.184.42.78|talk]]) 10:45, 11 July 2008 (UTC)
+<br />[[Image:Symbol confirmed.svg|20px]] '''Article created.''' {{#if:|You can find it at [[{{{1}}}]].}} Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 14:15, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== ROGER TOOK ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Author 'Running with Reindeer' Encounters in Russian Lapland. Published by Basic Books.
+December 15th 2003. Short listed for the Thomas Cook Travel Book Award.
+Roger Took is an art historian, museum curator. He has held several museum posts in England and is an active member of the Royal Geographic Society.
+Educated at Haileybury College, Sandhurst and the Courtauld Institue. Became Director of the Barbican Art Gallery and the founder of Artangel. An acclaimed expert on the Medieaval Russian Fur Trade.
+Took was sentenced in February 2008 to spend four and a half years of an indeterminate prison sentence for 18 crimes of child abuse.
+As reported in the Spectator Roger Took boasted on internet chat rooms of 'observing' a five year old Cambodian child cowering naked and crying in a corner. She is so frightened she urinates. One of the men hit her repeatedly. The others laugh. Another man picks her up and throws her face down on the bed. Then the men rape her. She dies soon afterwards of atrocious injuries.
+Took was arrested in April 2007 charged with molesting two of his step granddaughters and the possession of 260 photographs, including 102 level 5's, which mean they contain images of children being tortured or penetrated, including by animals. One photograph showed a penis entering the vagina of a baby. Many images showed small children shackled to chairs or bars, in obvious pain. Also taken by the police from Roger Took's laptop were 742 chat logs of a sexual nature relating to children adding up to 1,500 pages.
+Judge Blaksell deemed Took to be enough of a danger to the public to give him an indeterminate sentence. Took is now appealing. He will be eligible for parole in three and a half years.
+Took's wife of 25 years Pat Cleary has decided to talk to the Spectator and Radio 4 Women's Hour because the case has been so little reported by the media. 
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+Charlotte Metcalfe
+www.spectator.co.uk
+Radio 4 Women's Hour Broadcast July 10th 2008.
+Available on Listen Again.
+Perseus Books Group.
+Running with Reindeer published by Basic Books December 2003.
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[User:Mennorca|Mennorca]] ([[User talk:Mennorca|talk]]) 11:54, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. We cannot accept unsourced suggestions or sources that are [[Wikipedia:Reliable sources|not reliable]] per the [[Wikipedia:Verifiability|verifiability policy]]. Please provide '''reputable, third-party''' sources with your suggestions. Third party sources are needed both to establish the [[WP:Verifiability|verifiability]] of the submission as well as its [[Wikipedia:Notability|notability]]. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 14:14, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Data Service ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+Dave "18" Arria's idea of phone Activatin.
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. We cannot accept unsourced suggestions or sources that are [[Wikipedia:Reliable sources|not reliable]] per the [[Wikipedia:Verifiability|verifiability policy]]. Please provide '''reputable, third-party''' sources with your suggestions. Third party sources are needed both to establish the [[WP:Verifiability|verifiability]] of the submission as well as its [[Wikipedia:Notability|notability]]. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 14:14, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Data Service ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+Dave "18" Arria's idea of phone Activation.
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: P         Vincent Weijl-->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+Vincent Weijl is a football player. He's born in December 11 1990. He's from the Netherlands but he doesn't play with the natinal team. He's a midfielder. Now, he's playing with Liverpool Football Club.
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Les joueurs de football (book)                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/132.208.30.51|132.208.30.51]] ([[User talk:132.208.30.51|talk]]) 14:16, 11 July 2008 (UTC)<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. We cannot accept unsourced suggestions or sources that are [[Wikipedia:Reliable sources|not reliable]] per the [[Wikipedia:Verifiability|verifiability policy]]. Please provide '''reputable, third-party''' sources with your suggestions. Third party sources are needed both to establish the [[WP:Verifiability|verifiability]] of the submission as well as its [[Wikipedia:Notability|notability]]. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:14, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Devore ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[Devore, California]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.194.16|75.47.194.16]] ([[User talk:75.47.194.16|talk]]) 14:58, 11 July 2008 (UTC)
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:14, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+=== Sources ===
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/216.80.8.144|216.80.8.144]] ([[User talk:216.80.8.144|talk]]) 15:33, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+
+HIDDEN MECHANISM. Once installed, the playing mechanism is completely hidden from view. The note solenoids and their associated electronics reside within a cutout in the keybed. Underneath the keybed, only the note solenoid mounting rail is visible. 
+ The playing mechanism is completely hidden from view 
+ CONVENTIONAL TRAPWORK. The hidden mechanism allows the use of conventional trapwork in a reproducing piano for the first time. Pianos equipped with the LX exhibit the same "look and feel" underneath as conventional grand pianos, making use of the lever arrangement that has been universal in piano construction for well over 100 years. Such trapwork is extremely robust and is free from the problems that arise from the unusual levers required by other playing mechanisms, such as loss of the sostenuto pedal function and the need for frequent service to keep the sustaining pedal in adjustment. 
+
+PROPORTIONAL PEDALING. The new LX uses full proportional pedaling. With 256 pedal positions, 100 pedal samples/second, and high-bandwidth closed-loop control, the dampers are raised to their full height and their motion is closely controlled at every instant in time. This reproduces the subtlest and most delicate of pedal effects. Other playing mechanisms use simple "on-off" pedaling, which destroys the pedal shadings that make fine piano playing so satisfying.
+
+HIGH RESOLUTION. The new LX has 1020 dynamic levels for each note with a keyboard samples rate of 800 samples per second, standards that emerged after many years of experimentation and study. These standards, combined with high-resolution control of the note solenoids, yield a degree of articulation and subtlety beyond the reach of other mechanisms.
+
+
+  
+The sustain solenoid remains cool even when the piano is played for extended periods  
+ 
+ 
+
+SUPERB MUSICALITY. The combination of proportional pedaling and high-resolution control yields musical results that are head and shoulders above what the competition can do. Words do not do justice to the performance. You have to hear it for yourself.
+ 
+
+REINFORCED KEYBED. The new LX solves the problem of keybed integrity that comes about from the need to cut the keybed to allow the note solenoids access to the keys. Conventional playing mechanisms do not attempt to remedy the loss of support that ensues, with the consequence that the regulation of the piano action can come and go with the weather. In contrast, the mounting rail of the LX is a rigid steel structure that is attached to the keybed across its width, thereby restoring the structural integrity that was present before installation.
+
+LARGE LIBRARY. The LX plays every CD ever made for reproducing pianos (except for encrypted CDs, which by law cannot be played).
+
+
+  
+The note driver boards use the latest 
+advances in high technology electronics 
+ 
+ROBUST DESIGN. The new LX was designed over the past three years and thus takes advantage of recent advances in high-tech electronics, yielding a compact and robust design. It will give many years of pleasure without service or calibration.
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. {{#if:|This article appears to be taken from {{{1}}}.}} We cannot accept [[WP:Copyrights|copyrighted]] content taken from web sites or printed sources. Note that copyright protection is granted to all works automatically, whether it is asserted or not.  Unless stated otherwise, assume that most content on the internet is copyrighted and not suitable for Wikipedia. Please write in your own words, and in continuous prose. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 15:35, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Beef & Boards Dinner Theatre ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+Beef & Boards Dinner Theatre is a historic, year-round dinner theatre in Indianapolis, Indiana, offering Broadway shows and employing members of the Actors’ Equity Association.
+Seasons typically consist of a straight play, followed by six Broadway shows and ending the year with A Beef & Boards Christmas, the theatre’s annual original holiday variety show. Several concerts are also offered throughout the season, as are special one-hour Live Theatre for Kids performances presented by the theatre’s Pyramid Players.
+A buffet dinner, famous for its roast beef, precedes all shows with the exception of the Live Theatre for Kids performances.
+The theatre seats approximately 450. More than 4 million people have seen a show at Beef & Boards Dinner Theatre.
+=== History ===
+Located on the northwest side of Indianapolis, Beef & Boards was one of five dinner theatres built from a chain designed by J. Scott Talbott, a Louisville contractor, with the other locations in Kentucky and Ohio. The name simply stemmed from what was offered: the beef served and the boards – or stage – for performances.
+The Indianapolis theatre is located in College Park, near The Pyramids office complex, and opened on March 2, 1973 with the show “Tom Jones.” Today, it is the only remaining theatre from the original chain.
+=== Casting a show ===
+B&B employs both Equity and non-Equity actors from across the United States. Actors’ Equity Association is the only union for professional actors in the legitimate theatre. 
+A new cast selected for each show. 
+Actors are found through auditions that take place locally, as well as in Chicago, Memphis and New York City.
+=== Entertainment ===
+Dozens of stars graced the stage in the local theatre’s early years, including Mamie Vandoren in “How To Succeed in Business Without Really Trying” (1976), Don Ameche in “Never Get Smart With An Angel” (1977), Ann Miller in “Cactus Flower,” Myrna Loy in “Relatively Speaking” and Adam West in “Hot Shot” (all in 1978), Jerry Mathers in “So Long Stanley” (1979), Cesar Romero in “A Dash Of Spirits” and Tab Hunter in “Chapter 2” (both in 1980).
+In 1982, Tina Turner performed at Beef & Boards, just two years shy of her comeback album, Private Dancer.
+Other stars who have performed at Beef & Boards include: B.B. King, The Smothers Brothers, Waylon Flowers & Madam, Ricky Nelson, Jan & Dean, Pearl Bailey, Carol Channing, Ray Charles, Rosemary Clooney, Sid Caesar, Chubby Checker, Mickey Gilley, Tony Bennett, Phyllis Diller Helen Reddy, Sha Na Na, Bobby Vinton, Frankie Valli, The Temptations, Three Dog Night, Gladys Knight and the Pips, Donny and Marie Osmond, The Righteous Brothers, Paul Revere and the Raiders, and Lovin’ Spoonful.
+=== Religious Services Offered ===
+The theatre also opens its doors each Sunday morning to host a local interfaith, nondenominational outreach program for three contemporary religious services before the afternoon matinee and evening performances.
+
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+Indianapolis Star July 8, 1972  
+Indianapolis Star January 10, 2008 http://www.indystar.com/apps/pbcs.dll/article?AID=2008801100374
+Indianapolis Star March 14, 2008 www.indystar.com
+Alexandria Times-Tribune January 23, 2008
+Current In Carmel April 1, 2008 http://currentincarmel.com/Archive.aspx 
+AAA Home & Away Magazine, August 2008 issue
+Actors' Equity Association www.actorsequity.org
+http://www.actorsequity.org/docs/rulebooks/beef_boards_rulebook_05-09.pdf
+Beef & Boards Dinner Theatre www.beefandboards.com 
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/69.252.233.8|69.252.233.8]] ([[User talk:69.252.233.8|talk]]) 16:28, 11 July 2008 (UTC)
+
+[[Image:Symbol declined.svg|20px]] '''Declined.''' No actual sources.  It needs citations, not the name of the website where you got information. --[[User:Meldshal42|<font color="green">'''Meldshal42'''</font >]] [[User talk:Meldshal42|<font color="red">'''(talk to me)'''</font >]] 17:45, 11 July 2008 (UTC)
+
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Beef & Boards Dinner Theatre ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Beef & Boards Dinner Theatre is a historic, year-round dinner theatre in Indianapolis, Indiana, offering Broadway shows and employing members of the Actors’ Equity Association. 
+Seasons typically consist of a straight play, followed by six Broadway shows and ending the year with A Beef & Boards Christmas, the theatre’s annual original holiday variety show. Several concerts are also offered throughout the season, as are special one-hour Live Theatre for Kids performances presented by the theatre’s Pyramid Players. 
+A buffet dinner, famous for its roast beef, precedes all shows with the exception of the Live Theatre for Kids performances.
+The theatre seats approximately 450. More than 4 million people have seen a show at Beef & Boards Dinner Theatre.
+=== History ===
+Located on the northwest side of Indianapolis, Beef & Boards was one of five dinner theatres built from a chain designed by J. Scott Talbott, a Louisville contractor, with the other locations in Kentucky and Ohio. The name simply stemmed from what was offered: the beef served and the boards – or stage – for performances. The Indianapolis theatre is located in College Park, near The Pyramids office complex, and opened on March 2, 1973 with the show “Tom Jones.” Today, it is the only remaining theatre from the original chain.
+=== Casting a show ===
+B&B employs both Equity and non-Equity actors from across the United States. Actors’ Equity Association is the only union for professional actors in the legitimate theatre. A new cast selected for each show. Actors are found through auditions that take place locally, as well as in Chicago, Memphis and New York City.
+=== Entertainment ===
+Dozens of stars graced the stage in the local theatre’s early years, including Mamie Vandoren in “How To Succeed in Business Without Really Trying” (1976), Don Ameche in “Never Get Smart With An Angel” (1977), Ann Miller in “Cactus Flower,” Myrna Loy in “Relatively Speaking” and Adam West in “Hot Shot” (all in 1978), Jerry Mathers in “So Long Stanley” (1979), Cesar Romero in “A Dash Of Spirits” and Tab Hunter in “Chapter 2” (both in 1980). In 1982, Tina Turner performed at Beef & Boards, just two years shy of her comeback album, Private Dancer. Other stars who have performed at Beef & Boards include: B.B. King, The Smothers Brothers, Waylon Flowers & Madam, Ricky Nelson, Jan & Dean, Pearl Bailey, Carol Channing, Ray Charles, Rosemary Clooney, Sid Caesar, Chubby Checker, Mickey Gilley, Tony Bennett, Phyllis Diller Helen Reddy, Sha Na Na, Bobby Vinton, Frankie Valli, The Temptations, Three Dog Night, Gladys Knight and the Pips, Donny and Marie Osmond, The Righteous Brothers, Paul Revere and the Raiders, and Lovin’ Spoonful.
+=== Religious Services Offered ===
+The theatre also opens its doors each Sunday morning to host a local interfaith, nondenominational outreach program for three contemporary religious services before the afternoon matinee and evening performances.
+
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+Indianapolis Star July 8, 1972
+Indianapolis Star January 10, 2008 http://www.indystar.com/apps/pbcs.dll/article?AID=2008801100374
+Indianapolis Star March 14, 2008 www.indystar.com
+Alexandria Times-Tribune January 23, 2008
+Current In Carmel April 1, 2008 http://currentincarmel.com/Archive.aspx
+AAA Home & Away Magazine, August 2008 issue
+Actors' Equity Association www.actorsequity.org
+http://www.actorsequity.org/docs/rulebooks/beef_boards_rulebook_05-09.pdf
+Beef & Boards Dinner Theatre www.beefandboards.com
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/69.252.233.8|69.252.233.8]] ([[User talk:69.252.233.8|talk]]) 16:36, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. The proposed article is [[Wikipedia:What Wikipedia is not|not suitable for Wikipedia]]. <!-- From template Afc not --> See above. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 18:33, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== My Music Industry Contacts Book ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+My Music Industry Contacts Book was prepared for those with the desire to set up and run an independent music business or succeed as a major artist, whether you are into rock, pop, hip hop, grime and more, this book is a must have resource tool for you, Learn how be a success in business, how to get funding for your business, to the little things such as collecting money from your radio play or even learn where to get major named software worth thousands for free.
+
+This is a HTML compiled e-book that is interactive so it’s easy to read and understand, anyone would be eager to rush back home and read on and on until your finished and by then you’re already going to be in the process of being well known in the industry because this book will guide you each and every step of the way!
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+http://www.mymicbook.com/
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/82.9.112.194|82.9.112.194]] ([[User talk:82.9.112.194|talk]]) 17:00, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the importance or significance of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria (A7)]] and/or [[WP:N|guidelines on notability]]. Please provide more information on why the subject is worthy of inclusion in an encyclopedia. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 18:31, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Elmont, Long Island ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Redirect to Elmont, New York
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+Several articles related to the Mafia link to "Elmont, Long Island".  Long Island is a part of New York, but either name is acceptable in colloquial use.
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/157.127.124.15|157.127.124.15]] ([[User talk:157.127.124.15|talk]]) 17:29, 11 July 2008 (UTC)
+[[Image:Symbol support vote.svg|20px]] '''Approved'''. Thanks for the suggestion.  --[[User:Meldshal42|<font color="green">'''Meldshal42'''</font >]] [[User talk:Meldshal42|<font color="red">'''(talk to me)'''</font >]] 17:49, 11 July 2008 (UTC)
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 18:31, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Bam Bam Amphitheaters ==
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+The Bam Bam Amphitheaters are large erosional ravines found in Wonga-Wongue Presidential Reserve in western Gabon.  Although they are referred to as "cirques," they are unrelated to the glacial cirques of high latitudes and mountains.  In Gabon, they are east-facing slopes cut into the Upper Cretaceous to Paleocene sandstones that dip westward beneath the Atlantic Ocean.  Because the sandstones are higher and drier than the surrounding coastal plain, they are covered with grasslands rather than the prevailing tropical rain forest.  As the sandstones are locally intensely colored, and because the steep slopes tend to be barren, the "cirques" locally appear to be "badlands" similar to those of the American West.
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+Scheffel, R. L., and Wernert, S. J., eds., 1980, Bam Bam Amphitheaters: in Natural Wonders of the World: Reader's Digest, Pleasantville, New York, p. 69.
+Horner, R. H., 1985, The Gabon Basin: its regional setting with respect to onshore basement tectonic elements as interpreted from side-looking airborne radar imagery: Remote Sensing for Exploration Geology, 4th Thematic Conference, Proceedings, Environmental Research Institute of Michigan, p. 31-47.
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[User:Sschutter|Sschutter]] ([[User talk:Sschutter|talk]]) 17:43, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+
+== Brandon Wilcox ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Brandon Wilcox is a private equity fund producer in media and founder of HD Gathering.
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+http://www.imdb.com/name/nm1651301/
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[User:NOLAGodfather|NOLAGodfather]] ([[User talk:NOLAGodfather|talk]]) 18:15, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the [[WP:N|importance or significance]] of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:BIO|guidelines on biographies]]. Please provide more information on why the person or group is worthy of inclusion in an encyclopedia, and cite [[WP:RS|reliable]], published third-party sources, so that the information in the article is [[WP:V|verifiable]]. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 18:29, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Oswald Obrempong Baidoo in i2cap competition ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+The Ghana India Kofi Annan Centre for Excellence Advanced Information Technology Institute (AITI-KACE) organized a programming competition for secondary schools in the Volta and Central regions. The programming competition, dubbed i2CAP-â€˜I Too Can Programmeâ€™, is in its second year. AITI-KACE organizes the competition as part of its drive to cultivate Ghanaian IT expertise in all ages. Fourteen (14) senior secondary schools were invited .
+
+The judges were very impressed with the general performance. Nana Yaw Asare Adu, '''Oswald Baidoo''', Charles Otoo, Jnr and Oppong-Quayson from Mfantsipim School, Cape Coast, won this year's competition. The team from St. Augustineâ€™s College, also from Cape Coast, placed second.
+
+Students from non-participating schools, PRESEC, Legon and Ashesi University College, presented their software innovations to the general student audience.
+
+The winning team from the first competition in 2004 came from Chemu Secondary School, Accra.
+
+The GhanaThink Foundation supported this year's event with a cash donation of GHC2 000 000.
+
+For the full report, please visit the i2CAP website at http://www.aiti-kace.com.gh/i2cap/2ndreport.html.
+
+
+info from http://homefront.ghanathink.org/i2CAP2005
+
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/58.26.109.162|58.26.109.162]] ([[User talk:58.26.109.162|talk]]) 18:25, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. {{#if:|This article appears to be taken from {{{1}}}.}} We cannot accept [[WP:Copyrights|copyrighted]] content taken from web sites or printed sources. Note that copyright protection is granted to all works automatically, whether it is asserted or not.  Unless stated otherwise, assume that most content on the internet is copyrighted and not suitable for Wikipedia. Please write in your own words, and in continuous prose. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 18:29, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Sarah M. McCaffrey ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Sarah Marie McCaffrey was born on the sixth of July, 1992, in Mercy Hospital, Iowa City, Iowa. As an Iowa native, she lived with her parents,  Paul and Tracey McCaffrey. She has lived all her life in Iowa City, Iowa.
+
+Sarah has two brothers: Dominic and Paul. All 3 of the siblings attend/attended Regina High School(Iowa City, Iowa). Dominic was a graduate of the class of 2007, Sarah will graduate in 2010, and Paul will graduate 2015. Sarah is a well known musician in the Regina Community. As a member of the Regina Pep Band, Regina Orchestra, and the Regina Jazz Ensemble. She plays both the Bass Clarinet and the Oboe.
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+Regina Spectrum, Iowa City Gazette
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[User:WLreginite|WLreginite]] ([[User talk:WLreginite|talk]]) 18:40, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the [[WP:N|importance or significance]] of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:BIO|guidelines on biographies]]. Please provide more information on why the person or group is worthy of inclusion in an encyclopedia, and cite [[WP:RS|reliable]], published third-party sources, so that the information in the article is [[WP:V|verifiable]]. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 19:34, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Railpower Hybrid Technologies Corp ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+Railpower Hybrid Technologies Corp.  is the US subsidiary of [http://en.wikipedia.org/wiki/Railpower Railpower Technologies Corp.] 
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+http://www.railpower.com/contact.html
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/66.211.222.35|66.211.222.35]] ([[User talk:66.211.222.35|talk]]) 18:50, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the importance or significance of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:CORP|guidelines on organizations and companies]]. Please provide more information on why the organization is worthy of inclusion in an encyclopedia. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 19:34, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Brandon Wilcox ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Brandon Wilcox, a private equity fund producer and HD Gathering founder, is part of the New Orleans cultural Renaissance. He has recently announced the launch of HD Gathering, a philanthropic multimedia event meant to bring attention to the battered city, to fuel the recovery of New Orleans this October, 2008.
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+[http://www.imdb.com/name/nm1651301/]
+[http://www.corsairmediaproductions.com/Articles.htm]
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[User:NOLAGodfather|NOLAGodfather]] ([[User talk:NOLAGodfather|talk]]) 19:27, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the [[WP:N|importance or significance]] of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:BIO|guidelines on biographies]]. Please provide more information on why the person or group is worthy of inclusion in an encyclopedia, and cite [[WP:RS|reliable]], published third-party sources, so that the information in the article is [[WP:V|verifiable]]. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 19:34, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Aciid Elite ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+It has recently come to light that bebo is no longer controlled by the high paid workers in LA but is now controlled by a secret cult who call them self the Aciid Elite. Together the eight (this is not confirmed yet) use secret dark magic methods to control bebo, with one member of the cult having 109092 love, a figure which is impossible to attain by a normal human. Through a secret source we can now tell you the members code names as follows: Pancy, Pissdale, FattyMattY, sheleatyourballs, thefakeman, Sucker, AntiOxidants and Blowmaster. All the secret work takes place in the "fags lounge" the location is unknown. They use secret terms such as T-T and qwned to which there is controversy as to the true meaning.
+
+[[Special:Contributions/86.42.187.183|86.42.187.183]] ([[User talk:86.42.187.183|talk]]) 20:01, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+{{tlx|subst:afc nonsense}} '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 20:18, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Thomas Kraft ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+{{tlx|football_player_infobox 
+|playername=[[Thomas Kraft]]
+|fullname=[[Thomas Kraft]]
+|height= {{tlx|height|meter=1.87}}
+|weight= 181 lbs. (82 kg)
+|dateofbirth={{tlx|birth date and age|1988|7|22}}
+|countryofbirth=[[Germany]]
+|currentclub= [[Bayern Munich]]
+|clubnumber = 33
+|years= 2007&ndash;
+|clubs=[[Bayern Munich]]
+|caps(goals)= 0 (0) <!--LEAGUE GAMES ONLY-->
+|nationalcaps(goals)= {{tlx|0}}{{tlx|0}}6 (1)</br>{{tlx|0}}78 (0) <ref name=autogenerated1>Source: [http://fifaworldcup.yahoo.com/06/en/w/player/155971_NESTA_Alessandro.html FIFA World Cup official site] </ref>
+|pcupdate= 19:18, 6 June 2008 (UTC)
+|ntupdate= [[October 11]], [[2006]]
+}}
+
+{{tlx|football_player_infobox 
+|playername=[[Thomas Kraft]]
+|fullname=[[Thomas Kraft]]
+|height= {{tlx|height|meter=1.87}}
+|weight= {{tlx|181 lbs. (82 kg)}}
+|dateofbirth={{tlx|birth date and age|1988|7|22}}
+|countryofbirth=[[Germany]]
+|currentclub= [[Bayern Munich]]
+|clubnumber = 33
+|years= 2007&ndash;
+|clubs=[[Bayern Munich]]
+|caps(goals)= 0 (0) <!--LEAGUE GAMES ONLY-->
+|nationalcaps(goals)= {{tlx|0}}{{tlx|0}}6 (1)</br>{{tlx|0}}78 (0) <ref name=autogenerated1 />
+|pcupdate= 19:18, 6 June 2008 (UTC)
+|ntupdate= [[October 11]], [[2006]]
+}}
+
+
+'''Thomas Kraft''', born July 22,1988, is a professional [[German]] goalkeeper currently playing for [[Bayern Munich]] in the [[German Bundesliga]].
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. We cannot accept unsourced suggestions or sources that are [[Wikipedia:Reliable sources|not reliable]] per the [[Wikipedia:Verifiability|verifiability policy]]. Please provide '''reputable, third-party''' sources with your suggestions. Third party sources are needed both to establish the [[WP:Verifiability|verifiability]] of the submission as well as its [[Wikipedia:Notability|notability]]. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 21:28, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Luke McQuillen ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Luke McQuillen is a 13 year old conservative political activist.  He was invited to the National Jr. Young Leaders confrence in 2007 and also in that year was nominated for the People to People award.  he is also a basketball player and fan. 
+
+Blog
+
+Luke in May 2008 created a conservative blog conservativevoiceofreason.blogspot.com called conservative voice of reason.  On his blog he has endorsed canidates and shared his opinion on several issues.  The blog as of May 2008 was placed on Huckpacs blogroll. 
+In June 2008 he created a blog called gop2012.  It was a polling site to guess who would be the gop nominee.  
+
+As a basketball fan, basketball expert, and diehard piston fan Luke created the blog pistons fanatics.  
+
+July Luke enjoyed watching the orlando summer league so much he created a blog for the announcers Daunte and Galante.
+
+Luke has been an advocate for the blog @ The Frontlines of Faith Family and Freedom.
+
+Luke in June 2008 created a youtube channel called conservative voice 500
+Endorsements
+ as of January 2008 Luke endorsed Mike Huckabee for president
+When Mike Huckabee dropped out of the race Luke endosed McCain.
+Luke soon found Mccain's voting record on social issues very Liberal so he started a draft for huckabee as a nopartisan.
+The Draft failed so he endorsed in July 2008 Alan keyes.
+
+
+
+
+
+
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+conservativevoiceofreason.blogspot.com
+gop2012.blogspot.com
+pistonsfanatics.blogspot.com
+daunteandgalante.blogspot.com
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/98.220.160.240|98.220.160.240]] ([[User talk:98.220.160.240|talk]]) 21:20, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the [[WP:N|importance or significance]] of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:BIO|guidelines on biographies]]. Please provide more information on why the person or group is worthy of inclusion in an encyclopedia, and cite [[WP:RS|reliable]], published third-party sources, so that the information in the article is [[WP:V|verifiable]]. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 21:27, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Robert Mason ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+Robert Mason is the owner of the below 3 websites, which need visitors really bad.
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+[http://anggames.1sweethost.com/ AnG Games]
+[http://www.biggostudios.freewebs.com/ Biggo Studios]
+[http://www.lolanimals.wordpress.com/ Lolanimals]
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/68.12.110.68|68.12.110.68]] ([[User talk:68.12.110.68|talk]]) 21:40, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<!-- Text inserted by Template: afc adv -->
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. I'm sorry, but your article appears to read more like an [[Wikipedia:What Wikipedia is not#SOAPBOX|advertisement]] than an entry in an encyclopedia. If you still feel that this subject is appropriate for Wikipedia, please rewrite your proposed article in the form of an encyclopedia entry. Encyclopedia entries should be written from a [[Wikipedia:Neutral point of view|neutral point of view]], and should refer to a range of published, [[Wikipedia:Verifiability|verifiable]] [[Wikipedia:Citing sources|sources]], not just to materials produced by the creator of the item being discussed. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 22:40, 11 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== MSP Intermark ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+'''MSP Intermark''' is a full-service [[advertising agency]] and brand consultancy located in [[San Francisco]], California. The firm's approach is a synthesis of business consulting and integrated communications. As described by '''Mark Madison''', the company "digs deep to discover what truly drives your business and then delivers inventive (business and marketing) solutions that drive sales". [http://www.madisonsproul.com] '''Mark Madison''' and '''Bob Sproul''' founded '''Madison Sproul & Partners''' in 2001. In 2007, the agency sold a controlling interest to the [[Intermark Group]] to form '''MSP Intermark'''.
+
+
+'''Bob Sproul''' (born February 1947), grandson of [[Robert Gordon Sproul]], has worked in the advertising business for almost thirty years. He has served a a senior executive in [[San Francisco]] and [[New York]] as well as the owner of several firms in the Bay Area. In 2007 he retied from the advertising business and is now the Cheif Executive Officer of the Fritz Institute.<ref name=fritzinstitute>http://www.fritzinstitute.org/abtMngmtTeam-Robert.htm</ref>
+
+
+'''Mark Madison''' (born February 1967) is the Managing Partner Strategy & Planning Director, and Co-founder of '''Madison Sproul & Partners'''. His client experience includes, but is not limited to [[Clorox]], Boise Paper, [[East Bay Regional Parks]], First American Title, [[IBM]], [[Neopost]], [[Oracle]], [[Royal Bank of Canada]], and [[Wells Fargo]].
+
+==='''Experience'''===
+
+After receiving a BS in [[Marketing]] and Law Minor from [[Cal Poly]], '''Mark Madison''' began his career as a marketing consultant. From 1991-1994 he worked with big non-profits like [[World Vision]], region chains like [[Sport Chalet]], and many small companies including Automobile Investment Services, a company that did investment consulting on collectible cars. 
+
+From 1994-1996, Mark worked as Account Supervisor at [[OmniCom]]. It was here that Mark experienced a big shift into direct response marketing and learned about the relationship between PR, direct response marketing, and advertising as well as how to correctly generate results. After gaining consulting and supervising experience, Mark moved to [[San Francisco]] in 1996 where he became the Director of Strategy & Planning at [[ClearInk]]. His reputation within the company grew as he won businesses with his innovative pitches. He won clients like [[PeopleSoft]], [[Maxis]] ([[SimCity]] computer game), [[Ascend Communications]], [[Oracle]], [[Siebel Systems]], [[Tibco]], Asera, and others. During this period, Mark learned how to think through the adoption cycle, budget waste, opportunity cost, tactics vs. selling, solo vs. team approaches, David vs. Goliath issues, and most importantly, how to take companies public. 
+
+
+==='''Madison Sproul & Partners'''===
+
+In 2001, '''Mark madison''' took his approach to advertising/branding and founded '''Madison Sproul & Partners''' with '''Bob Sproul'''. He fills the role of Managing Partner and Director of Strategy & Planning of '''Madison Sproul & Partners'''. The company's roster is impressive including Boise Paper, First American Title, [[Wells Fargo]], and [[Tyson Foods]]. However, according to '''Mark Madison''', "It's not the names that matter. It's the amount of Faith they put in out thinking."
+
+
+==='''Areas of Operation'''===
+
+*[[Adecco]]
+*[[Ascend Communications]]
+*[[Auto Zone]]
+*[[Charles Schwab]]
+*[[Clorox]]
+*[[Coldwell Banker]]
+*[[Commerce Once]]
+*[[Compass Bank]]
+*[[East Bay Regional Park District]]
+*[[Exodus Communications]]
+*First American Title
+*[[Fresh Del Monte Produce]]
+*[[eBay]]
+*[[GMAC Mortgage]]
+*[[H & R Block]]
+*[[Intermex]]
+*[[Jelly Belly]]
+*[[Logitech]]
+*[[Neopost]]
+*[[Oracle]]
+*[[Pacific Bell]]
+*[[PeopleSoft]]
+*[[PG&E]]
+*[[Proctor & Gamble]]
+*[[Proxim Wireless]]
+*[[Royal Bank of Canada]]
+*[[Safeway]]
+*[[Siebel Systems]]
+*Specialty Foods Group
+*[[Tibco]]
+*[[Toyota]]
+*[[Tyson Foods]]
+*[[Union Bank]]
+*[[University of California, Berkeley]]
+*[[United States Space & Rocket Center]]
+*[[Wells Fargo]]
+*[[Xerox]]
+
+
+==='''Notable Campaigns'''===
+
+In 2006 '''Boise Paper''' was experiencing decreasing sales over time because other mills were buying up distributors and merchants. '''Boise''' hired '''MSP Intermark''' to determine how to reverse a potentially catastrophic sales trend and determine the solution.
+
+'''MSP Intermark''' developed a new program called '''Now@Boise'''. The business proposition was simple, buy direct and save. '''Boise''' put a $500 million business at risk on these findings and recommendations, but '''MSP Intermark''' was right. Within the first 90 days, all lost merchant sales ere placed with direct sales. Launch deliverables included swatch books, an e-commerce we site, a teaser DM, and other sales support materials.<ref name=gdusa>http://www.gdusa.com/issue_2004/10_oct/feature/feat_02.php</ref>
+
+'''MSP Intermark''' has also been involved in various successful print web, and television [[[Toyota Tundra]] campaigns. These campaigns resulted in an 83% sales increase in Gulf States Toyota's 2007 Tundra. Currently, Gulf States Toyota's is selling more Tundras than other regions combined. 
+
+
+==='''Awards'''===
+
+'''Stephen Etzine''', the Executive Creative Director at '''MSP Intermark''', has received international recognition for his creative work and campaigns. He's worked on many global brands including [[Toyota]], [[Blue Cross Blue Shield]], [[Acura]], [[Lenox]], [[Jack Daniel's]], and [[Dewar's]]. Stephen is also an Associate Professor for Integrated Marketing & Communications at [[John Hopkins University]].
+
+Stephen Etzine's Awards include:
+
+*One Show Pencil
+*One Show
+*O'Toole Award
+*National Addys
+*Over 200 local Addy Wards
+*20 New York Addy Awards (District 2)
+*RACie
+*Effie
+*Andy
+*Graphis
+*Canadian Art Directors Award
+*Canadian Marketing Awards
+*Clio
+*NY International Radio Festival
+*London International Festival
+*South African Loerie Awards
+*South African Effectiveness Awards
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+http://www.gdusa.com/issue_2004/10_oct/feature/feat_02.php
+http://www.fritzinstitute.org/abtMngmtTeam-Robert.htm
+http://www.buyatoyota.com
+http://www.madisonsproul.com
+
+
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/68.126.170.190|68.126.170.190]] ([[User talk:68.126.170.190|talk]]) 22:44, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the importance or significance of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:CORP|guidelines on organizations and companies]]. Please provide more information on why the organization is worthy of inclusion in an encyclopedia. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 13:49, 12 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== [[Shannon McNeill]] ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+[[Shannon McNeill]] to [[Nitro Girls]]
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+*'''Comment'''. [[Shannon McNeill]] is the name of "Nitro Girl Baby" of the [[Nitro Girls#Members|Nitro Girls]]. [[Special:Contributions/71.184.62.244|71.184.62.244]] ([[User talk:71.184.62.244|talk]]) 22:47, 11 July 2008 (UTC)
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 13:50, 12 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Dr Alexiei Dingli ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+
+Dr Alexiei Dingli was born on the 29th December 1979 and lived most of his life in Valletta . He is the son of Paul & Doris (nee Carbonaro) and he is married to Anna Maria (nee Degiorgio). He started his studies at the Pillar Primary School in Valletta and after successfully passing an entry exam; he continued his formation (primary, secondary and post-secondary) at De La Salle College. After completing his Matriculation Examinations and obtaining the highest grade possible, he read a Bachelor of Science degree in Information Technology (B.Sc. IT Hons) within the University of Malta where he obtained a First Class degree.
+
+Immediately after, he decided to continue his studies at the University of Sheffield in the United Kingdom . To earn a living, he found a job as a researcher within the same University. He spent slightly less than three years and while there, he pursued in a record time, a Doctorate (Ph.D) in Computer Science. His work was praised by international Professors and it was awarded a World Class status. It was also published in books, journals and in some of the most prominent conferences on the subject. Upon his return to Malta , he started working as a Senior Manager with the Employment and Training Corporation ( Malta ’s Public Employment Service) where he stayed for almost four years. With the opening of the new Faculty of ICT in 2007, he moved over to the Department of Artificial Intelligence where he holds the position of Lecturer. Apart from this, he also works as a Lecturer with the University of London which is represented in Malta by the St Martins Institute of IT. In these past years, he also managed to obtain a Masters in Business Administration with specialisation in Technology Management from the Grenoble Business School in France where he graduated with distinction.
+ 
+Dr Dingli has been working in the Nationalist Party for these past sixteen years. When he was just eleven year old, he started volunteering in the various organisations of the Party. At the age of fifteen, he was elected for the first time in the PN sectional committee in Valletta where he took care of the Youth section. On his return from the UK , he once again offered his services to the committee where he was elected as vice president and after a few months as President of the PN Valletta sectional committee. In 2005, he contested the Valletta Local Council elections where he was elected as a councillor of the city. In his portfolio, one finds youth, education, the social aspect and work. In these past years as a councillor, he coordinated a large number of projects, the biggest amongst these being the setting up and coordination of the Valletta Community Network (the network of organisations working in Valletta in the social dimension). The project served as a catalyst to speed up the creation, by central government, of the first community centre in Valletta . 
+ 
+Dr Dingli is a hardworking young man always ready to help others; he is a very dynamic person and full of energy. He believes that his country offered him a lot; free educational and health services of the highest quality and an environment rich in fundamental values which made him what he is today. This formation was crucial for him since it opened a myriad of opportunities abroad. Opportunities which he took, and managed to make a success out of them! Now, he believes that the time has come for him to offer his service to the nation. His believes are targeted at achieving the common good and directed by Christian-Democratic principles and values.
+
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+http://www.cityofvalletta.org/
+http://www.dingli.org
+http://www.pn.org.mt/content/docs/kandidati%202008.pdf
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/195.158.92.126|195.158.92.126]] ([[User talk:195.158.92.126|talk]]) 23:13, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. {{#if:|This article appears to be taken from {{{1}}}.}} We cannot accept [[WP:Copyrights|copyrighted]] content taken from web sites or printed sources. Note that copyright protection is granted to all works automatically, whether it is asserted or not.  Unless stated otherwise, assume that most content on the internet is copyrighted and not suitable for Wikipedia. Please write in your own words, and in continuous prose. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 13:54, 12 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Max Stammer ==
+
+{{#switch:decline|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+A Kid that lives in lansing.
+
+He was on South Park in the third season.
+<br />[[Image:Symbol declined.svg|20px]] '''Declined'''. This suggestion doesn't sufficiently explain the [[WP:N|importance or significance]] of the subject. See the [[WP:SPEEDY#A7|speedy deletion criteria A7]] and/or [[WP:BIO|guidelines on biographies]]. Please provide more information on why the person or group is worthy of inclusion in an encyclopedia, and cite [[WP:RS|reliable]], published third-party sources, so that the information in the article is [[WP:V|verifiable]]. Thank you. '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 13:53, 12 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->
+
+== Valencia Avenue ==
+
+{{#switch:accept|accept={{afc a}}|mm={{afc mm}}|#default={{afc r}}}}
+
+
+<!-- Follow these three steps to fill out this form:                         -->
+<!-- STEP 1: Put the name of your proposed article in the box above (the one -->
+<!--         labeled "Subject/headline").                                    -->
+<!-- STEP 2: Write your article in the empty space below. USE YOUR OWN       -->
+<!--         WORDS; do not copy content from another website.                -->
+<!--         When including new sections: ===Section name=== (3 equals signs)-->
+#REDIRECT [[California State Route 142]]
+=== Sources ===
+<!-- STEP 3: All articles must cite at least one PUBLISHED, SPECIFIC,   -->
+<!--         THIRD-PARTY source for the information, such as a book or  -->
+<!--         a page on a reputable website. Please provide a URL or     -->
+<!--         link if you wish to use an internet source. WE MUST BE     -->
+<!--         ABLE TO VERIFY YOUR SOURCE, so sources such as "Google" or -->
+<!--         "personal knowledge" will be rejected.                     -->
+<!--         IF YOU DO NOT INCLUDE AT LEAST ONE VALID SOURCE, YOUR      -->
+<!--         ARTICLE WILL BE REJECTED.                                  -->
+<!--                                                                    -->
+<!--         Please add your source(s) below this line.                 -->
+
+
+<!-- ------ You're done! Please do not edit anything below this line. ------ -->
+[[Special:Contributions/75.47.152.237|75.47.152.237]] ([[User talk:75.47.152.237|talk]]) 23:23, 11 July 2008 (UTC)
+
+<noinclude>{{tlx|uncategorized template}}</noinclude>
+<br />[[Image:Symbol confirmed.svg|20px]] '''Redirect created.''' {{#if:|You can find it at [[{{{1}}}]].&nbsp;}}Thank you for your contribution to Wikipedia! '''[[User:Sceptre|Sceptre]]''' <sup>([[User talk:Sceptre|talk]])</sup> 13:54, 12 July 2008 (UTC) 
+ 
+<!--Template:Afc b (start)--></div>
+|-
+| style="text-align:center;" | ''This is an archived discussion. <span style="color:red;">'''Please do not modify it.'''</span>''
+|}<!--Template:Afc b (end)-->

@@ -1,0 +1,55 @@
+<<Author>>: PhilKnight-1812441
+<<Timestamp>>: 2008-07-09T18:23:09Z
+<<Comment>>: close
+<<WikiText>>: {{Medcabstatus
+<!-- Mediator, please change from new to open when accepted, to status closed when the case is closed. Remember to remove the mediation request message from the article talk page when closing.   -->
+|status = closed
+|article = <!-- Replace this with the article's name, without [[ and ]] around it -->
+|requestor = <span style= "font-variant:small-caps"> <font color="FF4500">[[User_talk:Juux|juux]]</font></span> ☠ <!-- Don't touch this -->
+|date = 05:28, 8 July 2008 (UTC) <!-- Don't touch this -->
+|parties = <!-- Put other user's names here in the format {{User|USERNAME}}/{{Useranon|IP ADDRESS}} -->
+|mediators = <!-- MEDIATOR USE ONLY -->
+|comment = <!-- MEDIATOR USE ONLY -->
+}}
+<!-- The comment section above is used by mediators to briefly state the status of the case, which shows up on the case list. -->
+
+
+=== Request details ===
+<!-- Why are you submitting this mediation request? -->
+Despite attempts at engaging dialogue surrounding multiple unexplained reverts to article [[Makka Pakka]], an editor seems insistent on maintaining a separate article for this childrens' TV character, in my view in the face of Wikipedia guidelines on notability.  The article also contains a very strange comment "''PS: Don't Delete or redirect this article''", which seemed to imply [[WP:OWN|ownership]].
+
+==== Who are the involved parties? ====
+<!-- List the names of those parties involved in this dispute, add users on per line in the format
+* {{Usercheck|USERNAME}} and IP addresses as * {{IPcheck|IP ADDRESS}} -->
+{{usercheck|Juux}}
+
+{{IPcheck|83.217.165.174}}
+
+==== What's going on? ====
+<!-- What has been happening in the article to cause this dispute, mention usernames and be detailed. If you yourself have done something wrong, mention that as well. -->
+On finding the separate article for Makka Pakka on 30 June, I checked Wikipedia guidelines for notability and concluded that the subject did not perhaps justify a separate article.  Being bold, I redirected the article to [[In the Night Garden]] with a full justification in the [[Talk:In the Night Garden#Separate Makka Pakka article]] talk page of that article.  This edit was almost immediately reverted by editor 83.217.165.174, without explanation in edit summary or discussion pages.
+
+I again explained what I felt were the criteria for merging on the ''In the Night Garden'' talk page and reimplemented the redirect.  Once again, it was reverted by the same editor within 24 hours without justification or explanation.
+
+Even though I felt this was a pretty watertight case, at this point I sought a third opinion thinking that, as it is hard to debate a situation when one party refuses to speak up, perhaps another opinon would make this editor see that this was not just one person's crusade against "their" article.
+
+With third opinion given, I again redirected the article only to find that 83.217.165.174 reverted it within 48 hours.  At this point I started to look at how the situation could be resolved, not having been involved in any kind of edit war before.  As far as I can see, this is the next logical step.
+
+==== What would you like to change about that? ====
+<!-- What do you want to be done about this problem? Remember that mediators cannot force other users to do anything and cannot issue punishments -->
+I'm hoping that the weight of consensus will make 83.217.165.174 see that the article they are so protective over does not perhaps meet the criteria set out in Wikipedia guidelines.
+
+
+=== Mediator notes ===
+<!-- MEDIATOR USE ONLY -->
+* Case submitted. <span style= "font-variant:small-caps"> <font color="FF4500">[[User_talk:Juux|juux]]</font></span> ☠ 05:28, 8 July 2008 (UTC)
+
+
+=== Administrative notes ===
+<!-- MEDIATOR USE ONLY -->
+This IP address is likely dynamically assigned within the UK, so I figure that any reverts to redirects will be coming from a different IP. I'd be bold and try again until the anon actually discusses - this time, leave a message on his talk page (not a template) directing him or her here :-) It'd be rather disruptive if the anon didn't talk ''at all''. [[User:Xavexgoem|Xavexgoem]] ([[User talk:Xavexgoem|talk]]) 17:16, 8 July 2008 (UTC)
+
+:The IP has been [[Special:BlockIP/83.217.165.174|blocked for 6 months]], so I guess we can close this case. [[User:PhilKnight|PhilKnight]] ([[User talk:PhilKnight|talk]]) 18:21, 9 July 2008 (UTC)
+
+=== Discussion ===
+<!-- You can discuss you problem with the mediator and other users under this heading, or at the involved article's talk page -->
