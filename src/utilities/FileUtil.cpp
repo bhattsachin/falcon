@@ -233,7 +233,7 @@ bool FileUtil::writeIndex(Index* index) {
 	}
 	string fileName;
 	//cout<<"flush counter:"<<index->flushCounter<<endl;
-	fileName ="inv_index/index.inv." + index->barrelId + "." + getStringValue(index->flushCounter);
+	fileName ="OUTPUT/inv_index/index.inv." + index->barrelId + "." + getStringValue(index->flushCounter);
 	return writeFile(fileName.c_str(), output);
 
 

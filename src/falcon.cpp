@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
 	Util util;
 	//filter to test if the command line arguments are correct
 	if(!util.parseCommandLine(argc, argv)){
-		cout << "USAGE:  /falcon [-r] <config filename> [batch query]. Or. /falcon [-s] <config filename> " << endl;
+		cout << "USAGE:   /falcon [-r] <config filename> [batch query]. Or. /falcon [-s] <config filename> " << endl;
 		return 0;
 	}
 

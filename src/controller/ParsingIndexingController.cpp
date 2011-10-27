@@ -104,7 +104,7 @@ bool ParsingIndexingController::configureEngine(string baseDir) {
 	vector<DocumentQueue::Document>* queue = docqueue.getQueue();
 
 	//write file dictionary
-	string name = "dictionary/FileDictionary.txt";
+	string name = "OUTPUT/dictionary/FileDictionary.txt";
 	util.writeDictionary(name.c_str(), queue);
 
 	cout << "@@@@@@ queue size:" << queue->size() << endl;
@@ -152,11 +152,11 @@ bool ParsingIndexingController::configureEngine(string baseDir) {
 	//create term dictionary using termid & write to filesystem
 	//iterate & add all text to a file using termid
 	//TODO: remove this hard coding later
-	name = "dictionary/TermDictionary.txt";
+	name = "OUTPUT/dictionary/TermDictionary.txt";
 
 	util.writeDictionary(name.c_str(), dictUtil.getTermDictionary());
 
-	name = "dictionary/TermCountDictionary.txt";
+	name = "OUTPUT/dictionary/TermCountDictionary.txt";
 	util.writeTermDictionary(name.c_str(), dictUtil.getTermDictionary());
 
 	/**
@@ -227,7 +227,7 @@ vector<string> ParsingIndexingController::parseFile(DocumentQueue::Document doc)
 			semwikitext += semwiki.wikiCategory.at(k) + "\n";
 		}
 
-		filename = (string)"SemWiki/" + util.getFileNameFromPath(doc.path) +  (string)" _semwiki_meta.txt";
+		filename = (string)"OUTPUT/SemWiki/" + util.getFileNameFromPath(doc.path) +  (string)" _semwiki_meta.txt";
 		util.writeFile(filename.c_str(), semwikitext);
 
 		//	parseWiki(doc.path);
@@ -237,13 +237,15 @@ vector<string> ParsingIndexingController::parseFile(DocumentQueue::Document doc)
 }
 
 void ParsingIndexingController::createOutputFolders() {
-	string folderName = "SemWiki";
+	string folderOutput = "OUTPUT";
+	util.createFolder(folderOutput.c_str());
+	string folderName = "OUTPUT/SemWiki";
 	util.createFolder(folderName.c_str());
-	folderName = "fwd_index";
+	folderName = "OUTPUT/fwd_index";
 	util.createFolder(folderName.c_str());
-	folderName = "inv_index";
+	folderName = "OUTPUT/inv_index";
 	util.createFolder(folderName.c_str());
-	folderName = "dictionary";
+	folderName = "OUTPUT/dictionary";
 	util.createFolder(folderName.c_str());
 
 }
