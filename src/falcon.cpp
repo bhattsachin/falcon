@@ -13,8 +13,10 @@
 #include "utilities/Library.h"
 #include "utilities/Util.h"
 #include "controller/ParsingIndexingController.h"
+#include "parser/lang/en/PositionalTextParser.h"
 using namespace std;
 
+/**
 int main(int argc, char** argv) {
 	time_t start, end;
 	double diff;
@@ -28,10 +30,20 @@ int main(int argc, char** argv) {
 	string base_dir = argv[2];
 	time(&start);
 	ParsingIndexingController contoller;
-	contoller.configureEngine(base_dir);
+	//contoller.configureEngine(base_dir);
+	///test block
+	PositionalTextParser parser;
+	parser.parse("./data/news/FT911-119");
+
+
+	//test block over
+
+
+
 	time(&end);
 	diff = difftime(end, start);
 	cout << "Total time taken for execution:" << diff << " seconds" << endl;
 
 }
 
+*/
