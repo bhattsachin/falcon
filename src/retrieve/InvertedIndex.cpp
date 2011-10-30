@@ -50,6 +50,7 @@ map<size_t,list<size_t> > InvertedIndex::getInvertedIndex(string query){
 }
 
 list<size_t> InvertedIndex::getPostingList(string query){
+	//cout<<"query input"<<query<<endl;
 	map<size_t,list<size_t> > postingIndex = getInvertedIndex(query);
 
 	size_t termId = dictionary.getTermDictionaryTermId(query);
@@ -57,6 +58,8 @@ list<size_t> InvertedIndex::getPostingList(string query){
 	//postingIndex.
 
 	list<size_t> postingList = postingIndex.at(termId); //(postingIndex.find(termId));
+
+	//cout<<"size of posting list present for this term:"<<postingList.size()<<endl;
 
 	return postingList;
 

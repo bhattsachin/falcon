@@ -21,11 +21,12 @@ Util::~Util() {
 bool Util::parseCommandLine(int argc, char** argv){
 	string BATCH_MODE="-r";
 	string INTERACTIVE_MODE="-s";
+	string INDEXING_MODE="-i";
 	bool validQuery = false;
 	for(int i = 0; i < argc; i++)
 	      cout << "argv[" << i << "] = " << argv[i] << endl;
 
-	if((BATCH_MODE.compare(argv[1])!=0 || INTERACTIVE_MODE.compare(argv[1])!=0) && argc>1){
+	if((BATCH_MODE.compare(argv[1])!=0 || INTERACTIVE_MODE.compare(argv[1])!=0 || INDEXING_MODE.compare(argv[1])!=0) && argc>1){
 		validQuery = true;
 
 		if(argv[1]=="-r"){

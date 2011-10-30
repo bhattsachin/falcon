@@ -7,10 +7,10 @@
 
 #include "CommandLine.h"
 
+
 string EXIT = "exit";
 CommandLine::CommandLine() {
-	// TODO Auto-generated constructor stub
-
+	idex.load();
 }
 
 CommandLine::~CommandLine() {
@@ -23,21 +23,53 @@ void CommandLine::run(){
 	string result = "Response of the query here";
 	double diff;
 
+
+
+
 	do{
-	cout<<"~ falcon$ ";
-	cin>>command;
-	time(&start);
+		result = " ";
+		cout<<"~ falcon$ ";
+		cin>>command;
+		time(&start);
 
-	//send query for evaulation & return the result;
+		//send query for evaulation & return the result;
+		result = runQuery(command);
 
-	cout<<"~ result$: "<<result<<endl;
-	time(&end);
-	diff = difftime(end,start);
-	cout<<diff<<" seconds elapsed."<<endl;
+		cout<<"~ result$: "<<result<<endl;
+		time(&end);
+		diff = difftime(end,start);
+		cout<<diff<<" seconds elapsed."<<endl;
+
 
 	}while(EXIT.compare(command)!=0);
 
-	cout<<"--terminating falcon---hope you like it :)--give us good marks"<<endl;
+	//cout<<"--terminating falcon---hope you like it :)--give us good marks"<<endl;
+
+}
+
+
+
+string CommandLine::runQuery(string query){
+	qparser.setQueryString(query);
+	vector<string> queryTerms = qparser.getTerms();
+
+	//cout<<"----------total terms:"<<queryTerms.size()<<": term:"<<queryTerms.at(0)<<endl;
+
+	vector<list<size_t> > postingList;
+
+	for(size_t j=0;j<queryTerms.size();j++){
+		//cout<<"query parser returns::"<<queryTerms.at(j)<<endl;
+		postingList.push_back(idex.getPostingList(queryTerms.at(j)));
+	}
+
+	list<size_t> m_result;
+	m_result = bret.search(postingList);
+
+	string response;
+	response = m_result.size() + " results found";
+	cout<<response<<endl;
+
+	return response;
 
 }
 
@@ -48,4 +80,4 @@ int main(){
 	cmd.run();
 
 }
-*/
+ */

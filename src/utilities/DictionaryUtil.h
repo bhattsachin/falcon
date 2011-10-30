@@ -53,6 +53,10 @@ public:
 		return termId;
 	}
 
+	void loadDictionary(string filePath){
+
+	}
+
 
 };
 
