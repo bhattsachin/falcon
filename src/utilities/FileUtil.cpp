@@ -177,77 +177,247 @@ string FileUtil::getStringValue(unsigned int value) {
 
 }
 
-string FileUtil::getFileNameFromPath(string path){
+string FileUtil::getFileNameFromPath(string path) {
 	string name;
 	unsigned int start = path.find_last_of("/");
-	name = path.substr(start, path.length()-start);
+	name = path.substr(start, path.length() - start);
 	return name;
 }
 
-bool FileUtil::writeDictionary(const char* filename, DictionaryUtil::Dictionary* dictionary){
-		string output;
-		set<string>::iterator it;
+bool FileUtil::writeDictionary(const char* filename,
+		DictionaryUtil::Dictionary* dictionary) {
+	string output;
+	set<string>::iterator it;
 
-
-		for (it = dictionary->term.begin(); it != dictionary->term.end(); it++) {
-			output += getStringValue(dictionary->entry[*it]) + " " + *it + "\n";
-		}
-		return writeFile(filename, output);
-
-}
-
-bool FileUtil::writeTermDictionary(const char* filename, DictionaryUtil::Dictionary* dictionary){
-		string output;
-		set<string>::iterator it;
-
-
-		for (it = dictionary->term.begin(); it != dictionary->term.end(); it++) {
-			output += getStringValue(dictionary->entry[*it]) + " " + getStringValue(dictionary->count[*it]) + "\n";
-		}
-		return writeFile(filename, output);
+	for (it = dictionary->term.begin(); it != dictionary->term.end(); it++) {
+		output += getStringValue(dictionary->entry[*it]) + " " + *it + "\n";
+	}
+	return writeFile(filename, output);
 
 }
 
+bool FileUtil::writeTermDictionary(const char* filename,
+		DictionaryUtil::Dictionary* dictionary) {
+	string output;
+	set<string>::iterator it;
 
+	for (it = dictionary->term.begin(); it != dictionary->term.end(); it++) {
+		output += getStringValue(dictionary->entry[*it]) + " "
+				+ getStringValue(dictionary->count[*it]) + "\n";
+	}
+	return writeFile(filename, output);
+
+}
 
 bool FileUtil::writeIndex(Index* index) {
 	string output;
-	set<size_t>::iterator it,pit;
+	set<size_t>::iterator it, pit;
 	set<size_t>* postingLst;
 	set<size_t> terms = index->termIds;
 	for (it = terms.begin(); it != terms.end(); it++) {
 		postingLst = index->postingList[*it];
-		output +=getStringValue(*it) + " ";
+		output += getStringValue(*it) + " ";
 		bool firstItem = true;
 		for (pit = postingLst->begin(); pit != postingLst->end(); pit++) {
-			if(firstItem){
+			if (firstItem) {
 				output += getStringValue(*pit);
 				firstItem = false;
-			}else{
+			} else {
 				output += "|" + getStringValue(*pit);
 			}
 
 		}
 		//added for readability
-		output +="\n";
+		output += "\n";
 	}
 	string fileName;
 	//cout<<"flush counter:"<<index->flushCounter<<endl;
-	fileName ="OUTPUT/inv_index/index.inv." + index->barrelId + "." + getStringValue(index->flushCounter);
+	fileName = "OUTPUT/inv_index/index.inv." + index->barrelId + "."
+			+ getStringValue(index->flushCounter);
 	return writeFile(fileName.c_str(), output);
-
 
 }
 
-bool FileUtil::createFolder(const char* foldername){
+bool FileUtil::createFolder(const char* foldername) {
 	struct stat statBuf;
 	if (stat(foldername, &statBuf) != 0) {
-			mkdir(foldername, 0700);
-		}
+		mkdir(foldername, 0700);
+	}
 
 	return true;
 }
+/**
+ * Reads inverted index of the form termid<space><docid1>|<docid2>|<docid3>......<docidn>
+ */
+map<size_t, list<size_t> > FileUtil::readNonPositionalInvertedIndex(
+		string filepath) {
+	string content = "";
+	size_t termId;
+	string posting;
+	list<size_t> postinglist;
+	map<size_t, list<size_t> > index;
+	string line;
+	ifstream ifs(filepath.c_str());
+	if (ifs.is_open()) {
+		while (ifs) {
+			//cout << termId << " " << posting << endl;
+			ifs >> termId >> posting;
+			postinglist = split(posting, '|');
+			index.insert(pair<size_t, list<size_t> > (termId, postinglist));
 
+		}
+	} else {
+		cout << "Couldn't open file " << filepath << endl;
+	}
+
+	//close the stream
+	ifs.close();
+
+	return index;
+}
+
+list<size_t> &FileUtil::split(const string &s, char delim, list<size_t> &elems) {
+	stringstream ss(s);
+	string item;
+	while (getline(ss, item, delim)) {
+		elems.push_back(atol(item.c_str()));
+	}
+	return elems;
+}
+
+list<size_t> FileUtil::split(const string &s, char delim) {
+	list<size_t> elems;
+	return split(s, delim, elems);
+}
+
+void FileUtil::mergeInvertedIndex(string pattern) {
+
+	vector<string> indexList;
+	//read all the files in the given folder
+	indexList = getAllFileList("OUTPUT/inv_index", indexList);
+
+	list<string> barrelList;
+
+	for (int i = 0; i < indexList.size(); i++) {
+		if (indexList.at(i).find(pattern) != string::npos) {
+			barrelList.push_back(indexList.at(i));
+		}
+	}
+
+	//cout << "size:" << indexList.size() << endl;
+
+	//cout << "barrel size:" << barrelList.size() << endl;
+
+	//write that one file //keep all files open
+	vector<list<FileUtil::PostingEntry> > postingBuffer;
+	FileUtil::PostingEntry posStruct;
+	size_t termId;
+	string posting;
+	size_t counter = 0;
+	while (!barrelList.empty()) {
+		ifstream ifs(barrelList.front().c_str());
+		list<FileUtil::PostingEntry> postingList;
+		if (ifs.is_open()) {
+			while (ifs) {
+				//cout << termId << " " << posting << endl;
+				ifs >> termId >> posting;
+				posStruct.posting = posting;
+				posStruct.termId = termId;
+				postingList.push_back(posStruct);
+
+			}
+			postingBuffer.push_back(postingList);
+			counter++;
+		} else {
+			cout << "Couldn't open file " << barrelList.front() << endl;
+		}
+
+		ifs.close();
+		remove(barrelList.front().c_str());
+		barrelList.pop_front();
+
+	}
+
+	size_t min;
+
+	list<FileUtil::PostingEntry> finalPosting;
+
+	FileUtil::PostingEntry entry;
+
+	while (true) {
+
+		min = 999999999;
+		bool alive = false;
+
+		for (size_t k = 0; k < postingBuffer.size(); k++) {
+			list<FileUtil::PostingEntry> posEntry;
+			posEntry = postingBuffer.at(k);
+
+			if (posEntry.size() > 0 && posEntry.front().termId < min) {
+				min = posEntry.front().termId;
+				alive = true;
+			}
+
+		}
+
+		//termination condition for this loop
+		if (!alive)
+			break;
+
+		string posting;
+		bool first = true;
+		for (size_t k = 0; k < postingBuffer.size(); k++) {
+			list<FileUtil::PostingEntry> posEntry;
+			posEntry = postingBuffer.at(k);
+
+			if (posEntry.size() > 0) {
+				if (posEntry.front().termId == min) {
+					if (first) {
+						posting = posEntry.front().posting;
+						posEntry.pop_front();
+						postingBuffer.at(k) = posEntry;
+						first = false;
+					} else {
+						posting.append("|");
+						posting.append(posEntry.front().posting);
+						posEntry.pop_front();
+						postingBuffer.at(k) = posEntry;
+					}
+				}
+			}
+
+		}
+		entry.termId = min;
+		entry.posting = posting;
+		finalPosting.push_back(entry);
+
+		//cout << "termid" << entry.termId << "---entry:" << entry.posting
+		//		<< endl;
+
+	}
+
+	string writeFileName = "OUTPUT/inv_index/";
+
+	string text;
+	writeFileName.append(pattern);
+
+	while (!finalPosting.empty()) {
+		text += getStringValue(finalPosting.front().termId);
+		text += " ";
+		text += finalPosting.front().posting;
+		text += "\n";
+		//file <<
+		finalPosting.pop_front();
+
+	}
+
+	writeFile(writeFileName.c_str(), text);
+
+}
+
+/**
+ * for spliting posting lists
+ */
 
 /**
 
@@ -271,4 +441,36 @@ bool FileUtil::createFolder(const char* foldername){
  }
 
  */
+
+
+/**
+
+int main() {
+
+	FileUtil util;
+	map<size_t, list<size_t> > index;
+	string filepath = "OUTPUT/inv_index/index.inv.000.1";
+	index = util.readNonPositionalInvertedIndex(filepath);
+	list<size_t> posting;
+
+	map<size_t, list<size_t> >::iterator iter;
+	for (iter = index.begin(); iter != index.end(); iter++) {
+		cout << "#termid " << iter->first << " - ";
+		posting = iter->second;
+		while (!posting.empty()) {
+			cout << posting.front() << "|";
+			posting.pop_front();
+		}
+		cout << endl;
+
+	}
+
+	cout << "we are done" << endl;
+
+
+	//remove("OUTPUT/inv_index/index.inv.000.1");
+}
+
+*/
+
 

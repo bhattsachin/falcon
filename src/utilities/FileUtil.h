@@ -18,6 +18,13 @@
 using namespace std;
 
 class FileUtil {
+
+public:
+	struct PostingEntry{
+		size_t termId;
+		string posting;
+	};
+
 public:
 	FileUtil();
 	string INDEX_FOLDER;
@@ -46,6 +53,10 @@ public:
 	bool writeTermDictionary(const char* filename, DictionaryUtil::Dictionary* dictionary);
 	bool createFolder(const char* foldername);
 	string getFileNameFromPath(string path);
+	map<size_t, list<size_t> > readNonPositionalInvertedIndex(string filepath);
+	list<size_t> split(const string &s, char delim);
+	list<size_t> &split(const string &s, char delim, list<size_t> &elems);
+	void mergeInvertedIndex(string pattern);
 
 
 };

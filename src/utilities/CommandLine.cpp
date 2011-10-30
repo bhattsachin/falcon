@@ -41,9 +41,11 @@ void CommandLine::run(){
 
 }
 
+/**
 int main(){
 
 	CommandLine cmd;
 	cmd.run();
 
 }
+*/
