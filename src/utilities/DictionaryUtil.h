@@ -11,7 +11,8 @@
 
 #include "Library.h"
 #include "IDGenerator.h"
-
+#include <fstream>
+#include <sstream>
 using namespace std;
 
 class DictionaryUtil {
@@ -53,10 +54,21 @@ public:
 		return termId;
 	}
 
-	void loadDictionary(string filePath){
+	size_t queryTermId(const string term, bool& existFlag){
+		Dictionary* dic = getTermDictionary();
+		size_t termId = -1;
+		if(dic->term.find(term) == dic->term.end()){
+			existFlag = false;
+			return termId;
+		} else {
 
+			dic->count[term]++;
+			existFlag = true;
+			return termId = dic->entry[term];
+		}
 	}
 
+	void loadDictionary(string filepath);
 
 };
 

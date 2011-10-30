@@ -11,6 +11,7 @@
 string EXIT = "exit";
 CommandLine::CommandLine() {
 	idex.load();
+	util.loadDictionary("OUTPUT/dictionary/TermDictionary.txt");
 }
 
 CommandLine::~CommandLine() {
@@ -22,9 +23,6 @@ void CommandLine::run(){
 	time_t start, end;
 	string result = "Response of the query here";
 	double diff;
-
-
-
 
 	do{
 		result = " ";

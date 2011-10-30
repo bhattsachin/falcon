@@ -33,8 +33,17 @@ vector<string> QueryParser::separateTerms(){
 vector<size_t> QueryParser::fetchTermIds(){
 	vector<string>::iterator itTemp;
 	baseParseProc(queryTerms);
+	bool existFlag;
+	size_t termId;
+	bool& flagR = existFlag;
 	for (itTemp=semwiki.baseParsedTerms.begin();itTemp!=semwiki.baseParsedTerms.end();itTemp++){
-		queryTermIds.push_back(dictUtil.getTermDictionaryTermId(*itTemp));
+		existFlag = false;
+		termId = dictUtil.queryTermId(*itTemp, flagR);
+		if(flagR){
+			queryTermIds.push_back(termId);
+		}
+
+
 	}
 	return queryTermIds;
 }

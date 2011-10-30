@@ -12,6 +12,7 @@
 #define COMMANDLINE_H_
 
 #include "Library.h";
+#include "DictionaryUtil.h";
 #include "../retrieve/InvertedIndex.h"
 #include "../retrieve/BinaryRetrieval.h"
 #include "../parser/lang/en/QueryParser.h"
@@ -22,6 +23,8 @@ public:
 	InvertedIndex idex;
 	QueryParser qparser;
 	BinaryRetrieval bret;
+	DictionaryUtil util;
+
 
 public:
 	CommandLine();
