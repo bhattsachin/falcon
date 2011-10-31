@@ -57,8 +57,6 @@ list<size_t> BinaryRetrieval::search(vector<list<size_t> > postings){
 	}
 	}
 
-	cout<<"result size:"<<result.size();
-
 	return result;
 
 

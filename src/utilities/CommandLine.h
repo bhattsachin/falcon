@@ -13,6 +13,7 @@
 
 #include "Library.h";
 #include "DictionaryUtil.h";
+#include "FileUtil.h";
 #include "../retrieve/InvertedIndex.h"
 #include "../retrieve/BinaryRetrieval.h"
 #include "../parser/lang/en/QueryParser.h"
@@ -24,6 +25,7 @@ public:
 	QueryParser qparser;
 	BinaryRetrieval bret;
 	DictionaryUtil util;
+	FileUtil fUtil;
 
 
 public:

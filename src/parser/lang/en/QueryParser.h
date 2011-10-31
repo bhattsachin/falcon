@@ -24,6 +24,7 @@ public:
 	void setQueryString(string);
 	vector<string> getTerms();
 	vector<size_t> getTermIds();
+	vector<string> getAvailableQueryTerms(string query);
 };
 
 #endif /* QUERYPARSER_H_ */

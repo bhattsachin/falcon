@@ -35,6 +35,7 @@ vector<size_t> QueryParser::fetchTermIds(){
 	baseParseProc(queryTerms);
 	bool existFlag;
 	size_t termId;
+
 	bool& flagR = existFlag;
 	for (itTemp=semwiki.baseParsedTerms.begin();itTemp!=semwiki.baseParsedTerms.end();itTemp++){
 		existFlag = false;
@@ -47,6 +48,29 @@ vector<size_t> QueryParser::fetchTermIds(){
 	}
 	return queryTermIds;
 }
+
+vector<string> QueryParser::getAvailableQueryTerms(string query){
+	setQueryString(query);
+
+
+	vector<string>::iterator itTemp;
+		baseParseProc(queryTerms);
+		bool existFlag;
+		size_t termId;
+
+		bool& flagR = existFlag;
+		for (itTemp=semwiki.baseParsedTerms.begin();itTemp!=semwiki.baseParsedTerms.end();itTemp++){
+			existFlag = false;
+			termId = dictUtil.queryTermId(*itTemp, flagR);
+			if(flagR){
+				queryTermIds.push_back(termId);
+			}
+
+
+	}
+
+}
+
 
 vector<string> QueryParser::getTerms(){
 	return semwiki.baseParsedTerms;
