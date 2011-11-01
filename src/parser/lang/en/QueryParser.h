@@ -8,14 +8,15 @@
 #ifndef QUERYPARSER_H_
 #define QUERYPARSER_H_
 
-#include "../../BaseParser.h"
+#include "PlainTextParser.h"
 #include "../../../utilities/DictionaryUtil.h"
-class QueryParser: public BaseParser {
+class QueryParser{
 private:
 	DictionaryUtil dictUtil;
 	string queryString;
 	vector<string> queryTerms;
 	vector<size_t> queryTermIds;
+	vector<string> indexedTerms;
 	vector<string> separateTerms();
 	vector<size_t> fetchTermIds();
 public:
@@ -24,7 +25,6 @@ public:
 	void setQueryString(string);
 	vector<string> getTerms();
 	vector<size_t> getTermIds();
-	vector<string> getAvailableQueryTerms(string query);
 };
 
 #endif /* QUERYPARSER_H_ */

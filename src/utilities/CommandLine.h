@@ -27,12 +27,27 @@ public:
 	DictionaryUtil util;
 	FileUtil fUtil;
 
+public:
+
+
+	struct KeyValue{
+		string key;
+		string val;
+	};
+
+	struct Query{
+			size_t resultCount;
+			string queryString;
+			list<CommandLine::KeyValue > options;
+		};
+
 
 public:
 	CommandLine();
 	virtual ~CommandLine();
 	void run();
 	string runQuery(string query);
+	CommandLine::Query parseQuery(string query);
 };
 
 #endif /* COMMANDLINE_H_ */

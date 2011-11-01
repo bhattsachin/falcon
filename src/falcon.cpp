@@ -22,6 +22,7 @@ string BATCH_MODE = "-r";
 string INTERACTIVE_MODE = "-s";
 string INDEXING_MODE = "-i";
 
+
 int main(int argc, char** argv) {
 	time_t start, end;
 	double diff;
@@ -76,8 +77,12 @@ int main(int argc, char** argv) {
 		cout << "Total time taken for execution:" << diff << " seconds" << endl;
 	}
 
+
+
 	//test block over
 
 
 }
+
+
 

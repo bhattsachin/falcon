@@ -18,9 +18,9 @@ Index::~Index() {
 }
 
 
-void Index::addPosting(size_t docId, size_t termId){
+void Index::addPosting(string docId, size_t termId){
 	addToIndex(termId);
-	set<size_t>* postingL = postingList[termId];
+	set<string >* postingL = postingList[termId];
 	postingL->insert(docId);
 	//cout<<"##termId:"<<termId<<" docId:"<<docId;
 	currentPostingCount++;
@@ -31,7 +31,7 @@ void Index::addToIndex(size_t termId){
 	if(termIds.find(termId)==termIds.end()){
 		termIds.insert(termId);
 
-		postingList[termId] = new set<size_t>();
+		postingList[termId] = new set<string>();
 	}
 
 

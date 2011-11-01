@@ -56,7 +56,11 @@ public:
 	map<size_t, list<size_t> > readNonPositionalInvertedIndex(string filepath);
 	list<size_t> split(const string &s, char delim);
 	list<size_t> &split(const string &s, char delim, list<size_t> &elems);
+	list<size_t> splitToGetPosting(const string &s, char delim);
+	list<size_t> &splitToGetPosting(const string &s, char delim, list<size_t> &elems);
 	void mergeInvertedIndex(string pattern);
+	bool writeAuthorDictionary(const char* filename, DictionaryUtil::AuthorDictionary*);
+	bool writeCatDictionary(const char* filename, DictionaryUtil::CatDictionary*);
 
 
 };

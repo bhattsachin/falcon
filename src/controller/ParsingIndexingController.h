@@ -16,6 +16,7 @@
 #include "../utilities/DictionaryUtil.h"
 #include "../indexer/Index.h"
 #include "../indexer/Indexer.h"
+#include "../indexer/FwrdIndexer.h"
 #include "../parser/lang/en/WikiParser.h"
 #include "WikiController.h"
 
@@ -31,16 +32,9 @@ class ParsingIndexingController {
 		FileUtil util;
 		DictionaryUtil dictUtil;
 		Indexer indexer;
-
+		FwrdIndexer fwrdindexer;
 		WikiParser* semWikiParser;
-
-
 		map<string, Index*> barrel_map;
-
-
-
-
-
 
 	public:
 		ParsingIndexingController();
@@ -52,6 +46,8 @@ class ParsingIndexingController {
 		void parseWiki(string path);
 	private:
 		void createOutputFolders();
+		void writeFwrdIndex(size_t, vector<string>, vector<int>);
+		map<string,size_t> countFrequency(vector<string> lst);
 
 	};
 

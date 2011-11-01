@@ -44,3 +44,41 @@ bool Util::parseCommandLine(int argc, char** argv){
 	return validQuery;
 
 }
+
+/**
+int main(){
+
+	vector<string> lst;
+	lst.push_back("sun");
+	lst.push_back("mon");
+	lst.push_back("tue");
+	lst.push_back("sun");
+	lst.push_back("sun");
+	lst.push_back("mon");
+	lst.push_back("fri");
+	lst.push_back("dry");
+
+
+	map<string,size_t> count;
+	map<string,size_t>::iterator iter;
+
+	for(size_t m=0;m<lst.size();m++){
+		if(count.find(lst.at(m))!=count.end()){
+			count.find(lst.at(m))->second = count.find(lst.at(m))->second + 1;
+
+		}else{
+			count.insert(pair<string,size_t>(lst.at(m),1));
+		}
+	}
+
+
+	for(iter = count.begin();iter!=count.end();iter++){
+		cout<<iter->first<<" "<<iter->second<<endl;
+	}
+
+	cout<<count["sun"]<<endl;
+
+
+
+}
+*/

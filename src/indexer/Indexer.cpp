@@ -26,7 +26,7 @@ void Indexer::flush(Index* index){
 
 }
 
-void Indexer::buildIndex(Index* index, size_t fileId, size_t termId){
+void Indexer::buildIndex(Index* index, string fileId, size_t termId){
 	//TODO: get this value from config file
 	if(index->currentPostingCount>500){
 		flush(index);

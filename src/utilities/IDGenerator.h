@@ -35,6 +35,16 @@ public:
 		termId++;
 		return termId;
 	}
+	size_t getAuthorId(){
+		static size_t authorId = 0;
+		authorId++;
+		return authorId;
+	}
+	size_t getCatId(){
+		static size_t catId = 0;
+		catId++;
+		return catId;
+	}
 };
 
 

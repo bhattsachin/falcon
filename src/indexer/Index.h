@@ -25,11 +25,11 @@ public:
 	size_t flushCounter;
 	size_t currentPostingCount;
 	set<size_t> termIds;
-	map<size_t, set<size_t>* > postingList;
+	map<size_t, set<string>* > postingList;
 
 	void addToIndex(size_t termId);
 	//all the terms present in given docId for given barrel
-	void addPosting(size_t docId, size_t termId);
+	void addPosting(string docId, size_t termId);
 	//flush everything to file, clear termId & postingList & currentPostingCount & increment flushCounter
 	void flush();
 

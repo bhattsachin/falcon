@@ -211,8 +211,9 @@ bool FileUtil::writeTermDictionary(const char* filename,
 
 bool FileUtil::writeIndex(Index* index) {
 	string output;
-	set<size_t>::iterator it, pit;
-	set<size_t>* postingLst;
+	set<size_t>::iterator it;
+	set<string>::iterator pit;
+	set<string>* postingLst;
 	set<size_t> terms = index->termIds;
 	for (it = terms.begin(); it != terms.end(); it++) {
 		postingLst = index->postingList[*it];
@@ -220,10 +221,10 @@ bool FileUtil::writeIndex(Index* index) {
 		bool firstItem = true;
 		for (pit = postingLst->begin(); pit != postingLst->end(); pit++) {
 			if (firstItem) {
-				output += getStringValue(*pit);
+				output += *pit;
 				firstItem = false;
 			} else {
-				output += "|" + getStringValue(*pit);
+				output += "|" + *pit;
 			}
 
 		}
@@ -262,7 +263,7 @@ map<size_t, list<size_t> > FileUtil::readNonPositionalInvertedIndex(
 		while (ifs) {
 			//cout << termId << " " << posting << endl;
 			ifs >> termId >> posting;
-			postinglist = split(posting, '|');
+			postinglist = splitToGetPosting(posting, '|');
 			index.insert(pair<size_t, list<size_t> > (termId, postinglist));
 
 		}
@@ -286,6 +287,22 @@ list<size_t> &FileUtil::split(const string &s, char delim, list<size_t> &elems) 
 }
 
 list<size_t> FileUtil::split(const string &s, char delim) {
+	list<size_t> elems;
+	return split(s, delim, elems);
+}
+
+list<size_t> &FileUtil::splitToGetPosting(const string &s, char delim, list<size_t> &elems) {
+	stringstream ss(s);
+	string item;
+	string temp;
+	while (getline(ss, item, delim)) {
+		temp = item.substr(0,item.find_first_of(','));
+		elems.push_back(atol(temp.c_str()));
+	}
+	return elems;
+}
+
+list<size_t> FileUtil::splitToGetPosting(const string &s, char delim) {
 	list<size_t> elems;
 	return split(s, delim, elems);
 }
@@ -414,6 +431,25 @@ void FileUtil::mergeInvertedIndex(string pattern) {
 	writeFile(writeFileName.c_str(), text);
 
 }
+
+bool FileUtil::writeAuthorDictionary(const char* filename, DictionaryUtil::AuthorDictionary* authorList){
+	string output;
+	set<string>::iterator it;
+	for(it=authorList->author.begin(); it!=authorList->author.end(); it++){
+		output += getStringValue(authorList->entry[*it]) + " " + *it + '\n';
+	}
+	return writeFile(filename, output);
+}
+
+bool FileUtil::writeCatDictionary(const char* filename, DictionaryUtil::CatDictionary* catList){
+	string output;
+	set<string>::iterator it;
+	for(it=catList->cat.begin(); it!=catList->cat.end(); it++){
+		output += getStringValue(catList->entry[*it]) + " " + "*it" + "\n";
+	}
+	return writeFile(filename, output);
+}
+
 
 /**
  * for spliting posting lists

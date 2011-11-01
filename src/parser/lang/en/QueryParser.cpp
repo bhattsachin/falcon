@@ -23,59 +23,34 @@ void QueryParser::setQueryString(string querystr){
 }
 
 vector<string> QueryParser::separateTerms(){
-	vector<string>& queryTermsR = queryTerms;
-	const string& queryStrR=this->queryString;
-	const string& queryDelimaR=" ";
-	baseToolSplit(queryStrR,queryDelimaR,queryTermsR);
-	return queryTerms;
+	PlainTextParser ptp;
+	this->queryTerms = ptp.plainParseProcStr(this->queryString);
+	return this->queryTerms;
 }
 
 vector<size_t> QueryParser::fetchTermIds(){
+	this->queryTermIds.erase(this->queryTermIds.begin(), this->queryTermIds.end());
+	this->queryTermIds.clear();
+	this->indexedTerms.erase(this->indexedTerms.begin(), this->indexedTerms.end());
+	this->indexedTerms.clear();
 	vector<string>::iterator itTemp;
-	baseParseProc(queryTerms);
-	bool existFlag;
+	bool flag=false;
+	bool& flagR = flag;
 	size_t termId;
-
-	bool& flagR = existFlag;
-	for (itTemp=semwiki.baseParsedTerms.begin();itTemp!=semwiki.baseParsedTerms.end();itTemp++){
-		existFlag = false;
+	for (itTemp=this->queryTerms.begin();itTemp!=this->queryTerms.end();itTemp++){
 		termId = dictUtil.queryTermId(*itTemp, flagR);
-		if(flagR){
-			queryTermIds.push_back(termId);
+		if (flagR){
+			this->queryTermIds.push_back(termId);
+			this->indexedTerms.push_back(*itTemp);
 		}
-
-
 	}
-	return queryTermIds;
+	return this->queryTermIds;
 }
-
-vector<string> QueryParser::getAvailableQueryTerms(string query){
-	setQueryString(query);
-
-
-	vector<string>::iterator itTemp;
-		baseParseProc(queryTerms);
-		bool existFlag;
-		size_t termId;
-
-		bool& flagR = existFlag;
-		for (itTemp=semwiki.baseParsedTerms.begin();itTemp!=semwiki.baseParsedTerms.end();itTemp++){
-			existFlag = false;
-			termId = dictUtil.queryTermId(*itTemp, flagR);
-			if(flagR){
-				queryTermIds.push_back(termId);
-			}
-
-
-	}
-
-}
-
 
 vector<string> QueryParser::getTerms(){
-	return semwiki.baseParsedTerms;
+	return this->indexedTerms;
 }
 
 vector<size_t> QueryParser::getTermIds(){
-	return queryTermIds;
+	return this->queryTermIds;
 }

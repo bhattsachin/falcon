@@ -96,6 +96,10 @@ bool ParsingIndexingController::configureEngine(string baseDir) {
 	crawler.read(baseDir);
 	createOutputFolders();
 
+	// added by Su, to initialize the forward indexer
+	string outputFolder = "OUTPUT/fwd_index";
+	fwrdindexer.init(outputFolder);
+
 	/**
 	 * once file are read
 	 * parse them one by one
@@ -126,7 +130,7 @@ bool ParsingIndexingController::configureEngine(string baseDir) {
 				<< endl;
 
 	}
-
+	fwrdindexer.closeFile();
 	//flush all the barrels
 	map<string, Index*>::iterator mapItr;
 	for (mapItr = barrel_map.begin(); mapItr != barrel_map.end(); mapItr++) {
@@ -158,7 +162,10 @@ bool ParsingIndexingController::configureEngine(string baseDir) {
 
 	name = "OUTPUT/dictionary/TermCountDictionary.txt";
 	util.writeTermDictionary(name.c_str(), dictUtil.getTermDictionary());
-
+	name = "OUTPUT/dictionary/AuthorDictionary.txt";
+    util.writeAuthorDictionary(name.c_str(), dictUtil.getAuthorDictionary());
+    name = "OUTPUT/dictionary/CatDictionary.txt";
+    util.writeCatDictionary(name.c_str(), dictUtil.getCatDictionary());
 	/**
 	 * create a term frequency counter dictionary
 	 * expensive block :(
@@ -170,22 +177,47 @@ bool ParsingIndexingController::configureEngine(string baseDir) {
 	return true;
 }
 
+map<string,size_t> ParsingIndexingController::countFrequency(vector<string> lst){
+	map<string,size_t> count;
+
+	for(size_t m=0;m<lst.size();m++){
+			if(count.find(lst.at(m))!=count.end()){
+				count.find(lst.at(m))->second = count.find(lst.at(m))->second + 1;
+
+			}else{
+				count.insert(pair<string,size_t>(lst.at(m),1));
+			}
+	}
+
+	return count;
+
+}
+
 void ParsingIndexingController::indexFile(size_t fileId, vector<string> terms) {
 
 	Index* barrel;
 	string word;
 	size_t term;
 	vector<size_t> termIds;
-	//for each of the term get termId & save to barrel
-	for (unsigned int i = 0; i < terms.size(); i++) {
-		word = terms.at(i);
+	string val;
+	map<string,size_t> count = countFrequency(terms);
+	map<string, size_t>::iterator iter;
+
+	for(iter = count.begin();iter!=count.end();iter++){
+		val="";
+		word = iter->first;
 		barrel = barrel_map[getBarrel(word)];
 		term = dictUtil.getTermDictionaryTermId(word);
 		termIds.push_back(term);
-		indexer.buildIndex(barrel, fileId, term);
-
-		//barrel->addPosting(fileId,term);
+		val.append(util.getStringValue(fileId));
+		val.append(",");
+		val.append(util.getStringValue(count[word]));
+		indexer.buildIndex(barrel, val, term);
 	}
+
+
+
+
 
 }
 
@@ -202,35 +234,72 @@ vector<string> ParsingIndexingController::parseFile(DocumentQueue::Document doc)
 
 	//if wiki file . overhead of semwiki creation goes here
 	if (doc.type.compare("wiki") == 0) {
-		semwikitext += "<#ARTICAL NAME>\n" + doc.path + "\n";
+		PlainTextParser* ptp = new PlainTextParser();
+		ptp->initParser("config/stopwords.txt");
+
+		vector<string> fwrdIndexTerms;
+		vector<int> fwrdIndexParts;
+
+		string arti_name = doc.path.substr(doc.path.find_last_of("/\\")+1);
+		semwikitext += "<#ARTICAL NAME>\n" + arti_name + "\n";
+		vector<string> arti_namev;
+		arti_namev.push_back(arti_name);
+		fwrdIndexTerms.insert(fwrdIndexTerms.end(),arti_namev.begin(),arti_namev.end());
+		fwrdIndexParts.push_back(1);
 		semwikitext += "<#AUTHOR>\n" + semwiki.wikiAuthor + "\n";
+		size_t authorId = dictUtil.getAuthorDictionaryAuthorId(semwiki.wikiAuthor);
+		vector<string> authorv;
+		authorv.push_back(semwiki.wikiAuthor);
+		fwrdIndexTerms.insert(fwrdIndexTerms.end(),authorv.begin(),authorv.end());
+		fwrdIndexParts.push_back(2);
 		semwikitext += "<#TIMESTAMP>\n" + semwiki.wikiTimeStamp + "\n";
+		vector<string> timestampv;
+		timestampv.push_back(semwiki.wikiTimeStamp);
+		fwrdIndexTerms.insert(fwrdIndexTerms.end(),timestampv.begin(),timestampv.end());
+		fwrdIndexParts.push_back(3);
 		semwikitext += "<#INFOBOX>\n";
 		for (unsigned int l = 0; l < semwiki.wikiInfobox.size(); l++) {
 			semwikitext += semwiki.wikiInfobox.at(l) + "$";
 		}
-
+		fwrdIndexTerms.insert(fwrdIndexTerms.end(),semwiki.wikiInfobox.begin(),semwiki.wikiInfobox.end());
+		vector<int> infoboxId(semwiki.wikiInfobox.size(),4);
+		fwrdIndexParts.insert(fwrdIndexParts.end(), infoboxId.begin(),infoboxId.end());
 		semwikitext += "<#SECTIONS>\n";
 		for (unsigned int k = 0; k < semwiki.wikiSection.size(); k++) {
 			semwikitext += semwiki.wikiSection.at(k) + "\n";
+			vector<string> tempV;
+			tempV=ptp->plainParseProcStr(semwiki.wikiSection.at(k));
+			fwrdIndexTerms.insert(fwrdIndexTerms.end(),tempV.begin(),tempV.end());
+			vector<int> sectionId(tempV.size(),5);
+			fwrdIndexParts.insert(fwrdIndexParts.end(), sectionId.begin(),sectionId.end());
 		}
-
 		semwikitext += "\n<#LINKS>\n";
 
 		for (unsigned int k = 0; k < semwiki.wikiInternLink.size(); k++) {
 			semwikitext += semwiki.wikiInternLink.at(k) + "\n";
 		}
-
+		fwrdIndexTerms.insert(fwrdIndexTerms.end(), semwiki.wikiInternLink.begin(), semwiki.wikiInternLink.end());
+		vector<int> InternLinkId(semwiki.wikiInternLink.size(),6);
+		fwrdIndexParts.insert(fwrdIndexParts.end(), InternLinkId.begin(),InternLinkId.end());
 		semwikitext += "\n<#CATEGORY>\n";
 
 		for (unsigned int k = 0; k < semwiki.wikiCategory.size(); k++) {
 			semwikitext += semwiki.wikiCategory.at(k) + "\n";
+			size_t catId = dictUtil.getCatDictionaryCatId(semwiki.wikiCategory.at(k));
 		}
+		fwrdIndexTerms.insert(fwrdIndexTerms.end(), semwiki.wikiCategory.begin(), semwiki.wikiCategory.end());
+		vector<int> wikiCatId(semwiki.wikiCategory.size(),7);
+		fwrdIndexParts.insert(fwrdIndexParts.end(), wikiCatId.begin(),wikiCatId.end());
+		// write to forward index
+		//	added: Zhiliang Su, Oct292011
+		writeFwrdIndex(doc.id, fwrdIndexTerms, fwrdIndexParts);
 
+		// write to semwiki file
 		filename = (string)"OUTPUT/SemWiki/" + util.getFileNameFromPath(doc.path) +  (string)" _semwiki_meta.txt";
 		util.writeFile(filename.c_str(), semwikitext);
 
 		//	parseWiki(doc.path);
+
 	}
 
 	return tmp;
@@ -247,6 +316,54 @@ void ParsingIndexingController::createOutputFolders() {
 	util.createFolder(folderName.c_str());
 	folderName = "OUTPUT/dictionary";
 	util.createFolder(folderName.c_str());
-
 }
 
+void ParsingIndexingController::writeFwrdIndex(size_t docId, vector<string> terms, vector<int> parts){
+	// TODO private function to write forward index
+	vector<size_t> termId;
+	vector<string>::iterator itTerms;
+
+	// get term IDs
+	for (size_t i = 0; i<terms.size(); i++){
+		// moded: Oct31, 2011 by Su
+		//termId.push_back(dictUtil.getTermDictionaryTermId(*itTerms));
+		switch (parts.at(i)){
+		case 1://Article name
+			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
+			break;
+		case 2://Author name
+			termId.push_back(dictUtil.getAuthorDictionaryAuthorId(terms.at(i)));
+			break;
+		case 3://Time stamp
+			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
+			break;
+		case 4://Infobox
+			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
+			break;
+		case 5://section
+			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
+			break;
+		case 6://links
+			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
+			break;
+		case 7://Category
+			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
+			break;
+		}
+	}
+
+	// compute term frequency
+	vector<size_t> termFreq;
+	vector<size_t>::iterator itTermIda;
+	vector<size_t>::iterator itTermIdb;
+	for (itTermIda=termId.begin(); itTermIda!=termId.end(); itTermIda++){
+		size_t tempCount=0;
+		for (itTermIdb=termId.begin(); itTermIdb!=termId.end(); itTermIdb++){
+			if (*itTermIda == *itTermIdb){tempCount++;}
+		}
+		termFreq.push_back(tempCount);
+	}
+
+	// use FwrdIndexer to write to file.(FwrdIndexer should maintain the barrel informations too, which we don't care now)
+	fwrdindexer.writeFwrdIndex(docId, termFreq, termId, parts);
+}

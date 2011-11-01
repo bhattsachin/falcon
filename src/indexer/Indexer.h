@@ -17,7 +17,7 @@ public:
 	Indexer();
 	virtual ~Indexer();
 	void flush(Index* index);
-	void buildIndex(Index* index, size_t fileId, size_t termId);
+	void buildIndex(Index* index, string fileId, size_t termId);
 	//TODO: fix this hardcoding
 	//std::map<std::string, BaseParser*> parser_map;
 };
