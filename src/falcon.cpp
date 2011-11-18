@@ -14,7 +14,7 @@
 #include "utilities/Util.h"
 #include "utilities/FileUtil.h"
 #include "utilities/CommandLine.h"
-#include "controller/ParsingIndexingController.h"
+#include "controller/ParsingIndexingBoostController.h"
 #include "parser/lang/en/PositionalTextParser.h"
 using namespace std;
 
@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
 
 	if (INDEXING_MODE.compare(argv[1]) == 0) {
 
-		ParsingIndexingController contoller;
+		ParsingIndexingBoostController contoller;
 		contoller.configureEngine(base_dir);
 
 		//merge all inverted indexes.

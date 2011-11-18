@@ -17,6 +17,7 @@
 
 using namespace std;
 
+
 class BaseParser {
 public:
 	string tempSection;

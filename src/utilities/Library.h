@@ -34,6 +34,14 @@
 #include <limits>
 #include <cassert>
 
+//boost library
+#include <boost/foreach.hpp>
+#include <boost/algorithm/string.hpp>
+#include <iostream>
+#include <iterator>
+#include <algorithm>
+
+
 
 
 #define UNIX
