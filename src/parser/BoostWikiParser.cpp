@@ -60,7 +60,7 @@ vector<string> BoostWikiParser::parseFile(string path) {
 	//cout << replaced << endl;
 	replaced = regex_replace(replaced, expr_unwantedChar, replacement,
 			boost::match_default | boost::format_sed);
-	cout << replaced << endl;
+	//cout << replaced << endl;
 
 	return parse(replaced);
 
