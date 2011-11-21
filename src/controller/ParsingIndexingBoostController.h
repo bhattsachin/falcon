@@ -1,3 +1,4 @@
+
 /*
  * ParsingIndexingBoostController.h
  *
@@ -48,6 +49,7 @@ private:
 	void createOutputFolders();
 	void writeFwrdIndex(size_t, vector<string> , vector<int> );
 	map<string, size_t> countFrequency(vector<string> lst);
+	void createSemWikiFiles(BoostParser::ParsedDocument doc);
 
 };
 

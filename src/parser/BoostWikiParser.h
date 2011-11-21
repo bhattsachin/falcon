@@ -17,7 +17,7 @@ class BoostWikiParser : public BoostParser {
 public:
 	BoostWikiParser();
 	virtual ~BoostWikiParser();
-	virtual vector<string> parseFile(string path);
+	virtual BoostParser::ParsedDocument parseFile(string path);
 
 };
 

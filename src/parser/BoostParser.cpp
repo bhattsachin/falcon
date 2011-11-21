@@ -29,10 +29,12 @@ void BoostParser::init(string stopWordsFile){
 
 }
 
-vector<string> BoostParser::parseFile(string path) {
+BoostParser::ParsedDocument BoostParser::parseFile(string path) {
 	FileUtil util;
+	BoostParser::ParsedDocument doc;
 	string inputText = util.readFile(path);
-	return parse(inputText);
+	doc.tokens = parse(inputText);
+	return doc;
 
 }
 
