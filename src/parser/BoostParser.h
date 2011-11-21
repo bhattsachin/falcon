@@ -8,7 +8,7 @@
 #ifndef BOOSTPARSER_H_
 #define BOOSTPARSER_H_
 
-#include "../utilities/Library.h";
+#include "../utilities/Library.h"
 #include "../utilities/FileUtil.h"
 
 using namespace std;

@@ -12,8 +12,14 @@
 
 class ProfScore: public ScoreBase {
 public:
-	ProfScore();
+	ProfScore(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize) : ScoreBase(ifsPtrList, offset, barrelSize){};
 	virtual ~ProfScore();
+
+private:
+	class JOccur{
+
+	};
 };
+
 
 #endif /* PROFSCORE_H_ */

@@ -6,18 +6,24 @@
 CPP_SRCS += \
 ../src/parser/lang/en/LangUtil.cpp \
 ../src/parser/lang/en/PlainTextParser.cpp \
+../src/parser/lang/en/PositionalTextParser.cpp \
+../src/parser/lang/en/QueryParser.cpp \
 ../src/parser/lang/en/SemWikiParser.cpp \
 ../src/parser/lang/en/WikiParser.cpp 
 
 OBJS += \
 ./src/parser/lang/en/LangUtil.o \
 ./src/parser/lang/en/PlainTextParser.o \
+./src/parser/lang/en/PositionalTextParser.o \
+./src/parser/lang/en/QueryParser.o \
 ./src/parser/lang/en/SemWikiParser.o \
 ./src/parser/lang/en/WikiParser.o 
 
 CPP_DEPS += \
 ./src/parser/lang/en/LangUtil.d \
 ./src/parser/lang/en/PlainTextParser.d \
+./src/parser/lang/en/PositionalTextParser.d \
+./src/parser/lang/en/QueryParser.d \
 ./src/parser/lang/en/SemWikiParser.d \
 ./src/parser/lang/en/WikiParser.d 
 
@@ -26,7 +32,7 @@ CPP_DEPS += \
 src/parser/lang/en/%.o: ../src/parser/lang/en/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	g++ -I/home/suz/boost -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

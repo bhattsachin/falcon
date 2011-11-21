@@ -7,11 +7,6 @@
 
 #include "ProfScore.h"
 
-ProfScore::ProfScore() {
-	// TODO Auto-generated constructor stub
-
-}
-
 ProfScore::~ProfScore() {
 	// TODO Auto-generated destructor stub
 }

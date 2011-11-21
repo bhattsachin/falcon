@@ -17,7 +17,6 @@ FwrdIndexer::FwrdIndexer(string outputFolder){
 
 void FwrdIndexer::init(string folder) {
 	string outputpath = folder + "/ForwardIndex.txt";
-	cout << outputpath << endl;
 	ofs.open(outputpath.c_str(),ios::out);
 }
 

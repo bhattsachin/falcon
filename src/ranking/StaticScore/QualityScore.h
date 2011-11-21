@@ -7,10 +7,11 @@
 
 #ifndef QUALITYSCORE_H_
 #define QUALITYSCORE_H_
+#include "ScoreBase.h"
 
-class QualityScore {
+class QualityScore : public ScoreBase {
 public:
-	QualityScore();
+	QualityScore(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize) : ScoreBase(ifsPtrList, offset, barrelSize){};
 	virtual ~QualityScore();
 };
 

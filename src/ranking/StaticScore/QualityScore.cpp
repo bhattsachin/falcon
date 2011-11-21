@@ -7,12 +7,13 @@
 
 #include "QualityScore.h"
 
-QualityScore::QualityScore() {
-	// TODO Auto-generated constructor stub
-
-}
-
 QualityScore::~QualityScore() {
 	// TODO Auto-generated destructor stub
+}
+
+float QualityScore::getScore(){
+	// TODO return quality score of a wiki file
+	this->staticScore = QualityScore::getNumRefer() + QualityScore::getNumSection();
+	return QualityScore::staticScore;
 }
 

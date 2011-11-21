@@ -8,15 +8,18 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include subdir.mk
 -include src/utilities/subdir.mk
+-include src/retrieve/subdir.mk
+-include src/ranking/StaticScore/subdir.mk
+-include src/ranking/DynamicScore/subdir.mk
 -include src/parser/lang/en/subdir.mk
 -include src/parser/subdir.mk
 -include src/indexer/subdir.mk
--include src/subdir.mk
 -include src/extraction/fileio/subdir.mk
 -include src/extraction/subdir.mk
 -include src/controller/subdir.mk
+-include src/subdir.mk
+-include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -50,14 +53,14 @@ all: falcon
 # Tool invocations
 falcon: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: MacOS X C++ Linker'
+	@echo 'Invoking: GCC C++ Linker'
 	g++  -o "falcon" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) falcon
+	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) falcon
 	-@echo ' '
 
 .PHONY: all clean dependents
