@@ -106,7 +106,7 @@ std::string FileUtil::readFile(std::string filePath) {
 }
 
 bool FileUtil::writeFile(const char* filename, std::string text) {
-	ofstream file(filename);
+	ofstream file(filename,ios_base::app);
 	if (file.is_open()) {
 		file << text;
 		file.flush();
@@ -448,6 +448,13 @@ bool FileUtil::writeCatDictionary(const char* filename, DictionaryUtil::CatDicti
 		output += getStringValue(catList->entry[*it]) + " " + "*it" + "\n";
 	}
 	return writeFile(filename, output);
+}
+
+string FileUtil::removeExtension(string filename){
+	size_t dot = filename.find_first_of(".");
+	if(dot!=string::npos)
+		filename = filename.substr(0,dot);
+	return filename;
 }
 
 

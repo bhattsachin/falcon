@@ -244,6 +244,7 @@ void ParsingIndexingBoostController::createOutputFolders() {
 void ParsingIndexingBoostController::createSemWikiFiles(
 		BoostParser::ParsedDocument doc) {
 	string semwikitext;
+	string linkDictionary;
 	string filename;
 	string arti_name = doc.articleName.substr(
 			doc.articleName.find_last_of("/\\") + 1);
@@ -296,9 +297,11 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 
 	 */
 	semwikitext += "\n<#LINKS>\n";
+
 	BOOST_FOREACH(string t, doc.links)
 				{
 					semwikitext += t + "\n";
+					linkDictionary += util.removeExtension(arti_name) + " , " + t + "\n";
 				}
 	//for (unsigned int k = 0; k < semwiki.wikiInternLink.size(); k++) {
 	//	semwikitext += semwiki.wikiInternLink.at(k) + "\n";
@@ -326,6 +329,11 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 	filename = (string) "OUTPUT/SemWiki/" + util.getFileNameFromPath(
 			doc.articleName) + (string) " _semwiki_meta.txt";
 	util.writeFile(filename.c_str(), semwikitext);
+
+
+	//write Link Repository
+	string linkFileName = "OUTPUT/dictionary/LinkPairRepository.txt";
+	util.writeFile(linkFileName.c_str(),linkDictionary);
 
 }
 

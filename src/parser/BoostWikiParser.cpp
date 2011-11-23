@@ -97,7 +97,7 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 
 		//links internal
 
-		regex expr_links("(<ref name=)((?:[a-zA-Z0-9][a-zA-Z0-9]+))(/>)");
+		regex expr_links("(\\[\\[)((?:[A-Za-z0-9()\\s+:'][A-Za-z0-9()\\s+:']+))");
 		start = inputText.begin();
 		end = inputText.end();
 		while (boost::regex_search(start, end, what, expr_links, flags)) {
@@ -106,8 +106,9 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 			start = what[0].second;
 		}
 
-		//external links
+		//external links: uncomment if required
 
+		/**
 		regex expr_http("(http:\\/.*?)(((?:\\/[\\w\\.\\-]+)+))");
 		start = inputText.begin();
 		end = inputText.end();
@@ -115,6 +116,8 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 			doc.links.push_back(what[1] + what[2]);
 			start = what[0].second;
 		}
+
+		*/
 
 		//fetch category
 
