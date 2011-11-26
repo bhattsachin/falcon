@@ -222,7 +222,7 @@ vector<string> ParsingIndexingBoostController::parseFile(
 	 * if this is wiki document create semwiki file
 	 */
 	if (doc.type.compare("wiki") == 0) {
-		createSemWikiFiles(pdoc);
+		createSemWikiFiles(pdoc, doc.id);
 	}
 
 	return tmp;
@@ -242,7 +242,11 @@ void ParsingIndexingBoostController::createOutputFolders() {
 }
 
 void ParsingIndexingBoostController::createSemWikiFiles(
-		BoostParser::ParsedDocument doc) {
+		BoostParser::ParsedDocument doc, size_t docId) {
+
+	vector<string> fwrdIndexTerms;
+	vector<int> fwrdIndexParts;
+
 	string semwikitext;
 	string linkDictionary;
 	string filename;
@@ -250,33 +254,36 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 			doc.articleName.find_last_of("/\\") + 1);
 	semwikitext += "<#ARTICAL NAME>\n" + arti_name + "\n";
 	vector<string> arti_namev;
-	//arti_namev.push_back(arti_name);
-	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),arti_namev.begin(),arti_namev.end());
-	//fwrdIndexParts.push_back(1);
+	arti_namev.push_back(arti_name);
+	fwrdIndexTerms.insert(fwrdIndexTerms.end(),arti_namev.begin(),arti_namev.end());
+	fwrdIndexParts.push_back(1);
 	semwikitext += "<#AUTHOR>\n" + doc.author + "\n";
-	//size_t authorId = dictUtil.getAuthorDictionaryAuthorId(semwiki.wikiAuthor);
-	//vector<string> authorv;
-	//authorv.push_back(semwiki.wikiAuthor);
-	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),authorv.begin(),authorv.end());
-	//fwrdIndexParts.push_back(2);
+	size_t authorId = dictUtil.getAuthorDictionaryAuthorId(doc.author);
+	vector<string> authorv;
+	authorv.push_back(doc.author);
+	fwrdIndexTerms.insert(fwrdIndexTerms.end(),authorv.begin(),authorv.end());
+	fwrdIndexParts.push_back(2);
 	semwikitext += "<#TIMESTAMP>\n" + doc.timestamp + "\n";
-	//vector<string> timestampv;
-	//timestampv.push_back(semwiki.wikiTimeStamp);
-	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),timestampv.begin(),timestampv.end());
-	//fwrdIndexParts.push_back(3);
+	vector<string> timestampv;
+	timestampv.push_back(doc.timestamp);
+	fwrdIndexTerms.insert(fwrdIndexTerms.end(),timestampv.begin(),timestampv.end());
+	fwrdIndexParts.push_back(3);
 	semwikitext += "<#INFOBOX>\n";
 	BOOST_FOREACH(string t, doc.infobox)
 				{
 					semwikitext += t + "$";
 				}
 
-	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),semwiki.wikiInfobox.begin(),semwiki.wikiInfobox.end());
-	//vector<int> infoboxId(semwiki.wikiInfobox.size(),4);
-	//fwrdIndexParts.insert(fwrdIndexParts.end(), infoboxId.begin(),infoboxId.end());
+	fwrdIndexTerms.insert(fwrdIndexTerms.end(),doc.infobox.begin(),doc.infobox.end());
+	vector<int> infoboxId(doc.infobox.size(),4);
+	fwrdIndexParts.insert(fwrdIndexParts.end(), infoboxId.begin(),infoboxId.end());
 	semwikitext += "\n<#SECTIONS>\n";
 
 	BOOST_FOREACH(vector<string> subsec, doc.sections)
 				{
+					fwrdIndexTerms.insert(fwrdIndexTerms.end(),subsec.begin(),subsec.end());
+					vector<int> sectionId(subsec.size(),5);
+					fwrdIndexParts.insert(fwrdIndexParts.end(), sectionId.begin(),sectionId.end());
 					BOOST_FOREACH(string t, subsec)
 								{
 									semwikitext += t + " ";
@@ -285,45 +292,27 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 
 				}
 
-	/**
-	 for (unsigned int k = 0; k < semwiki.wikiSection.size(); k++) {
-	 semwikitext += semwiki.wikiSection.at(k) + "\n";
-	 vector<string> tempV;
-	 tempV=ptp->plainParseProcStr(semwiki.wikiSection.at(k));
-	 fwrdIndexTerms.insert(fwrdIndexTerms.end(),tempV.begin(),tempV.end());
-	 vector<int> sectionId(tempV.size(),5);
-	 fwrdIndexParts.insert(fwrdIndexParts.end(), sectionId.begin(),sectionId.end());
-	 }
-
-	 */
 	semwikitext += "\n<#LINKS>\n";
-
 	BOOST_FOREACH(string t, doc.links)
 				{
 					semwikitext += t + "\n";
 					linkDictionary += util.removeExtension(arti_name) + " , " + t + "\n";
 				}
-	//for (unsigned int k = 0; k < semwiki.wikiInternLink.size(); k++) {
-	//	semwikitext += semwiki.wikiInternLink.at(k) + "\n";
-	//}
-	//fwrdIndexTerms.insert(fwrdIndexTerms.end(), semwiki.wikiInternLink.begin(), semwiki.wikiInternLink.end());
-	//vector<int> InternLinkId(semwiki.wikiInternLink.size(),6);
-	//fwrdIndexParts.insert(fwrdIndexParts.end(), InternLinkId.begin(),InternLinkId.end());
+	fwrdIndexTerms.insert(fwrdIndexTerms.end(), doc.links.begin(), doc.links.end());
+	vector<int> InternLinkId(doc.links.size(),6);
+	fwrdIndexParts.insert(fwrdIndexParts.end(), InternLinkId.begin(),InternLinkId.end());
+
 	semwikitext += "\n<#CATEGORY>\n";
 	BOOST_FOREACH(string t, doc.category)
 				{
 					semwikitext += t + "\n";
 				}
-	//for (unsigned int k = 0; k < semwiki.wikiCategory.size(); k++) {
-	//	semwikitext += semwiki.wikiCategory.at(k) + "\n";
-	//	size_t catId = dictUtil.getCatDictionaryCatId(semwiki.wikiCategory.at(k));
-	//}
-	//fwrdIndexTerms.insert(fwrdIndexTerms.end(), semwiki.wikiCategory.begin(), semwiki.wikiCategory.end());
-	//vector<int> wikiCatId(semwiki.wikiCategory.size(),7);
-	//fwrdIndexParts.insert(fwrdIndexParts.end(), wikiCatId.begin(),wikiCatId.end());
+	fwrdIndexTerms.insert(fwrdIndexTerms.end(), doc.category.begin(), doc.category.end());
+	vector<int> wikiCatId(doc.category.size(),7);
+	fwrdIndexParts.insert(fwrdIndexParts.end(), wikiCatId.begin(),wikiCatId.end());
 	// write to forward index
 	//	added: Zhiliang Su, Oct292011
-	//writeFwrdIndex(doc.id, fwrdIndexTerms, fwrdIndexParts);
+	writeFwrdIndex(docId, fwrdIndexTerms, fwrdIndexParts);
 
 	// write to semwiki file
 	filename = (string) "OUTPUT/SemWiki/" + util.getFileNameFromPath(

@@ -3,7 +3,7 @@
 #ifndef __okapi_h__
 #define __okapi_h__
 
-#include "../utilities/Library.h"
+#include "../../utilities/Library.h"
 
 using std::list;
 

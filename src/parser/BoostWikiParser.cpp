@@ -48,67 +48,77 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 	//parsing content
 
 	string::const_iterator start, end;
-		boost::match_results<std::string::const_iterator> what;
-		boost::match_flag_type flags = boost::match_default;
+	boost::match_results<std::string::const_iterator> what;
+	boost::match_flag_type flags = boost::match_default;
 
-		//fetch author
-		regex expr_author("(<<Author>>:)(.*?)(<<)");
-		start = inputText.begin();
-		end = inputText.end();
-		boost::regex_search(start, end, what, expr_author, flags);
-		doc.author = what[2];
+	//fetch author
+	regex expr_author("(<<Author>>:)(.*?)(<<)");
+	start = inputText.begin();
+	end = inputText.end();
+	boost::regex_search(start, end, what, expr_author, flags);
+	doc.author = what[2];
 
-		//timestamp
+	//timestamp
 
-		regex expr_timestamp("(<<Timestamp>>:)(.*?)(<<)");
-		start = inputText.begin();
-		end = inputText.end();
-		regex_search(start, end, what, expr_timestamp, flags);
-		doc.timestamp = what[2];
+	regex expr_timestamp("(<<Timestamp>>:)(.*?)(<<)");
+	start = inputText.begin();
+	end = inputText.end();
+	regex_search(start, end, what, expr_timestamp, flags);
+	doc.timestamp = what[2];
 
-		//infobox
+	//infobox
 
-		regex expr_infobox("(\\{\\{Infobox)(.*?)(\\}\\})");
-		start = inputText.begin();
-		end = inputText.end();
-		regex_search(start, end, what, expr_infobox, flags);
-		string infobox = what[2];
-		regex expr_metaInfo("(\\|).*?(=\\s+)");
-		//Removing meta characters
-		infobox = regex_replace(infobox, expr_metaInfo, replacement,
-				boost::match_default | boost::format_sed);
-		doc.infobox = parse(infobox);
+	regex expr_infobox("(\\{\\{Infobox)(.*?)(\\}\\})");
+	start = inputText.begin();
+	end = inputText.end();
+	regex_search(start, end, what, expr_infobox, flags);
+	string infobox = what[2];
+	regex expr_metaInfo("(\\|).*?(=\\s+)");
+	//Removing meta characters
+	infobox = regex_replace(infobox, expr_metaInfo, replacement,
+			boost::match_default | boost::format_sed);
+	doc.infobox = parse(infobox);
 
-		/**
-		 * This block smells. inspect it
-		 */
+	/**
+	 * This block smells. inspect it
+	 */
 
-		//sections
-		regex expr_wikisection(
-				"(==)(.*?)(==)(\\s+)((?:[A-Za-z0-9][a-zA-Z0-9]+))(.*?)(==)");
-		start = inputText.begin();
-		end = inputText.end();
-		vector<vector<string> > section;
-		while (boost::regex_search(start, end, what, expr_wikisection, flags)) {
-			section.push_back(parse(what[2] + " " + what[5]));
-			start = what[5].second;
-		}
-		doc.sections = section;
+	//sections
+	regex expr_wikisection(
+			"(==)(.*?)(==)(\\s+)((?:[A-Za-z0-9][a-zA-Z0-9]+))(.*?)(==)");
+	start = inputText.begin();
+	end = inputText.end();
+	vector<vector<string> > section;
+	while (boost::regex_search(start, end, what, expr_wikisection, flags)) {
+		section.push_back(parse(what[2] + " " + what[5]));
+		start = what[5].second;
+	}
+	doc.sections = section;
 
-		//links internal
+	//links internal
 
-		regex expr_links("(\\[\\[)((?:[A-Za-z0-9()\\s+:'][A-Za-z0-9()\\s+:']+))");
-		start = inputText.begin();
-		end = inputText.end();
-		while (boost::regex_search(start, end, what, expr_links, flags)) {
-			doc.links.push_back(what[2]);
+	regex expr_links("(\\[\\[)((?:[A-Za-z0-9()\\s+:'][A-Za-z0-9()\\s+:']+))");
+	start = inputText.begin();
+	end = inputText.end();
+	while (boost::regex_search(start, end, what, expr_links, flags)) {
+		doc.links.push_back(what[2]);
 
-			start = what[0].second;
-		}
+		start = what[0].second;
+	}
 
-		//external links: uncomment if required
 
-		/**
+	//reference counter
+	regex expr_ref("(<ref\\s+)");
+	start = inputText.begin();
+	end = inputText.end();
+	while (boost::regex_search(start, end, what, expr_ref, flags)) {
+		doc.refCounter++;
+		start = what[0].second;
+	}
+
+	//external links: uncomment if required
+
+	/**
 		regex expr_http("(http:\\/.*?)(((?:\\/[\\w\\.\\-]+)+))");
 		start = inputText.begin();
 		end = inputText.end();
@@ -117,17 +127,17 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 			start = what[0].second;
 		}
 
-		*/
+	 */
 
-		//fetch category
+	//fetch category
 
-		regex expr_category("(\\[\\[Category:)(.*?)(\\]\\])");
-		start = inputText.begin();
-		end = inputText.end();
-		while (boost::regex_search(start, end, what, expr_category, flags)) {
-			doc.category.push_back(what[2]);
-			start = what[0].second;
-		}
+	regex expr_category("(\\[\\[Category:)(.*?)(\\]\\])");
+	start = inputText.begin();
+	end = inputText.end();
+	while (boost::regex_search(start, end, what, expr_category, flags)) {
+		doc.category.push_back(what[2]);
+		start = what[0].second;
+	}
 
 
 	//content parsing over
