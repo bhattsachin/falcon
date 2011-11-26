@@ -13,6 +13,7 @@ class QualityScore : public ScoreBase {
 public:
 	QualityScore(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize) : ScoreBase(ifsPtrList, offset, barrelSize){};
 	virtual ~QualityScore();
+	virtual float getScore();
 };
 
 #endif /* QUALITYSCORE_H_ */

@@ -37,21 +37,22 @@ void ScoreBase::setFileId(size_t fileId){
 
     // store results
     this->refCount = atoi(itMatchRef->str().c_str());
-    vector<string> body;
+
     for(; itMatchBody!=itMatchEnd; ++itMatchBody){
-    	body.push_back(itMatchBody->str());
-		vector<string> tokens;
-		boost::split(tokens, *it, boost::is_any_of(", |"),token_compress_on);
-		if (tokens.at(2) == "7"){
-			this->categoryList.push_back(str2sizet(tokens.at(1)));
-		} else if(tokens.at(2) == "5"){
-			this->sectCount++;
-			this->contentList.push_back(str2sizet(tokens.at(1)));
-		} else {
-			this->contentList.push_back(str2sizet(tokens.at(1)));
-		}
+    	vector<string> tokens;
+    	string temp = itMatchBody->str();
+    	boost::split(tokens, temp, is_any_of(" ,|"), token_compress_on);
+    	if (tokens.at(2) == "7"){
+    		this->categoryList.push_back(str2sizet(tokens.at(1)));
+    	} else if (tokens.at(2) == "5"){
+    		this->sectCount++;
+    		this->contentList.push_back(str2sizet(tokens.at(1)));
+    	} else {
+    		this->contentList.push_back(str2sizet(tokens.at(1)));
+    	}
     }
 }
+
 
 void ScoreBase::fetchFwrdIndx(){
 	// TODO fetch the forward index in forward index barrels according to the 'fileId' given and the offset kept in memory.
@@ -82,7 +83,7 @@ vector<size_t> ScoreBase::getWikiBody(){
 	return this->contentList;
 }
 
-vector<size_t> ScoreBase::getCatList(vector<string> body){
+vector<size_t> ScoreBase::getCatList(){
 	//TODO get the category list(as their id in 'Category dictionary') of a wiki file.
 	return this->categoryList;
 }

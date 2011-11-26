@@ -8,13 +8,13 @@
 #ifndef SCOREBASE_H_
 #define SCOREBASE_H_
 
-#include <vector>
+
 #include <string>
 #include <fstream>
 #include <math.h>	// for floor
 #include <boost/regex.hpp>
 #include <sstream>
-
+#include <vector>
 #include <boost/algorithm/string.hpp> // for split
 #include <stdlib.h> // for atoi
 
@@ -26,13 +26,13 @@ public:
 	virtual ~ScoreBase();
 	void setFileId(size_t fileId);
 	// getters
-	float getScore();
+	virtual float getScore();
 	int getNumSection();
 	int getNumRefer();
 	vector<size_t> getCatList();
 	vector<size_t> getWikiBody();
 
-private:
+protected:
 	// private vars
 	vector<ifstream*> ifsPtrList;
 	size_t offset;

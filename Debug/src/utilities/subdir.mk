@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../src/utilities/ConfigFile.cpp \
 ../src/utilities/ConfigHelper.cpp \
 ../src/utilities/DictionaryUtil.cpp \
+../src/utilities/FalconWebServer.cpp \
 ../src/utilities/FileUtil.cpp \
 ../src/utilities/IDGenerator.cpp \
 ../src/utilities/TextUtil.cpp \
@@ -18,6 +19,7 @@ OBJS += \
 ./src/utilities/ConfigFile.o \
 ./src/utilities/ConfigHelper.o \
 ./src/utilities/DictionaryUtil.o \
+./src/utilities/FalconWebServer.o \
 ./src/utilities/FileUtil.o \
 ./src/utilities/IDGenerator.o \
 ./src/utilities/TextUtil.o \
@@ -28,6 +30,7 @@ CPP_DEPS += \
 ./src/utilities/ConfigFile.d \
 ./src/utilities/ConfigHelper.d \
 ./src/utilities/DictionaryUtil.d \
+./src/utilities/FalconWebServer.d \
 ./src/utilities/FileUtil.d \
 ./src/utilities/IDGenerator.d \
 ./src/utilities/TextUtil.d \
