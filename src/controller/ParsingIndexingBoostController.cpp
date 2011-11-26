@@ -314,6 +314,9 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 	//	added: Zhiliang Su, Oct292011
 	writeFwrdIndex(docId, fwrdIndexTerms, fwrdIndexParts);
 
+	//	added: su, nov262011, to compute statistic scores on the fly when parsing the wikifile
+
+
 	// write to semwiki file
 	filename = (string) "OUTPUT/SemWiki/" + util.getFileNameFromPath(
 			doc.articleName) + (string) " _semwiki_meta.txt";
@@ -377,5 +380,8 @@ void ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
 
 	// use FwrdIndexer to write to file.(FwrdIndexer should maintain the barrel informations too, which we don't care now)
 	fwrdindexer.writeFwrdIndex(docId, termFreq, termId, parts);
+
+
+
 }
 

@@ -13,46 +13,40 @@
 #include <string>
 #include <fstream>
 #include <math.h>	// for floor
-#include <boost/regex.hpp>
+//#include <boost/regex.hpp>
 #include <sstream>
 #include <vector>
-#include <boost/algorithm/string.hpp> // for split
+//#include <boost/algorithm/string.hpp> // for split
 #include <stdlib.h> // for atoi
 
 using namespace std;
 using namespace boost;
 class ScoreBase {
 public:
-	ScoreBase(BoostParser::ParsedDocument pdoc);
-	ScoreBase(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize);
+	ScoreBase();
+	//ScoreBase(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize);
 	virtual ~ScoreBase();
-	void setFileId(size_t fileId);
+	void setFileId(BoostParser::ParsedDocument* pdoc, vector<size_t>* termId, vector<int>* parts, size_t fileId);
 	// getters
 	virtual float getScore();
 	int getNumSection();
 	int getNumRefer();
-	vector<size_t> getCatList();
-	vector<size_t> getWikiBody();
+	set<size_t> getCatList();
+	set<size_t> getWikiBody();
 
 protected:
 	// private vars
-	vector<ifstream*> ifsPtrList;
-	size_t offset;
-	size_t barrelSize;
-
-	vector<size_t> categoryList;
-	vector<size_t> contentList;
+	set<size_t> categoryList;
+	set<size_t> contentList;
 	int refCount;
 	int sectCount;
 	size_t fileId;
 	float staticScore;
-	string frwdIndxStream;
 
-	BoostParser::ParsedDocument pdoc;
+	BoostParser::ParsedDocument* pdoc;
+	vector<size_t>* termId;
+	vector<int>* parts;
 
-	// helpers
-	void fetchFwrdIndx();
-	size_t str2sizet(string);
 };
 
 #endif /* SCOREBASE_H_ */
