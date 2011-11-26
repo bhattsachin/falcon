@@ -8,6 +8,7 @@
 #ifndef SCOREBASE_H_
 #define SCOREBASE_H_
 
+#include "../../parser/BoostParser.h"
 
 #include <string>
 #include <fstream>
@@ -22,6 +23,7 @@ using namespace std;
 using namespace boost;
 class ScoreBase {
 public:
+	ScoreBase(BoostParser::ParsedDocument pdoc);
 	ScoreBase(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize);
 	virtual ~ScoreBase();
 	void setFileId(size_t fileId);
@@ -45,6 +47,8 @@ protected:
 	size_t fileId;
 	float staticScore;
 	string frwdIndxStream;
+
+	BoostParser::ParsedDocument pdoc;
 
 	// helpers
 	void fetchFwrdIndx();

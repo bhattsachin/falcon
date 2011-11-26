@@ -7,13 +7,18 @@
 
 #include "ScoreBase.h"
 
+ScoreBase::ScoreBase(BoostParser::ParsedDocument pdoc){
+	// TODO another constructor given pdoc from parsing indexing controller
+	this->pdoc = pdoc;
+}
+/**
 ScoreBase::ScoreBase(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize) {
 	// TODO Auto-generated constructor stub
 	this->ifsPtrList = ifsPtrList;
 	this->offset = offset;
 	this->barrelSize = barrelSize;
 }
-
+*/
 ScoreBase::~ScoreBase() {
 	// TODO Auto-generated destructor stub
 }
@@ -23,6 +28,10 @@ float ScoreBase::getScore(){
 	return ScoreBase::staticScore;
 }
 
+void ScoreBase::setFileId(size_t fileId){
+	// TODO set the file Id, fetch info according to the Id
+}
+/**
 void ScoreBase::setFileId(size_t fileId){
 	// TODO set the file Id and call several methods to retrieve reference/section count, content/category list and etc.
 	this->fileId = fileId;
@@ -52,7 +61,7 @@ void ScoreBase::setFileId(size_t fileId){
     	}
     }
 }
-
+*/
 
 void ScoreBase::fetchFwrdIndx(){
 	// TODO fetch the forward index in forward index barrels according to the 'fileId' given and the offset kept in memory.

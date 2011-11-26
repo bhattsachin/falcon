@@ -26,6 +26,7 @@ public:
 	vector<vector<string> > sections;
 	vector<string> links;
 	vector<string> category;
+	size_t refCounter;
 
 };
 
