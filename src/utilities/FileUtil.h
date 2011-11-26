@@ -61,6 +61,7 @@ public:
 	void mergeInvertedIndex(string pattern);
 	bool writeAuthorDictionary(const char* filename, DictionaryUtil::AuthorDictionary*);
 	bool writeCatDictionary(const char* filename, DictionaryUtil::CatDictionary*);
+	string removeExtension(string filename);
 
 
 };

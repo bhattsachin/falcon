@@ -9,24 +9,24 @@
 
 ParsingIndexingBoostController::ParsingIndexingBoostController() {
 	//TODO: remove this hard coding
-		parser_map["news"] = new BoostParser();
-		parser_map["wiki"] = new BoostWikiParser();
-		parser_map["wiki"]->init("config/stopwords.txt");
-		parser_map["news"]->init("config/stopwords.txt");
+	parser_map["news"] = new BoostParser();
+	parser_map["wiki"] = new BoostWikiParser();
+	parser_map["wiki"]->init("config/stopwords.txt");
+	parser_map["news"]->init("config/stopwords.txt");
 
-		/**
-		 * FIXME: remove hard coding & get all values from config file
-		 */
-		//a-f
-		barrel_map["000"] = new Index("000");
-		//g-k
-		barrel_map["001"] = new Index("001");
-		//l-p
-		barrel_map["002"] = new Index("002");
-		//q-v
-		barrel_map["003"] = new Index("003");
-		//w-z
-		barrel_map["004"] = new Index("004");
+	/**
+	 * FIXME: remove hard coding & get all values from config file
+	 */
+	//a-f
+	barrel_map["000"] = new Index("000");
+	//g-k
+	barrel_map["001"] = new Index("001");
+	//l-p
+	barrel_map["002"] = new Index("002");
+	//q-v
+	barrel_map["003"] = new Index("003");
+	//w-z
+	barrel_map["004"] = new Index("004");
 
 }
 
@@ -79,7 +79,6 @@ bool ParsingIndexingBoostController::configureEngine(string baseDir) {
 	 * based on type of reader from config file
 	 * TODO: to be done as minor release
 	 */
-
 
 	crawler.read(baseDir);
 	createOutputFolders();
@@ -140,7 +139,8 @@ bool ParsingIndexingBoostController::configureEngine(string baseDir) {
 		}
 	}
 
-	cout << "# unique terms:" << dictUtil.getTermDictionary()->term.size() << endl;
+	cout << "# unique terms:" << dictUtil.getTermDictionary()->term.size()
+			<< endl;
 
 	//create term dictionary using termid & write to filesystem
 	//iterate & add all text to a file using termid
@@ -152,9 +152,9 @@ bool ParsingIndexingBoostController::configureEngine(string baseDir) {
 	name = "OUTPUT/dictionary/TermCountDictionary.txt";
 	util.writeTermDictionary(name.c_str(), dictUtil.getTermDictionary());
 	name = "OUTPUT/dictionary/AuthorDictionary.txt";
-    util.writeAuthorDictionary(name.c_str(), dictUtil.getAuthorDictionary());
-    name = "OUTPUT/dictionary/CatDictionary.txt";
-    util.writeCatDictionary(name.c_str(), dictUtil.getCatDictionary());
+	util.writeAuthorDictionary(name.c_str(), dictUtil.getAuthorDictionary());
+	name = "OUTPUT/dictionary/CatDictionary.txt";
+	util.writeCatDictionary(name.c_str(), dictUtil.getCatDictionary());
 	/**
 	 * create a term frequency counter dictionary
 	 * expensive block :(
@@ -166,34 +166,36 @@ bool ParsingIndexingBoostController::configureEngine(string baseDir) {
 	return true;
 }
 
-map<string,size_t> ParsingIndexingBoostController::countFrequency(vector<string> lst){
-	map<string,size_t> count;
+map<string, size_t> ParsingIndexingBoostController::countFrequency(
+		vector<string> lst) {
+	map<string, size_t> count;
 
-	for(size_t m=0;m<lst.size();m++){
-			if(count.find(lst.at(m))!=count.end()){
-				count.find(lst.at(m))->second = count.find(lst.at(m))->second + 1;
+	for (size_t m = 0; m < lst.size(); m++) {
+		if (count.find(lst.at(m)) != count.end()) {
+			count.find(lst.at(m))->second = count.find(lst.at(m))->second + 1;
 
-			}else{
-				count.insert(pair<string,size_t>(lst.at(m),1));
-			}
+		} else {
+			count.insert(pair<string, size_t> (lst.at(m), 1));
+		}
 	}
 
 	return count;
 
 }
 
-void ParsingIndexingBoostController::indexFile(size_t fileId, vector<string> terms) {
+void ParsingIndexingBoostController::indexFile(size_t fileId,
+		vector<string> terms) {
 
 	Index* barrel;
 	string word;
 	size_t term;
 	vector<size_t> termIds;
 	string val;
-	map<string,size_t> count = countFrequency(terms);
+	map<string, size_t> count = countFrequency(terms);
 	map<string, size_t>::iterator iter;
 
-	for(iter = count.begin();iter!=count.end();iter++){
-		val="";
+	for (iter = count.begin(); iter != count.end(); iter++) {
+		val = "";
 		word = iter->first;
 		barrel = barrel_map[getBarrel(word)];
 		term = dictUtil.getTermDictionaryTermId(word);
@@ -204,22 +206,25 @@ void ParsingIndexingBoostController::indexFile(size_t fileId, vector<string> ter
 		indexer.buildIndex(barrel, val, term);
 	}
 
-
-
-
-
 }
 
-
-
-
-vector<string> ParsingIndexingBoostController::parseFile(DocumentQueue::Document doc) {
+vector<string> ParsingIndexingBoostController::parseFile(
+		DocumentQueue::Document doc) {
 	BoostParser* parser;
+	BoostParser::ParsedDocument pdoc;
 	string semwikitext;
 	vector<string> tmp;
 	string filename;
 	parser = parser_map[doc.type];
-	tmp = parser->parseFile(doc.path);
+	pdoc = parser->parseFile(doc.path);
+	tmp = pdoc.tokens;
+	/**
+	 * if this is wiki document create semwiki file
+	 */
+	if (doc.type.compare("wiki") == 0) {
+		createSemWikiFiles(pdoc);
+	}
+
 	return tmp;
 }
 
@@ -236,16 +241,113 @@ void ParsingIndexingBoostController::createOutputFolders() {
 	util.createFolder(folderName.c_str());
 }
 
-void ParsingIndexingBoostController::writeFwrdIndex(size_t docId, vector<string> terms, vector<int> parts){
+void ParsingIndexingBoostController::createSemWikiFiles(
+		BoostParser::ParsedDocument doc) {
+	string semwikitext;
+	string linkDictionary;
+	string filename;
+	string arti_name = doc.articleName.substr(
+			doc.articleName.find_last_of("/\\") + 1);
+	semwikitext += "<#ARTICAL NAME>\n" + arti_name + "\n";
+	vector<string> arti_namev;
+	//arti_namev.push_back(arti_name);
+	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),arti_namev.begin(),arti_namev.end());
+	//fwrdIndexParts.push_back(1);
+	semwikitext += "<#AUTHOR>\n" + doc.author + "\n";
+	//size_t authorId = dictUtil.getAuthorDictionaryAuthorId(semwiki.wikiAuthor);
+	//vector<string> authorv;
+	//authorv.push_back(semwiki.wikiAuthor);
+	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),authorv.begin(),authorv.end());
+	//fwrdIndexParts.push_back(2);
+	semwikitext += "<#TIMESTAMP>\n" + doc.timestamp + "\n";
+	//vector<string> timestampv;
+	//timestampv.push_back(semwiki.wikiTimeStamp);
+	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),timestampv.begin(),timestampv.end());
+	//fwrdIndexParts.push_back(3);
+	semwikitext += "<#INFOBOX>\n";
+	BOOST_FOREACH(string t, doc.infobox)
+				{
+					semwikitext += t + "$";
+				}
+
+	//fwrdIndexTerms.insert(fwrdIndexTerms.end(),semwiki.wikiInfobox.begin(),semwiki.wikiInfobox.end());
+	//vector<int> infoboxId(semwiki.wikiInfobox.size(),4);
+	//fwrdIndexParts.insert(fwrdIndexParts.end(), infoboxId.begin(),infoboxId.end());
+	semwikitext += "\n<#SECTIONS>\n";
+
+	BOOST_FOREACH(vector<string> subsec, doc.sections)
+				{
+					BOOST_FOREACH(string t, subsec)
+								{
+									semwikitext += t + " ";
+								}
+					semwikitext += "\n";
+
+				}
+
+	/**
+	 for (unsigned int k = 0; k < semwiki.wikiSection.size(); k++) {
+	 semwikitext += semwiki.wikiSection.at(k) + "\n";
+	 vector<string> tempV;
+	 tempV=ptp->plainParseProcStr(semwiki.wikiSection.at(k));
+	 fwrdIndexTerms.insert(fwrdIndexTerms.end(),tempV.begin(),tempV.end());
+	 vector<int> sectionId(tempV.size(),5);
+	 fwrdIndexParts.insert(fwrdIndexParts.end(), sectionId.begin(),sectionId.end());
+	 }
+
+	 */
+	semwikitext += "\n<#LINKS>\n";
+
+	BOOST_FOREACH(string t, doc.links)
+				{
+					semwikitext += t + "\n";
+					linkDictionary += util.removeExtension(arti_name) + " , " + t + "\n";
+				}
+	//for (unsigned int k = 0; k < semwiki.wikiInternLink.size(); k++) {
+	//	semwikitext += semwiki.wikiInternLink.at(k) + "\n";
+	//}
+	//fwrdIndexTerms.insert(fwrdIndexTerms.end(), semwiki.wikiInternLink.begin(), semwiki.wikiInternLink.end());
+	//vector<int> InternLinkId(semwiki.wikiInternLink.size(),6);
+	//fwrdIndexParts.insert(fwrdIndexParts.end(), InternLinkId.begin(),InternLinkId.end());
+	semwikitext += "\n<#CATEGORY>\n";
+	BOOST_FOREACH(string t, doc.category)
+				{
+					semwikitext += t + "\n";
+				}
+	//for (unsigned int k = 0; k < semwiki.wikiCategory.size(); k++) {
+	//	semwikitext += semwiki.wikiCategory.at(k) + "\n";
+	//	size_t catId = dictUtil.getCatDictionaryCatId(semwiki.wikiCategory.at(k));
+	//}
+	//fwrdIndexTerms.insert(fwrdIndexTerms.end(), semwiki.wikiCategory.begin(), semwiki.wikiCategory.end());
+	//vector<int> wikiCatId(semwiki.wikiCategory.size(),7);
+	//fwrdIndexParts.insert(fwrdIndexParts.end(), wikiCatId.begin(),wikiCatId.end());
+	// write to forward index
+	//	added: Zhiliang Su, Oct292011
+	//writeFwrdIndex(doc.id, fwrdIndexTerms, fwrdIndexParts);
+
+	// write to semwiki file
+	filename = (string) "OUTPUT/SemWiki/" + util.getFileNameFromPath(
+			doc.articleName) + (string) " _semwiki_meta.txt";
+	util.writeFile(filename.c_str(), semwikitext);
+
+
+	//write Link Repository
+	string linkFileName = "OUTPUT/dictionary/LinkPairRepository.txt";
+	util.writeFile(linkFileName.c_str(),linkDictionary);
+
+}
+
+void ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
+		vector<string> terms, vector<int> parts) {
 	// TODO private function to write forward index
 	vector<size_t> termId;
 	vector<string>::iterator itTerms;
 
 	// get term IDs
-	for (size_t i = 0; i<terms.size(); i++){
+	for (size_t i = 0; i < terms.size(); i++) {
 		// moded: Oct31, 2011 by Su
 		//termId.push_back(dictUtil.getTermDictionaryTermId(*itTerms));
-		switch (parts.at(i)){
+		switch (parts.at(i)) {
 		case 1://Article name
 			termId.push_back(dictUtil.getTermDictionaryTermId(terms.at(i)));
 			break;
@@ -274,10 +376,12 @@ void ParsingIndexingBoostController::writeFwrdIndex(size_t docId, vector<string>
 	vector<size_t> termFreq;
 	vector<size_t>::iterator itTermIda;
 	vector<size_t>::iterator itTermIdb;
-	for (itTermIda=termId.begin(); itTermIda!=termId.end(); itTermIda++){
-		size_t tempCount=0;
-		for (itTermIdb=termId.begin(); itTermIdb!=termId.end(); itTermIdb++){
-			if (*itTermIda == *itTermIdb){tempCount++;}
+	for (itTermIda = termId.begin(); itTermIda != termId.end(); itTermIda++) {
+		size_t tempCount = 0;
+		for (itTermIdb = termId.begin(); itTermIdb != termId.end(); itTermIdb++) {
+			if (*itTermIda == *itTermIdb) {
+				tempCount++;
+			}
 		}
 		termFreq.push_back(tempCount);
 	}

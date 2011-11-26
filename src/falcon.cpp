@@ -14,6 +14,7 @@
 #include "utilities/Util.h"
 #include "utilities/FileUtil.h"
 #include "utilities/CommandLine.h"
+#include "utilities/FalconWebServer.h"
 #include "controller/ParsingIndexingBoostController.h"
 #include "parser/lang/en/PositionalTextParser.h"
 using namespace std;
@@ -21,6 +22,7 @@ using namespace std;
 string BATCH_MODE = "-r";
 string INTERACTIVE_MODE = "-s";
 string INDEXING_MODE = "-i";
+string WEB_MODE = "-w";
 
 
 int main(int argc, char** argv) {
@@ -68,7 +70,11 @@ int main(int argc, char** argv) {
 		//read from batch query & print here
 		cout << cl.runQuery("President") << endl;
 		cout << "Total time taken for execution:" << diff << " seconds" << endl;
-	} else {
+	}else if (WEB_MODE.compare(argv[1]) == 0) {
+		cout << "Indexed loaded in " << diff << " seconds." << endl;
+		run();
+
+	} else  {
 		//this is default indexing mode.
 		//we do nothing here
 		time(&end);
