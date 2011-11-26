@@ -87,6 +87,10 @@ bool ParsingIndexingBoostController::configureEngine(string baseDir) {
 	string outputFolder = "OUTPUT/fwd_index";
 	fwrdindexer.init(outputFolder);
 
+	// added by Su, to initialize the score writer
+	scoreWriter_quality.init("OUTPUT/static_score/quality_score.txt");
+	scoreWriter_prof.init("OUTPUT/static_score/professional_score.txt");
+
 	/**
 	 * once file are read
 	 * parse them one by one
@@ -310,12 +314,15 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 	fwrdIndexTerms.insert(fwrdIndexTerms.end(), doc.category.begin(), doc.category.end());
 	vector<int> wikiCatId(doc.category.size(),7);
 	fwrdIndexParts.insert(fwrdIndexParts.end(), wikiCatId.begin(),wikiCatId.end());
+
 	// write to forward index
-	//	added: Zhiliang Su, Oct292011
-	writeFwrdIndex(docId, fwrdIndexTerms, fwrdIndexParts);
+	vector<size_t> termId = writeFwrdIndex(docId, fwrdIndexTerms, fwrdIndexParts);
 
-	//	added: su, nov262011, to compute statistic scores on the fly when parsing the wikifile
-
+	// compute static score and write to file
+	qualiScore.setFileId(&doc, &termId, &fwrdIndexParts, docId);
+	profScore.setFileId(&doc, &termId, &fwrdIndexParts, docId);
+	scoreWriter_quality.writeScoreFile(docId, qualiScore.getScore());
+	scoreWriter_prof.writeScoreFile(docId, profScore.getScore());
 
 	// write to semwiki file
 	filename = (string) "OUTPUT/SemWiki/" + util.getFileNameFromPath(
@@ -329,7 +336,7 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 
 }
 
-void ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
+vector<size_t> ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
 		vector<string> terms, vector<int> parts) {
 	// TODO private function to write forward index
 	vector<size_t> termId;
@@ -381,7 +388,6 @@ void ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
 	// use FwrdIndexer to write to file.(FwrdIndexer should maintain the barrel informations too, which we don't care now)
 	fwrdindexer.writeFwrdIndex(docId, termFreq, termId, parts);
 
-
-
+	return termId;
 }
 

@@ -48,7 +48,9 @@ public:
 	bool writeDictionary(const char* filename, vector<DocumentQueue::Document> *dictionary);
 	bool writeDictionary(const char* filename, vector<DocumentQueue::FrequencyDictionary> dictionary);
 	string findDocumentName(string path);
-	string getStringValue(unsigned int value);
+	string getStringValue(size_t value);
+	string getStringValue(float value);
+	string getStringValue(int value);
 	bool writeDictionary(const char* filename, DictionaryUtil::Dictionary* dictionary);
 	bool writeTermDictionary(const char* filename, DictionaryUtil::Dictionary* dictionary);
 	bool createFolder(const char* foldername);

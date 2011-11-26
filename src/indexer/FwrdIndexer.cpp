@@ -32,7 +32,6 @@ void FwrdIndexer::writeFwrdIndex(size_t docId, vector<size_t> termFreq, vector<s
 		content += fUtil.getStringValue(termFreq.at(i)) +","+ fUtil.getStringValue(termId.at(i)) +","+ fUtil.getStringValue(termSrc.at(i)) + "|";
 	}
 	content += '\n';
-	cout << content << endl;
 	ofs<<content;
 
 }

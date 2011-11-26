@@ -20,6 +20,9 @@
 #include "../indexer/Indexer.h"
 #include "../indexer/FwrdIndexer.h"
 #include "../utilities/ConfigFile.h"
+#include "../ranking/StaticScore/ProfScore.h"
+#include "../ranking/StaticScore/QualityScore.h"
+#include "../ranking/StaticScore/ScoreWriter.h"
 
 using namespace std;
 
@@ -34,6 +37,12 @@ class ParsingIndexingBoostController {
 	DictionaryUtil dictUtil;
 	Indexer indexer;
 	FwrdIndexer fwrdindexer;
+	// static score utility
+	QualityScore qualiScore;
+	ProfScore profScore;
+	ScoreWriter scoreWriter_quality;
+	ScoreWriter scoreWriter_prof;
+
 	map<string, Index*> barrel_map;
 
 public:
@@ -47,7 +56,7 @@ public:
 
 private:
 	void createOutputFolders();
-	void writeFwrdIndex(size_t, vector<string> , vector<int> );
+	vector<size_t> writeFwrdIndex(size_t, vector<string> , vector<int> );
 	map<string, size_t> countFrequency(vector<string> lst);
 	void createSemWikiFiles(BoostParser::ParsedDocument doc, size_t docId);
 
