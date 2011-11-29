@@ -12,19 +12,24 @@
 #include "../utilities/Library.h"
 #include "../utilities/FileUtil.h"
 #include "../utilities/DictionaryUtil.h"
+#include "../indexer/Index.h"
 
 using namespace std;
+using namespace boost;
 class InvertedIndex {
 
-	map<string, map<size_t, list<size_t> > > invertedIndexMap;
+	map<string, map<size_t, list<Index::DocIdPairTF> > > invertedIndexMap;
 	DictionaryUtil dictionary;
+
+
 
 public:
 	InvertedIndex();
 	virtual ~InvertedIndex();
 	void load();
-	map<size_t,list<size_t> > getInvertedIndex(string query);
-	list<size_t> getPostingList(string query);
+	map<size_t,list<Index::DocIdPairTF> > getInvertedIndex(string query);
+	list<Index::DocIdPairTF> getPostingList(string query);
+	size_t getTF(string term, size_t docid);
 };
 
 #endif /* INVERTEDINDEX_H_ */

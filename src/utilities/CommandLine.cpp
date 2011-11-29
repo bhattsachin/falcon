@@ -70,12 +70,20 @@ string CommandLine::runQuery(string query) {
 
 	//cout<<"----------total terms:"<<queryTerms.size()<<": term:"<<queryTerms.at(0)<<endl;
 
+	list<Index::DocIdPairTF> rawPostings;
+	list<size_t> intermediate_post;
+
 	vector<list<size_t> > postingList;
 	//cout<<"query term size:"<<queryTerms.size()<<endl;
 	if(queryTerms.size()>0){
 	for (size_t j = 0; j < queryTerms.size(); j++) {
 		//cout<<"query parser returns::"<<queryTerms.at(j)<<endl;
-		postingList.push_back(idex.getPostingList(queryTerms.at(j)));
+		rawPostings = idex.getPostingList(queryTerms.at(j));
+		BOOST_FOREACH(Index::DocIdPairTF t, rawPostings){
+			intermediate_post.push_back(t.docid);
+		}
+
+		postingList.push_back(intermediate_post);
 	}
 	}
 
