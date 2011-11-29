@@ -96,12 +96,16 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 	doc.sections = section;
 
 	//links internal
-
+	string txt;
 	regex expr_links("(\\[\\[)((?:[A-Za-z0-9()\\s+:'][A-Za-z0-9()\\s+:']+))");
+	regex expr_space("(\\s+)");
 	start = inputText.begin();
 	end = inputText.end();
 	while (boost::regex_search(start, end, what, expr_links, flags)) {
-		doc.links.push_back(what[2]);
+		txt = boost::(what[2]);
+		txt = regex_replace(txt, expr_space, "_",
+					boost::match_default | boost::format_sed);
+		doc.links.push_back(txt);
 
 		start = what[0].second;
 	}
