@@ -25,6 +25,7 @@ string INDEXING_MODE = "-i";
 string WEB_MODE = "-w";
 
 
+
 int main(int argc, char** argv) {
 	time_t start, end;
 	double diff;

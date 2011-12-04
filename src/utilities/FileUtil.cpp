@@ -9,6 +9,7 @@
 #include "Library.h"
 #include "IDGenerator.h"
 #include <boost/foreach.hpp>
+#include <fstream>
 #include <boost/algorithm/string.hpp>
 
 FileUtil::FileUtil() {
@@ -564,4 +565,62 @@ int main() {
 
 */
 
+
+/**
+int main(){
+
+	cout<<"here we are"<<endl;
+
+	FileUtil util;
+
+
+	vector<string> indexList;
+	//read all the files in the given folder
+	indexList = util.getAllFileList("OUTPUT/inv_index", indexList);
+
+	vector<string> barrelList;
+
+	for (int i = 0; i < indexList.size(); i++) {
+		if (indexList.at(i).find("000") != string::npos) {
+			barrelList.push_back(indexList.at(i));
+		}
+	}
+
+	cout<<"barrel size:"<<barrelList.size()<<endl;
+	//vector<FILE *> ifs;
+	vector<ofstream> ifs;
+	//ofstream *ifo;
+	for(size_t k=0;k<barrelList.size();k++){
+		//ifo = fopen(barrelList.at(k).c_str(),"rb");
+		//ifo.open(.c_str,ifstream::in);
+		//ifs.push_back(ifo);
+		ofstream ifo(barrelList.at(k).c_str(),ios::in);
+		//ifs.push_back(ifo);
+
+
+	}
+
+	string line;
+	map<string, ofstream> m_os;
+	for(size_t k=0;k<barrelList.size();k++){
+			//getline(ifs.at(k), line);
+			//cout<<line<<endl;
+		ofstream p_of(barrelList.at(k).c_str(), ios::app );
+		m_os[k] = p_of;
+
+	}
+
+
+
+
+
+//	ifstream ifs(filePath.c_str());
+//		if (ifs.is_open()) {
+//			while (!ifs.eof()) {
+//				getline(ifs, line);
+
+
+}
+
+*/
 
