@@ -32,8 +32,12 @@ int main(int argc, char** argv) {
 	//filter to test if the command line arguments are correct
 	if (!util.parseCommandLine(argc, argv)) {
 		cout
-				<< "USAGE:   /falcon [-r] <config filename> [batch query]. Or. /falcon [-s] <config filename> "
-				<< endl;
+				<< "USAGE: "<<
+				   "		./falcon [-r] <config filename> [batch query]."<< endl <<
+				   "		./falcon [-s] <config filename> [interaction query]"<< endl <<
+				   "		./falcon [-i] <config filename> [indexing mode]" << endl <<
+				   "		./falcon [-w] <config filename> [web online mode]" << endl <<
+				endl;
 		return 0;
 	}
 

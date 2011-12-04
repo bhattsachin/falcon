@@ -371,6 +371,8 @@ vector<size_t> ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
 		}
 	}
 
+	vector<size_t> termFreq(termId.size());
+	/**
 	// compute term frequency
 	vector<size_t> termFreq;
 	vector<size_t>::iterator itTermIda;
@@ -384,10 +386,13 @@ vector<size_t> ParsingIndexingBoostController::writeFwrdIndex(size_t docId,
 		}
 		termFreq.push_back(tempCount);
 	}
-
+	 */
 	// use FwrdIndexer to write to file.(FwrdIndexer should maintain the barrel informations too, which we don't care now)
 	fwrdindexer.writeFwrdIndex(docId, termFreq, termId, parts);
 
+
 	return termId;
+
+
 }
 
