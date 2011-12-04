@@ -16,6 +16,13 @@ using namespace std;
 class Index {
 
 public:
+	struct DocIdPairTF{
+			size_t docid;
+			size_t tf;
+		};
+
+
+public:
 	Index(string barrelId);
 	virtual ~Index();
 

@@ -19,6 +19,7 @@
 #include "../parser/lang/en/QueryParser.h"
 
 using namespace std;
+using namespace boost;
 class CommandLine {
 public:
 	InvertedIndex idex;

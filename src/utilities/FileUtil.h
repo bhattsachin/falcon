@@ -16,6 +16,7 @@
 #include "DictionaryUtil.h"
 
 using namespace std;
+using namespace boost;
 
 class FileUtil {
 
@@ -55,7 +56,8 @@ public:
 	bool writeTermDictionary(const char* filename, DictionaryUtil::Dictionary* dictionary);
 	bool createFolder(const char* foldername);
 	string getFileNameFromPath(string path);
-	map<size_t, list<size_t> > readNonPositionalInvertedIndex(string filepath);
+	map<size_t, list<Index::DocIdPairTF> > readNonPositionalInvertedIndex(string filepath);
+	map<size_t, list<Index::DocIdPairTF> > readInvertedIndex(string filepath);
 	list<size_t> split(const string &s, char delim);
 	list<size_t> &split(const string &s, char delim, list<size_t> &elems);
 	list<size_t> splitToGetPosting(const string &s, char delim);
@@ -64,6 +66,7 @@ public:
 	bool writeAuthorDictionary(const char* filename, DictionaryUtil::AuthorDictionary*);
 	bool writeCatDictionary(const char* filename, DictionaryUtil::CatDictionary*);
 	string removeExtension(string filename);
+	list<Index::DocIdPairTF> getPostings(string s);
 
 
 };

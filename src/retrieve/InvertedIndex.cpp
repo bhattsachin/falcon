@@ -27,7 +27,7 @@ void InvertedIndex::load(){
 
 }
 
-map<size_t,list<size_t> > InvertedIndex::getInvertedIndex(string query){
+map<size_t,list<Index::DocIdPairTF> > InvertedIndex::getInvertedIndex(string query){
 	char c = query.at(0);
 
 	c = tolower(c);
@@ -49,20 +49,33 @@ map<size_t,list<size_t> > InvertedIndex::getInvertedIndex(string query){
 
 }
 
-list<size_t> InvertedIndex::getPostingList(string query){
+list<Index::DocIdPairTF> InvertedIndex::getPostingList(string query){
 	//cout<<"query input"<<query<<endl;
-	map<size_t,list<size_t> > postingIndex = getInvertedIndex(query);
+	map<size_t,list<Index::DocIdPairTF> > postingIndex = getInvertedIndex(query);
 
 	size_t termId = dictionary.getTermDictionaryTermId(query);
 
 	//postingIndex.
 
-	list<size_t> postingList = postingIndex.at(termId); //(postingIndex.find(termId));
+	list<Index::DocIdPairTF> postingList = postingIndex.at(termId); //(postingIndex.find(termId));
 
 	//cout<<"size of posting list present for this term:"<<postingList.size()<<endl;
 
 	return postingList;
 
+}
+
+size_t InvertedIndex::getTF(string term, size_t docid){
+	list<Index::DocIdPairTF> postings = getPostingList(term);
+	size_t tf=0;
+	BOOST_FOREACH(Index::DocIdPairTF t, postings){
+		if(t.docid==docid){
+			tf = t.tf;
+			break;
+		}
+	}
+
+	return tf;
 }
 
 

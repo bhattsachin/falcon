@@ -8,6 +8,8 @@
 #include "FileUtil.h"
 #include "Library.h"
 #include "IDGenerator.h"
+#include <boost/foreach.hpp>
+#include <boost/algorithm/string.hpp>
 
 FileUtil::FileUtil() {
 	INDEX_FOLDER = "index/";
@@ -261,21 +263,21 @@ bool FileUtil::createFolder(const char* foldername) {
 /**
  * Reads inverted index of the form termid<space><docid1>|<docid2>|<docid3>......<docidn>
  */
-map<size_t, list<size_t> > FileUtil::readNonPositionalInvertedIndex(
+map<size_t, list<Index::DocIdPairTF> > FileUtil::readNonPositionalInvertedIndex(
 		string filepath) {
 	string content = "";
 	size_t termId;
 	string posting;
-	list<size_t> postinglist;
-	map<size_t, list<size_t> > index;
+	list<Index::DocIdPairTF> postinglist;
+	map<size_t, list<Index::DocIdPairTF> > index;
 	string line;
 	ifstream ifs(filepath.c_str());
 	if (ifs.is_open()) {
 		while (ifs) {
 			//cout << termId << " " << posting << endl;
 			ifs >> termId >> posting;
-			postinglist = splitToGetPosting(posting, '|');
-			index.insert(pair<size_t, list<size_t> > (termId, postinglist));
+			postinglist = getPostings(posting);
+			index.insert(pair<size_t, list<Index::DocIdPairTF> > (termId, postinglist));
 
 		}
 	} else {
@@ -287,6 +289,34 @@ map<size_t, list<size_t> > FileUtil::readNonPositionalInvertedIndex(
 
 	return index;
 }
+
+map<size_t, list<Index::DocIdPairTF> > FileUtil::readInvertedIndex(
+		string filepath) {
+	string content = "";
+	size_t termId;
+	string posting;
+	list<Index::DocIdPairTF> postinglist;
+	map<size_t, list<Index::DocIdPairTF> > index;
+	string line;
+	ifstream ifs(filepath.c_str());
+	if (ifs.is_open()) {
+		while (ifs) {
+			//cout << termId << " " << posting << endl;
+			ifs >> termId >> posting;
+			postinglist = getPostings(posting);
+			index.insert(pair<size_t, list<Index::DocIdPairTF> > (termId, postinglist));
+
+		}
+	} else {
+		cout << "Couldn't open file " << filepath << endl;
+	}
+
+	//close the stream
+	ifs.close();
+
+	return index;
+}
+
 
 list<size_t> &FileUtil::split(const string &s, char delim, list<size_t> &elems) {
 	stringstream ss(s);
@@ -316,6 +346,24 @@ list<size_t> &FileUtil::splitToGetPosting(const string &s, char delim, list<size
 list<size_t> FileUtil::splitToGetPosting(const string &s, char delim) {
 	list<size_t> elems;
 	return split(s, delim, elems);
+}
+
+list<Index::DocIdPairTF> FileUtil::getPostings(string s){
+	list<Index::DocIdPairTF> postings;
+	Index::DocIdPairTF item;
+	list<string> docs;
+	list<string> tf;
+	boost::split(docs, s, is_any_of("|"), token_compress_on);
+	BOOST_FOREACH(string t, docs){
+		boost::split(tf, t, is_any_of(","), token_compress_on);
+		item.docid = atoi(tf.front().c_str());
+		item.tf = atoi(tf.back().c_str());
+		postings.push_back(item);
+	}
+
+	return postings;
+
+
 }
 
 void FileUtil::mergeInvertedIndex(string pattern) {
