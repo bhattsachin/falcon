@@ -13,6 +13,9 @@
 #include "../utilities/FileUtil.h"
 #include "../utilities/DictionaryUtil.h"
 #include "../indexer/Index.h"
+#include <map>
+#include <set>
+#include <list>
 
 using namespace std;
 using namespace boost;

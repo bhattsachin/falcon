@@ -11,22 +11,28 @@
 #ifndef COMMANDLINE_H_
 #define COMMANDLINE_H_
 
-#include "Library.h";
-#include "DictionaryUtil.h";
-#include "FileUtil.h";
+#include "Library.h"
+#include "DictionaryUtil.h"
+#include "FileUtil.h"
 #include "../retrieve/InvertedIndex.h"
+#include "../retrieve/ForwardIndex.h"
 #include "../retrieve/BinaryRetrieval.h"
 #include "../parser/lang/en/QueryParser.h"
+#include "../ranking/DynamicScore/Cosine.h"
+#include "../ranking/StaticScore/ProfScore.h"
+#include "../ranking/StaticScore/QualityScore.h"
 
 using namespace std;
 using namespace boost;
 class CommandLine {
 public:
 	InvertedIndex idex;
+	ForwardIndex fdex;
 	QueryParser qparser;
 	BinaryRetrieval bret;
 	DictionaryUtil util;
 	FileUtil fUtil;
+	Cosine cosRanker;
 
 public:
 

@@ -50,7 +50,7 @@ string CommandLine::runQuery(string query) {
 	//vector<string> queryTerms = ;
 	qparser.setQueryString(query);
 	vector<string> queryTerms = qparser.getTerms();
-
+	vector<size_t> queryTermIds = qparser.getTermIds();
 	cout<<"size after dictionary check:"<<queryTerms.size()<<endl;
 
 
@@ -92,8 +92,20 @@ string CommandLine::runQuery(string query) {
 
 	if (postingList.size() > 0) {
 		m_result = bret.search(postingList);
-		response = fUtil.getStringValue(m_result.size()) + " results found";
+		set<size_t> binResult;
+		for(list<size_t>::iterator itMR = m_result.begin(); itMR!=m_result.end(); ++itMR){
+			binResult.insert(*itMR);
+		}
+		cosRanker.setup(binResult, queryTermIds, queryTerms, &fdex);
+		vector<float> cosScore = cosRanker.getScore();
 
+		response = fUtil.getStringValue(m_result.size()) + " results found\n";
+
+		size_t temp_count =0;
+		for (list<size_t>::iterator itMR = m_result.begin(); itMR!=m_result.end(); ++itMR){
+			response += "\t [docId:"+ fUtil.getStringValue(*itMR) +"] [cosine score: "+ fUtil.getStringValue(cosScore.at(temp_count)) +"]"+"\n";
+			++temp_count;
+		}
 	} else {
 		response ="0 results found";
 	}

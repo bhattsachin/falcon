@@ -12,13 +12,12 @@
 
 class ProfScore: public ScoreBase {
 public:
-	ProfScore(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize) : ScoreBase(ifsPtrList, offset, barrelSize){};
+	ProfScore() : ScoreBase(){};
 	virtual ~ProfScore();
+	virtual float getScore();
 
 private:
-	class JOccur{
-
-	};
+	float JCoeffient(set<size_t> A, set<size_t> B);
 };
 
 

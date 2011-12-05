@@ -113,6 +113,7 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 
 
 	//reference counter
+	doc.refCounter = 0;
 	regex expr_ref("(<ref\\s+)");
 	start = inputText.begin();
 	end = inputText.end();
