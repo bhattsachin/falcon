@@ -167,8 +167,7 @@ bool FileUtil::writeDictionary(const char* filename,
 	DocumentQueue::FrequencyDictionary doc;
 	for (unsigned int i = 0; i < dictionary.size(); i++) {
 		doc = dictionary.at(i);
-		output += "#" + getStringValue(doc.id) + " " + getStringValue(
-				doc.frequency) + "\n";
+		output += "#" + getStringValue((size_t)doc.id) + " " + getStringValue((size_t)doc.frequency) + "\n";
 	}
 	return writeFile(filename, output);
 }

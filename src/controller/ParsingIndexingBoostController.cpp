@@ -243,6 +243,8 @@ void ParsingIndexingBoostController::createOutputFolders() {
 	util.createFolder(folderName.c_str());
 	folderName = "OUTPUT/dictionary";
 	util.createFolder(folderName.c_str());
+	folderName = "OUTPUT/static_score";
+	util.createFolder(folderName.c_str());
 }
 
 void ParsingIndexingBoostController::createSemWikiFiles(
