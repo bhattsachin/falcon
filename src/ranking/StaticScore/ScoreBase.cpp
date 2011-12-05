@@ -7,18 +7,10 @@
 
 #include "ScoreBase.h"
 
-ScoreBase::ScoreBase(BoostParser::ParsedDocument pdoc){
-	// TODO another constructor given pdoc from parsing indexing controller
-	this->pdoc = pdoc;
+ScoreBase::ScoreBase(){
+	// TODO dummy constructor
 }
-/**
-ScoreBase::ScoreBase(vector<ifstream*> ifsPtrList, size_t offset, size_t barrelSize) {
-	// TODO Auto-generated constructor stub
-	this->ifsPtrList = ifsPtrList;
-	this->offset = offset;
-	this->barrelSize = barrelSize;
-}
-*/
+
 ScoreBase::~ScoreBase() {
 	// TODO Auto-generated destructor stub
 }
@@ -28,53 +20,22 @@ float ScoreBase::getScore(){
 	return ScoreBase::staticScore;
 }
 
-void ScoreBase::setFileId(size_t fileId){
+void ScoreBase::setFileId(BoostParser::ParsedDocument* pdoc, vector<size_t>* termId, vector<int>* parts, size_t fileId){
 	// TODO set the file Id, fetch info according to the Id
-}
-/**
-void ScoreBase::setFileId(size_t fileId){
-	// TODO set the file Id and call several methods to retrieve reference/section count, content/category list and etc.
+	this->pdoc = pdoc;
+	this->termId = termId;
+	this->parts = parts;
 	this->fileId = fileId;
-	this->refCount = 0;
-	this->sectCount = 0;
-	// use regular expression to parse a forward index string
-    regex expr_refCount("\\[\\d+\\]");
-    regex expr_tftidpartid("\\d+,\\d+,\\d+");
-    sregex_iterator itMatchEnd;
-    sregex_iterator itMatchRef(this->frwdIndxStream.begin(), this->frwdIndxStream.end(), expr_refCount);
-    sregex_iterator itMatchBody(this->frwdIndxStream.begin(), this->frwdIndxStream.end(), expr_tftidpartid);
 
-    // store results
-    this->refCount = atoi(itMatchRef->str().c_str());
-
-    for(; itMatchBody!=itMatchEnd; ++itMatchBody){
-    	vector<string> tokens;
-    	string temp = itMatchBody->str();
-    	boost::split(tokens, temp, is_any_of(" ,|"), token_compress_on);
-    	if (tokens.at(2) == "7"){
-    		this->categoryList.push_back(str2sizet(tokens.at(1)));
-    	} else if (tokens.at(2) == "5"){
-    		this->sectCount++;
-    		this->contentList.push_back(str2sizet(tokens.at(1)));
-    	} else {
-    		this->contentList.push_back(str2sizet(tokens.at(1)));
-    	}
-    }
-}
-*/
-
-void ScoreBase::fetchFwrdIndx(){
-	// TODO fetch the forward index in forward index barrels according to the 'fileId' given and the offset kept in memory.
-	size_t numBarrel = floor((fileId-offset)/barrelSize);
-	size_t inFileOffset = fileId - (barrelSize * numBarrel);
-
-	// get the forward index for fileId
-	for (size_t i = 0; i < inFileOffset; i++){
-		*ifsPtrList.at(numBarrel) >> ScoreBase::frwdIndxStream;
+	this->refCount = this->pdoc->refCounter; // cov from size_t to int
+	this->sectCount = this->pdoc->sections.size(); // cov from size_t to int
+	for(size_t i=0; i < this->termId->size(); i++){
+		if (parts->at(i) == 7){ // if part id shows that it's a category.
+			this->categoryList.insert(termId->at(i));
+		} else if(parts->at(i) == 4 || parts->at(i) == 5 || parts->at(i) == 6) { // if else, other content that is
+			this->contentList.insert(termId->at(i));
+		}
 	}
-
-	// set the stream get pointer to the beginning of the buffer
-	ifsPtrList.at(numBarrel)->seekg(0, ios::beg);
 }
 
 int ScoreBase::getNumRefer(){
@@ -87,20 +48,13 @@ int ScoreBase::getNumSection(){
 	return this->sectCount;
 }
 
-vector<size_t> ScoreBase::getWikiBody(){
+set<size_t> ScoreBase::getWikiBody(){
 	// TODO get the wiki body content (except category), term frequence will be ignored
 	return this->contentList;
 }
 
-vector<size_t> ScoreBase::getCatList(){
+set<size_t> ScoreBase::getCatList(){
 	//TODO get the category list(as their id in 'Category dictionary') of a wiki file.
 	return this->categoryList;
 }
 
-size_t ScoreBase::str2sizet(string input){
-	// TODO helper for converting string to size_t value
-	size_t rtr;
-	std::istringstream iss(input);
-	iss >> rtr;
-	return rtr;
-}

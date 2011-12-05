@@ -68,6 +68,7 @@ list<Index::DocIdPairTF> InvertedIndex::getPostingList(string query){
 size_t InvertedIndex::getTF(string term, size_t docid){
 	list<Index::DocIdPairTF> postings = getPostingList(term);
 	size_t tf=0;
+
 	BOOST_FOREACH(Index::DocIdPairTF t, postings){
 		if(t.docid==docid){
 			tf = t.tf;

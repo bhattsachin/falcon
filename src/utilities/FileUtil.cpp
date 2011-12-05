@@ -173,11 +173,22 @@ bool FileUtil::writeDictionary(const char* filename,
 	return writeFile(filename, output);
 }
 
-string FileUtil::getStringValue(unsigned int value) {
+string FileUtil::getStringValue(size_t value) {
 	std::stringstream b;
 	b << value;
 	return b.str();
+}
 
+string FileUtil::getStringValue(int value) {
+	std::stringstream b;
+	b << value;
+	return b.str();
+}
+
+string FileUtil::getStringValue(float value) {
+	std::stringstream b;
+	b << value;
+	return b.str();
 }
 
 string FileUtil::getFileNameFromPath(string path) {
