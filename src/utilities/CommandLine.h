@@ -54,6 +54,7 @@ public:
 	virtual ~CommandLine();
 	void run();
 	string runQuery(string query);
+	list<size_t> runQueryWeb(string query);
 	CommandLine::Query parseQuery(string query);
 };
 

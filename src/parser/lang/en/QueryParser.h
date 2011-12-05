@@ -9,6 +9,7 @@
 #define QUERYPARSER_H_
 
 #include "PlainTextParser.h"
+#include "../../BoostParser.h"
 #include "../../../utilities/DictionaryUtil.h"
 class QueryParser{
 private:

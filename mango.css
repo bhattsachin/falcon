@@ -1,0 +1,88 @@
+ 
+ol,ul,li {
+border:0;
+margin:0;
+padding:0;
+}
+
+h3,.med {
+font-size:medium;
+font-weight:400;
+}
+
+body {
+color:#222;
+}
+
+li.head,li.g,body,html,.std,.c h2,#mbEnd h2,h1 {
+font-size:small;
+font-family:arial,sans-serif;
+}
+
+li.g {
+margin-top:0;
+margin-bottom:20px;
+}
+
+ol li {
+list-style:none;
+}
+
+li {
+line-height:1.2;
+}
+
+#res h3.r {
+display:block;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+}
+
+.vsc {
+display:inline-block;
+position:relative;
+width:100%;
+}
+
+#ires h3,#res h3,#tads h3,#tadsb h3,#mbEnd h3 {
+font-size:medium;
+}
+
+.sl,.r {
+display:inline;
+font-weight:400;
+margin:0;
+}
+
+.s {
+max-width:42em;
+color:#222;
+}
+
+div {
+display:block;
+}
+
+.kv,.kvs {
+display:block;
+margin-bottom:2px;
+}
+
+.f,.f a:link,.m,.c h2,#mbEnd h2,#tads h2,#tadsb h2,#tadsto h2,.descbox {
+color:#666;
+}
+
+.st,.ac {
+line-height:1.24;
+}
+
+.a,cite,cite a:link,cite a:visited,.cite,.cite:link,#mbEnd cite b,#tads cite b,#tadsb cite b,#tadsto cite b,#ans > i,.bc a:link {
+color:#093;
+font-style:normal;
+}
+
+a:link,.w,.q:active,.q:visited,.tbotu {
+color:#12C;
+cursor:pointer;
+}

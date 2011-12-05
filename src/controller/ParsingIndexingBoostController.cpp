@@ -253,6 +253,7 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 
 	string semwikitext;
 	string linkDictionary;
+	string authorPairDictionary;
 	string filename;
 	string arti_name = doc.articleName.substr(
 			doc.articleName.find_last_of("/\\") + 1);
@@ -328,6 +329,11 @@ void ParsingIndexingBoostController::createSemWikiFiles(
 	filename = (string) "OUTPUT/SemWiki/" + util.getFileNameFromPath(
 			doc.articleName) + (string) " _semwiki_meta.txt";
 	util.writeFile(filename.c_str(), semwikitext);
+
+	//write author pair dictionary
+	authorPairDictionary = util.removeExtension(arti_name) + " , " + doc.author + "\n";
+	string authorPairFileName = "OUTPUT/dictionary/AuthorPairRepository.txt";
+	util.writeFile(authorPairFileName.c_str(),authorPairDictionary);
 
 
 	//write Link Repository

@@ -102,10 +102,11 @@ BoostParser::ParsedDocument BoostWikiParser::parseFile(string path) {
 	start = inputText.begin();
 	end = inputText.end();
 	while (boost::regex_search(start, end, what, expr_links, flags)) {
-		//txt = boost::(what[2]);
+		txt = what[2];
 		txt = regex_replace(txt, expr_space, "_",
 					boost::match_default | boost::format_sed);
 		doc.links.push_back(txt);
+		cout<<"txt is:"<<txt<<endl;
 
 		start = what[0].second;
 	}

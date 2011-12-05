@@ -22,4 +22,7 @@ Existing Git Repo?
   cd existing_git_repo
   git remote add origin git@github.com:bhattsachin/falcon.git
   git push -u origin master
+  
+Run graphDB
+bash$ java -jar falconGraph.jar ./OUTPUT/dictionary/LinkPairRepository.txt ./OUTPUT/dictionary/AuthorPairRepository.txt
       
