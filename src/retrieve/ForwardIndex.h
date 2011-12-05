@@ -13,7 +13,6 @@
 #include <fstream>
 #include <sstream>
 #include <boost/regex.hpp>
-#include <boost/algorithm/string.hpp>
 
 using namespace std;
 using namespace boost;

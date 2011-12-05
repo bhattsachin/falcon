@@ -19,7 +19,7 @@ void Cosine::setup(set<size_t> binResult, vector<size_t> queryTermId, vector<str
 	// TODO set the list of binary search result and the query term Ids.
 	//		Calculate the scores for each documents in binResult.
 	this->frwdReader = fR;
-
+	this->frwdReader->setup(1,"OUTPUT/fwd_index/ForwardIndex.txt");
 	this->queryTerm = queryTerm;
 	sort(queryTermId.begin(), queryTermId.end());
 	this->queryTermId = queryTermId;
@@ -80,6 +80,7 @@ void Cosine::computeScore(size_t docId){
 	size_t count = 0;
 	for (; itDocTermFreq!=frwdIndx.end(); ++itDocTermFreq){
 		docTermFreq[*itDocTermFreq] = this->invtReader.getTF(this->queryTerm.at(count), docId);
+		//docTermFreq[*itDocTermFreq] = 1;
 		++count;
 	}
 
@@ -99,7 +100,10 @@ void Cosine::computeScore(size_t docId){
 	float docDenominator = computeDenominator(frwdIndx, docTermFreq);
 
 	// push back the scores into member variant
+	cout << "iterset num: " << interTermId.size() <<"  || q term num: " << uniQueryTermId.size() << " || uniqdoctermId: " << frwdIndx.size() << endl;
+	cout << "unnorm cossim: " << cossim;
 	cossim = cossim / docDenominator /this->queryDenominator;
+	cout << " |||| docDenom: " << docDenominator << " |||| queryDenom: "<<this->queryDenominator<<endl;
 	this->score.push_back(cossim);
 }
 

@@ -16,7 +16,7 @@ ForwardIndex::~ForwardIndex() {
 	// TODO Auto-generated destructor stub
 }
 
-void ForwardIndex::setup(size_t offset, std::string fInxUrl){
+void ForwardIndex::setup(size_t offset, string fInxUrl){
 	// TODO initialization
 	this->offset = offset;
 	this->fInxUrl = fInxUrl;
@@ -28,8 +28,8 @@ std::set<size_t> ForwardIndex::getUniqueTermId(size_t docId){
 	set<size_t> rtr;
 
 	//skip to line storing doc forward index
-	std::string line;
-	for (size_t i=this->offset; i<docId; ++i){
+	string line="";
+	for (size_t i=this->offset; i<=docId; ++i){
 		getline(this->ifs, line);
 	}
 	ifs.seekg(0, std::ios::beg); //rewind the stream pointer
@@ -42,7 +42,8 @@ std::set<size_t> ForwardIndex::getUniqueTermId(size_t docId){
 	for(; itMatch!=itMatchEnd; ++itMatch){
 		stringstream oss;
 		oss << *itMatch;
-		size_t termId = (size_t) atoi(oss.str().substr(1,oss.str().length()-2).c_str());
+		string termIdStr = oss.str().substr(1,oss.str().length()-2);
+		size_t termId = (size_t) atoi(termIdStr.c_str());
 		rtr.insert(termId);
 	}
 	return rtr;
