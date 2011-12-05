@@ -35,6 +35,7 @@ int run()
     int rv,numbytes;
     char inputBuffer[400];
     CommandLine cl;
+    FileUtil util;
 
 
     memset(&hints, 0, sizeof hints);
@@ -104,8 +105,31 @@ int run()
 
         numbytes = recv(new_fd, inputBuffer, sizeof inputBuffer, 0);
         inputBuffer[numbytes] = '\0';
+        std::string inpbf(inputBuffer);
 
         //printf("input received:%d  and %s \n",numbytes,inputBuffer);
+        //printf("input is:%s \n",inputBuffer[0]);
+
+        std::string inputdata=" ";
+
+        //cout<<"input:"<<inpbf<<endl;
+
+        string::const_iterator start, end;
+        boost::match_results<std::string::const_iterator> what;
+        boost::match_flag_type flags = boost::match_default;
+
+        //get input from incoming request here
+        regex expr_ref("(GET)(\\s+)(\\/)(query=)(.*?)(\\s+)");
+        	start = inpbf.begin();
+        	end = inpbf.end();
+        	while (boost::regex_search(start, end, what, expr_ref, flags)) {
+        		inputdata = what[5];
+        		break;
+        	}
+
+       cout<<"input:"<<inputdata<<endl;
+
+        //input fetch code ends
 
         inet_ntop(their_addr.ss_family,
             get_in_addr((struct sockaddr *)&their_addr),
@@ -113,10 +137,37 @@ int run()
         printf("server: got connection from %s\n", s);
         std::string op;
         std::string response;
-        response = cl.runQuery("yesterday");
+        list<size_t> qresp;
+        if(inputdata.length()>0){
+        	qresp = cl.runQueryWeb(inputdata);
+        	response = "data";
+        }else{
+        	response = "empty";
+        }
 
 
-        op= "<html><head><title>falcon search engine</title></head><body><h1>falcon search engine</h1>search<input type=\"text\" value=\"Query here\" />"+ response + "</body></html>";
+        std::string html_inner_content;
+        std::string html_end_content;
+
+        std::string title = "this is title";
+        std::string link = "file path is here";
+        std::string description = "description should have come here";
+
+        std::string css = "<style type=\"text/css\">ol,ul,li{border:0;margin:0;padding:0}h3,.med{font-size:medium;font-weight:400}body{color:#222}li.head,li.g,body,html,.std,.c h2,#mbEnd h2,h1{font-size:small;font-family:arial,sans-serif}li.g{margin-top:0;margin-bottom:20px}ol li{list-style:none}li{line-height:1.2}#res h3.r{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vsc{display:inline-block;position:relative;width:100%}#ires h3,#res h3,#tads h3,#tadsb h3,#mbEnd h3{font-size:medium}.sl,.r{display:inline;font-weight:400;margin:0}.s{max-width:42em;color:#222}div{display:block}.kv,.kvs{display:block;margin-bottom:2px}.f,.f a:link,.m,.c h2,#mbEnd h2,#tads h2,#tadsb h2,#tadsto h2,.descbox{color:#666}.st,.ac{line-height:1.24}.a,cite,cite a:link,cite a:visited,.cite,.cite:link,#mbEnd cite b,#tads cite b,#tadsb cite b,#tadsto cite b,#ans > i,.bc a:link{color:#093;font-style:normal}a:link,.w,.q:active,.q:visited,.tbotu{color:#12C;cursor:pointer}</style>";
+
+
+        vector<std::string> outputList;
+        op="<html><head><title>Falcon Search Engine</title>" + css + "</head><body><h2>Falcon Search Engine - Team Mango</h2><form name=\"input\" action=\"http://localhost:8888\" method=\"post\" id=\"input\">Query: <input type=\"text\" id=\"queryId\" name=\"query\" value=\"query here\" /><input type=\"submit\" value=\"Submit\" /></form><ol>";
+
+
+        BOOST_FOREACH(size_t t, qresp){
+
+            html_inner_content="<li class=\"g\"><div class=\"vsc\"><h3 class=\"r\"><a href=\"#\">" + util.getStringValue(t) + "</a></h3><div class=\"s\"><div class=\"f kv\"><cite>" + link + "</cite></div><span class=\"st\">" + description + "</span></div></div></li>";
+            op = op + html_inner_content;
+
+        }
+
+        op = op+ "</ol></body></html>";
 
         if (!fork()) { // this is the child process
             close(sockfd); // child doesn't need the listener

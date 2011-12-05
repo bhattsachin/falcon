@@ -105,6 +105,47 @@ string CommandLine::runQuery(string query) {
 
 }
 
+
+list<size_t> CommandLine::runQueryWeb(string query) {
+	//qparser.setQueryString(query);
+	//vector<string> queryTerms = ;
+	qparser.setQueryString(query);
+	vector<string> queryTerms = qparser.getTerms();
+
+	cout<<"size after dictionary check:"<<queryTerms.size()<<endl;
+
+
+	list<Index::DocIdPairTF> rawPostings;
+	list<size_t> intermediate_post;
+
+	vector<list<size_t> > postingList;
+	//cout<<"query term size:"<<queryTerms.size()<<endl;
+	if(queryTerms.size()>0){
+	for (size_t j = 0; j < queryTerms.size(); j++) {
+		//cout<<"query parser returns::"<<queryTerms.at(j)<<endl;
+		rawPostings = idex.getPostingList(queryTerms.at(j));
+		BOOST_FOREACH(Index::DocIdPairTF t, rawPostings){
+			intermediate_post.push_back(t.docid);
+		}
+
+		postingList.push_back(intermediate_post);
+	}
+	}
+
+	list<size_t> m_result;
+	string response;
+
+
+	m_result = bret.search(postingList);
+
+
+	return m_result;
+
+}
+
+
+
+
 CommandLine::Query CommandLine::parseQuery(string query){
 
 	//the sequence of input should look like

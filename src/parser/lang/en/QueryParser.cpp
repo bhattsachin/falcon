@@ -23,8 +23,8 @@ void QueryParser::setQueryString(string querystr){
 }
 
 vector<string> QueryParser::separateTerms(){
-	PlainTextParser ptp;
-	this->queryTerms = ptp.plainParseProcStr(this->queryString);
+	BoostParser ptp;
+	this->queryTerms = ptp.parse(this->queryString);
 	return this->queryTerms;
 }
 

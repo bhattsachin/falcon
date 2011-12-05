@@ -21,7 +21,12 @@
 #include <arpa/inet.h>
 #include <sys/wait.h>
 #include <signal.h>
+#include <vector.h>
+#include <boost/regex.hpp>
+#include <boost/foreach.hpp>
+#include <boost/algorithm/string.hpp>
 #include "CommandLine.h"
+#include "FileUtil.h"
 
 int run();
 void sigchld_handler(int s);
