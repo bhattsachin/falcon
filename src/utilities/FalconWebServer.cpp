@@ -162,7 +162,7 @@ int run()
 
         BOOST_FOREACH(size_t t, qresp){
 
-            html_inner_content="<li class=\"g\"><div class=\"vsc\"><h3 class=\"r\"><a href=\"#\">" + util.getStringValue(t) + "</a></h3><div class=\"s\"><div class=\"f kv\"><cite>" + link + "</cite></div><span class=\"st\">" + description + "</span></div></div></li>";
+            html_inner_content="<li class=\"g\"><div class=\"vsc\"><h3 class=\"r\"><a href=\"#\">" + util.getStringValue(t) + "</a></h3><div class=\"s\"><div class=\"f kv\"><cite>" + cl.tutil.fileMap[util.getStringValue(t)] + "</cite></div><span class=\"st\">" + description + "</span></div></div></li>";
             op = op + html_inner_content;
 
         }

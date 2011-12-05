@@ -69,6 +69,7 @@ public:
 	list<Index::DocIdPairTF> getPostings(string s);
 
 
+
 };
 
 #endif /* FILEUTIL_H_ */

@@ -11,6 +11,7 @@ string EXIT = "exit";
 CommandLine::CommandLine() {
 	idex.load();
 	util.loadDictionary("OUTPUT/dictionary/TermDictionary.txt");
+	tutil.loadFileDictionary();
 }
 
 CommandLine::~CommandLine() {

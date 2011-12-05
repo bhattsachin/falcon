@@ -21,6 +21,7 @@
 #include "../ranking/DynamicScore/Cosine.h"
 #include "../ranking/StaticScore/ProfScore.h"
 #include "../ranking/StaticScore/QualityScore.h"
+#include "Util.h"
 
 using namespace std;
 using namespace boost;
@@ -33,6 +34,7 @@ public:
 	DictionaryUtil util;
 	FileUtil fUtil;
 	Cosine cosRanker;
+	Util tutil;
 
 public:
 

@@ -46,7 +46,37 @@ bool Util::parseCommandLine(int argc, char** argv){
 
 }
 
+void Util::loadFileDictionary(){
+	FileUtil util;
+	string fileDict = util.readFile("OUTPUT/dictionary/FileDictionary.txt");
+	list<string> tmp;
+		vector<string> tokens;
+		list<string> tokenList;
+		list<string> finalList;
+		string key, val;
+		int a;
+		split(tokenList, fileDict, is_any_of("#"), token_compress_on);
+		BOOST_FOREACH(string t, tokenList){
+			//cout<<t<<endl;
+			split(finalList, t, is_any_of("  "), token_compress_on);
+			//fileMap[finalList.at(0)] = finalList.at(1);
+			a=0;
+			BOOST_FOREACH(string k, finalList){
+				if(a==0)
+					key = k;
+				else
+					val = k;
+				a++;
+
+			}
+			fileMap.insert(pair<string,string>(key, val));
+		}
+
+
+}
+
 /**
+
 int main(){
 
 	vector<string> lst;
@@ -79,6 +109,18 @@ int main(){
 
 	cout<<count["sun"]<<endl;
 
+
+
+}
+
+
+*/
+
+/**
+int main(){
+
+Util util;
+util.loadFileDictionary();
 
 
 }
